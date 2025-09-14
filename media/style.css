@@ -1,0 +1,42 @@
+body {
+  /* ユーザー添付の色に合わせた背景（ペリウィンクル系） */
+  background-color: #a7b6d9; /* 添付画像に近い色 */
+  color: #072026; /* ダークトーンの本文色（読みやすさ重視） */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  padding: 20px;
+}
+
+#chat-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  /* 吹き出し内ははっきり見えるダークテキスト */
+  color: #0b2b2b;
+}
+
+.ai {
+  align-self: flex-start;
+  /* AI側は白に近い吹き出し（スクリーンショット準拠） */
+  background-color: #ffffff;
+  border-radius: 15px 15px 15px 0;
+  border: 1px solid rgba(3, 30, 32, 0.06);
+  box-shadow: 0 4px 10px rgba(3, 30, 32, 0.08);
+}
+
+.me {
+  align-self: flex-end;
+  /* ユーザー側は明るく鮮やかなグリーン */
+  background-color: #9efb7a; /* 添付画像に近い鮮やかなグリーン */
+  border-radius: 15px 15px 0 15px;
+  border: 1px solid rgba(3, 30, 32, 0.06);
+  box-shadow: 0 4px 10px rgba(3, 30, 32, 0.06);
+}

@@ -1,0 +1,25 @@
+out
+dist
+node_modules
+.vscode-test/
+*.vsix
+
+# Generated icons from scripts
+media/icons/
+
+# VS Code workspace/user settings
+# Keep project-level files in the repo so contributors have the debug/tasks/extensions setup.
+# Ignore only user-specific settings (workspace personal overrides)
+.vscode/settings.json
+
+# Logs
+npm-debug.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional: build artifacts
+out/
+dist/
