@@ -1,5 +1,5 @@
 # <p align="center">
-  <img src="./media/ChatView-logo4.png" alt="ChatView Logo" />
+  <img src="./media/ChatView-logo4.png" alt="ChatView Logo" width="512" height="512"/>
 </p>
 
 # 🗨️ ChatView — MarkdownをLINE風チャットUIでプレビュー表示
