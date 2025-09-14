@@ -3,6 +3,11 @@
   "displayName": "ChatView",
   "description": "Markdown conversation preview in LINE style",
   "version": "0.0.1",
+  "publisher": "keides2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keides2/chatview"
+  },
   "engines": {
     "vscode": "^1.104.0"
   },
@@ -13,6 +18,7 @@
     "onCommand:chatPreview.showPreview"
   ],
   "main": "./out/extension.js",
+  "icon": "media/icons/ChatView-icon-128.png",
   "contributes": {
     "commands": [
         {
