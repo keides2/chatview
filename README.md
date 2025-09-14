@@ -1,3 +1,7 @@
+# <p align="center">
+  <img src="./media/ChatView-logo4.png" alt="ChatView Logo" />
+</p>
+
 # 🗨️ ChatView — MarkdownをLINE風チャットUIでプレビュー表示
 
 **ChatView** は、Markdownファイル内の会話を、Visual Studio Code 上でLINE風のチャットUIとしてプレビュー表示できる拡張機能です。  
