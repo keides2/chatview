@@ -27,16 +27,46 @@ body {
   align-self: flex-start;
   /* AI側は白に近い吹き出し（スクリーンショット準拠） */
   background-color: #ffffff;
-  border-radius: 15px 15px 15px 0;
+  border-radius: 15px;
   border: 1px solid rgba(3, 30, 32, 0.06);
   box-shadow: 0 4px 10px rgba(3, 30, 32, 0.08);
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.ai::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 15px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #ffffff;
+  border-bottom: none;
 }
 
 .me {
   align-self: flex-end;
   /* ユーザー側は明るく鮮やかなグリーン */
   background-color: #9efb7a; /* 添付画像に近い鮮やかなグリーン */
-  border-radius: 15px 15px 0 15px;
+  border-radius: 15px;
   border: 1px solid rgba(3, 30, 32, 0.06);
   box-shadow: 0 4px 10px rgba(3, 30, 32, 0.06);
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.me::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 15px;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #9efb7a;
+  border-bottom: none;
 }

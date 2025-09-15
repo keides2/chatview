@@ -8,25 +8,43 @@
     "type": "git",
     "url": "https://github.com/keides2/chatview"
   },
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "ChatView",
+      "properties": {
+        "chatPreview.defaultFolder": {
+          "type": "string",
+          "default": "workspace",
+          "description": "保存ダイアログの既定フォルダ。'workspace'（ワークスペースのルート）、'home'（ユーザーホーム）、または絶対パスを指定できます。"
+        },
+        "chatPreview.puppeteerExecutablePath": {
+          "type": "string",
+          "default": "",
+          "description": "Puppeteerで使用するChrome/Chromiumの実行ファイルパス。空の場合は自動検出を試みます。"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "chatPreview.showPreview",
+        "title": "ChatView: Preview display"
+      },
+      {
+        "command": "chatPreview.exportImage",
+        "title": "ChatView: Export view as image"
+      }
+    ]
+  },
   "engines": {
     "vscode": "^1.104.0"
   },
+  "license": "MIT",
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:chatPreview.showPreview"
-  ],
   "main": "./out/extension.js",
   "icon": "media/icons/ChatView-icon-128.png",
-  "contributes": {
-    "commands": [
-        {
-          "command": "chatPreview.showPreview",
-          "title": "ChatView: Preview display"
-        }
-    ]
-  },
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
@@ -36,14 +54,18 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.104.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
+    "@types/vscode": "^1.104.0",
     "@typescript-eslint/eslint-plugin": "^8.42.0",
     "@typescript-eslint/parser": "^8.42.0",
-    "eslint": "^9.34.0",
-    "typescript": "^5.9.2",
     "@vscode/test-cli": "^0.0.11",
-    "@vscode/test-electron": "^2.5.2"
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.34.0",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "puppeteer": "^24.20.0",
+    "puppeteer-core": "^24.20.0"
   }
 }

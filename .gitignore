@@ -5,7 +5,7 @@ node_modules
 *.vsix
 
 # Generated icons from scripts
-media/icons/
+# media/icons/
 
 # VS Code workspace/user settings
 # Keep project-level files in the repo so contributors have the debug/tasks/extensions setup.
@@ -23,3 +23,5 @@ Thumbs.db
 # Optional: build artifacts
 out/
 dist/
+
+evac/

@@ -116,15 +116,6 @@ npm install
 
 ---
 
-## 🧩 よくある質問
-
-| 質問 | 回答 |
-|------|------|
-| プレビューが更新されない | CSSを変更したらF5で再起動してください |
-| 画像が表示されない | `media/` フォルダーに正しく配置されているか確認してください |
-
----
-
 ## 📥 インストール方法
 
 ### Marketplaceから
@@ -137,6 +128,45 @@ npm install
 1. リポジトリをクローン  
 2. `npm install` で依存関係をインストール  
 3. `F5` で拡張機能ホストを起動
+
+---
+
+## 🧾 Puppeteer（レンダリング）に関する重要な注意
+
+ChatView の高品質な画像出力（拡張側で HTML を忠実にレンダリングしてスクリーンショットを取る機能）は、Headless Chrome / Chromium（Puppeteer）を利用しています。本リポジトリは軽量化のため `puppeteer-core` を利用する設計になっており、ユーザー環境に既にインストールされている Chrome/Chromium を使うことを想定しています。以下を必ずご確認ください。
+
+### なぜ `puppeteer-core` なのか？
+- `puppeteer-core` はブラウザ本体（Chromium）を含まないため、拡張パッケージのサイズを抑えられます。
+- フルの `puppeteer` を依存に入れると Chromium が自動でダウンロードされ、配布・インストール時に大きなダウンロードが発生します（拡張の配布サイズが数百MBになる可能性があります）。
+
+### 動作に必要なもの
+- お使いのマシンに Chrome または Chromium がインストールされていること。
+- 拡張の設定 `chatPreview.puppeteerExecutablePath` に Chrome/Chromium の実行ファイルパスを設定するか、環境 PATH にある chrome/chromium 実行ファイルを利用できるようにしてください。
+
+例（settings.json）:
+
+```json
+"chatPreview.puppeteerExecutablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+```
+
+### 動作確認（手元で試す手順）
+開発環境で Puppeteer を使ってエクスポート処理を試す手順の一例です（ローカルでテストする場合）。
+
+1. まずは依存をインストールします（開発者向け）:
+
+```powershell
+npm install
+```
+
+2. もし `puppeteer-core` を使う設定のまま試すなら、ローカルに Chrome があることを確認し、`chatPreview.puppeteerExecutablePath` を設定してください。
+
+3. 付属のテストスクリプトで動作検証する（このリポジトリに含まれる簡易テスト）:
+
+```powershell
+node scripts\puppeteer-test.js
+```
+
+実行すると `out/puppeteer-test.png` にスクリーンショットが保存されます。
 
 ---
 
