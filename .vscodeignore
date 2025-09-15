@@ -1,11 +1,40 @@
+# VS Code files
 .vscode/**
 .vscode-test/**
+
+# Source files (only include bundled output)
 src/**
-.gitignore
-.yarnrc
-vsc-extension-quickstart.md
-**/tsconfig.json
-**/eslint.config.mjs
-**/*.map
+out/**
 **/*.ts
-**/.vscode-test.*
+**/*.map
+webpack.config.js
+
+# Build and config files
+tsconfig.json
+eslint.config.mjs
+.vscode-test.mjs
+vsc-extension-quickstart.md
+CHANGELOG.md
+
+# Git files
+.gitignore
+
+# Workspace files
+chatview.code-workspace
+
+# Scripts
+scripts/**
+
+# Node modules documentation and test files
+node_modules/**/test/**
+node_modules/**/tests/**
+node_modules/**/*.md
+node_modules/**/LICENSE*
+node_modules/**/CHANGELOG*
+node_modules/**/README*
+node_modules/**/docs/**
+node_modules/**/examples/**
+
+# Test files
+**/*.test.*
+out/test/**
