@@ -2,7 +2,7 @@
   "name": "chatview",
   "displayName": "ChatView",
   "description": "Markdown conversation preview in LINE style",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "keides2",
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
     ]
   },
   "engines": {
-    "vscode": "^1.104.0"
+    "vscode": "^1.103.0"
   },
   "activationEvents": [
     "onCommand:chatPreview.showPreview",
@@ -62,7 +62,7 @@
   "devDependencies": {
     "@types/mocha": "^10.0.10",
     "@types/node": "22.x",
-    "@types/vscode": "^1.104.0",
+    "@types/vscode": "^1.103.0",
     "@typescript-eslint/eslint-plugin": "^8.42.0",
     "@typescript-eslint/parser": "^8.42.0",
     "@vscode/test-cli": "^0.0.11",
