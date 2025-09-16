@@ -118,9 +118,13 @@ npm install
 
 ## 📥 インストール方法
 
+### システム要件
+
+- **Visual Studio Code**: バージョン 1.103.0 以上
+
 ### Marketplaceから
 
-1. VS Code の拡張機能ビューで「ChatView」を検索  
+1. VS Code の拡張機能ビューで「ChatView」を検索
 2. インストールしてすぐ使えます！
 
 ### ソースから（開発者向け）
