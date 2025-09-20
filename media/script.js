@@ -2,33 +2,109 @@ const DEBUG = true;
 
 let currentMarkdown = '';
 
+function parseMessages(markdown) {
+  const lines = markdown.split('\n');
+  const messages = [];
+  let current = null;
+
+  for (let rawLine of lines) {
+    const line = rawLine.replace(/\r$/, '');
+    if (line.startsWith('@ai')) {
+      current = { role: 'ai', text: line.replace('@ai', '').trim() };
+      messages.push(current);
+    } else if (line.startsWith('@me')) {
+      current = { role: 'me', text: line.replace('@me', '').trim() };
+      messages.push(current);
+    } else {
+      if (current) {
+        current.text += '\n' + line;
+      } else {
+        // ignore lines until a role-prefixed line appears
+      }
+    }
+  }
+
+  return messages;
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function renderMarkdownToHtml(text) {
+  if (!text) { return ''; }
+  const esc = escapeHtml(text);
+  const lines = esc.split('\n');
+  const out = [];
+  let inUl = false;
+  let inOl = false;
+
+  const flush = () => {
+    if (inUl) { out.push('</ul>'); inUl = false; }
+    if (inOl) { out.push('</ol>'); inOl = false; }
+  };
+
+  const inline = (s) => {
+    s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    s = s.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    s = s.replace(/`([^`]+?)`/g, '<code>$1</code>');
+    s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    return s;
+  };
+
+  for (let raw of lines) {
+    const line = raw.trim();
+    if (line.match(/^#{1,6}\s+/)) {
+      flush();
+      const m = line.match(/^(#{1,6})\s+(.*)$/);
+      out.push(`<div class="md-heading">${inline(m[2])}</div>`);
+      continue;
+    }
+    if (line.match(/^>\s+/)) {
+      flush();
+      const m = line.match(/^>\s+(.*)$/);
+      out.push(`<blockquote>${inline(m[1])}</blockquote>`);
+      continue;
+    }
+    if (line.match(/^[-\*]\s+/)) {
+      if (!inUl) { out.push('<ul>'); inUl = true; }
+      const m = line.match(/^[-\*]\s+(.*)$/);
+      out.push(`<li>${inline(m[1])}</li>`);
+      continue;
+    }
+    if (line.match(/^\d+\.\s+/)) {
+      if (!inOl) { out.push('<ol>'); inOl = true; }
+      const m = line.match(/^(\d+)\.\s+(.*)$/);
+      out.push(`<li>${inline(m[2])}</li>`);
+      continue;
+    }
+    if (line === '') {
+      flush();
+      out.push('<div class="md-paragraph"></div>');
+      continue;
+    }
+    out.push(`<div class="md-line">${inline(raw)}</div>`);
+  }
+
+  flush();
+  return out.join('');
+}
+
 window.addEventListener('message', event => {
   if (!event.data || !event.data.markdown) { return; }
   const markdown = event.data.markdown;
   currentMarkdown = markdown;
-  const lines = markdown.split('\n').filter(line => line.trim());
+  const messages = parseMessages(markdown);
 
   const container = document.getElementById('chat-container');
   container.innerHTML = '';
 
-  lines.forEach(line => {
-    let role = '';
-    let text = '';
-
-    if (line.startsWith('@ai')) {
-      role = 'ai';
-      text = line.replace('@ai', '').trim();
-    } else if (line.startsWith('@me')) {
-      role = 'me';
-      text = line.replace('@me', '').trim();
-    }
-
-    if (role) {
-      const div = document.createElement('div');
-      div.className = `message ${role}`;
-      div.textContent = text;
-      container.appendChild(div);
-    }
+  messages.forEach(msg => {
+    if (!msg.role) { return; }
+    const div = document.createElement('div');
+    div.className = `message ${msg.role}`;
+    div.innerHTML = renderMarkdownToHtml(msg.text);
+    container.appendChild(div);
   });
 });
 

@@ -213,7 +213,7 @@ function findChromeExecutable(): string | undefined {
 }
 
 function generateSvgContent(markdown: string, styleContent: string): string {
-  const lines = markdown.split('\n').filter(line => line.trim());
+  const messages = parseMessages(markdown);
   let yPosition = 30;
   let svgElements = '';
 
@@ -221,22 +221,25 @@ function generateSvgContent(markdown: string, styleContent: string): string {
   const backgroundColorMatch = styleContent.match(/background-color:\s*([^;]+)/);
   const backgroundColor = backgroundColorMatch ? backgroundColorMatch[1].trim() : '#a7b6d9';
 
-  lines.forEach(line => {
-    let role = '';
-    let text = '';
-
-    if (line.startsWith('@ai')) {
-      role = 'ai';
-      text = line.replace('@ai', '').trim();
-    } else if (line.startsWith('@me')) {
-      role = 'me';
-      text = line.replace('@me', '').trim();
-    }
+  messages.forEach(msg => {
+    const role = msg.role;
+    const text = msg.text;
 
     if (role) {
-      // テキストを適切な幅で折り返し
+      // テキストを適切な幅で折り返し（段落ごとの改行を保持）
       const maxCharsPerLine = 20;  // より短く設定
-      const textLines = wrapText(text, maxCharsPerLine);
+  const plain = stripMarkdown(text);
+  const paragraphs = plain.split('\n');
+      let textLines: string[] = [];
+      paragraphs.forEach((p, idx) => {
+        if (p === '') {
+          // 空行は段落区切りとして空行を追加
+          textLines.push('');
+        } else {
+          const wrapped = wrapText(p, maxCharsPerLine);
+          textLines.push(...wrapped);
+        }
+      });
       const lineHeight = 20;
       const padding = 16;
       const bubbleHeight = Math.max(50, textLines.length * lineHeight + padding * 2);
@@ -379,24 +382,57 @@ function escapeXml(text: string): string {
     .replace(/'/g, '&apos;');
 }
 
+// Parse markdown lines into message objects. Lines starting with @ai or @me start a new message.
+// Lines without a role prefix are treated as continuation lines and appended with a newline.
+function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , text: string }[] {
+  const lines = markdown.split('\n');
+  const messages: { role: 'ai' | 'me' | '' , text: string }[] = [];
+  let current: { role: 'ai' | 'me' | '' , text: string } | null = null;
+
+  for (let rawLine of lines) {
+    const line = rawLine.replace(/\r$/, '');
+    if (line.startsWith('@ai')) {
+      // start new ai message
+      current = { role: 'ai', text: line.replace('@ai', '').trim() };
+      messages.push(current);
+    } else if (line.startsWith('@me')) {
+      // start new user message
+      current = { role: 'me', text: line.replace('@me', '').trim() };
+      messages.push(current);
+    } else {
+      // continuation or unrelated line
+      if (current) {
+        // append as continuation with explicit newline
+        current.text += '\n' + line;
+      } else {
+        // no current message: ignore or treat as anonymous (skip)
+        // We'll skip lines until a role-prefixed line appears
+      }
+    }
+  }
+
+  return messages;
+}
+
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 function generateExportHtml(markdown: string, styleContent: string): string {
-  const lines = markdown.split('\n').filter(line => line.trim());
+  const messages = parseMessages(markdown);
   let messagesHtml = '';
 
-  lines.forEach(line => {
-    let role = '';
-    let text = '';
-
-    if (line.startsWith('@ai')) {
-      role = 'ai';
-      text = line.replace('@ai', '').trim();
-    } else if (line.startsWith('@me')) {
-      role = 'me';
-      text = line.replace('@me', '').trim();
-    }
-
+  messages.forEach(msg => {
+    const role = msg.role;
+    const text = msg.text;
     if (role) {
-      messagesHtml += `<div class="message ${role}">${text}</div>\n`;
+      const contentHtml = renderMarkdownToHtml(text);
+      messagesHtml += `<div class="message ${role}">${contentHtml}</div>\n`;
     }
   });
 
@@ -432,4 +468,96 @@ function getWebviewContent(scriptUri: vscode.Uri, styleUri: vscode.Uri): string 
     </body>
     </html>
   `;
+}
+
+// Render a limited subset of Markdown to HTML for display inside bubbles.
+function renderMarkdownToHtml(text: string): string {
+  if (!text) { return ''; }
+  // work with escaped text to avoid XSS
+  const esc = escapeHtml(text);
+  const lines = esc.split('\n');
+  const out: string[] = [];
+  let inUl = false;
+  let inOl = false;
+
+  const flushLists = () => {
+    if (inUl) { out.push('</ul>'); inUl = false; }
+    if (inOl) { out.push('</ol>'); inOl = false; }
+  };
+
+  const inline = (s: string) => {
+    // bold **text**
+    s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    // italic *text*
+    s = s.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    // inline code `code`
+    s = s.replace(/`([^`]+?)`/g, '<code>$1</code>');
+    // links [text](url)
+    s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+    return s;
+  };
+
+  for (let i = 0; i < lines.length; i++) {
+    const raw = lines[i];
+    const line = raw.trim();
+    if (line.match(/^#{1,6}\s+/)) {
+      flushLists();
+      const m = line.match(/^(#{1,6})\s+(.*)$/)!;
+      out.push(`<div class="md-heading">${inline(m[2])}</div>`);
+      continue;
+    }
+
+    if (line.match(/^>\s+/)) {
+      flushLists();
+      const m = line.match(/^>\s+(.*)$/)!;
+      out.push(`<blockquote>${inline(m[1])}</blockquote>`);
+      continue;
+    }
+
+    if (line.match(/^[-\*]\s+/)) {
+      if (!inUl) { out.push('<ul>'); inUl = true; }
+      const m = line.match(/^[-\*]\s+(.*)$/)!;
+      out.push(`<li>${inline(m[1])}</li>`);
+      continue;
+    }
+
+    if (line.match(/^\d+\.\s+/)) {
+      if (!inOl) { out.push('<ol>'); inOl = true; }
+      const m = line.match(/^(\d+)\.\s+(.*)$/)!;
+      out.push(`<li>${inline(m[2])}</li>`);
+      continue;
+    }
+
+    if (line === '') {
+      // blank line -> paragraph break
+      flushLists();
+      out.push('<div class="md-paragraph"></div>');
+      continue;
+    }
+
+    // normal text
+    out.push(`<div class="md-line">${inline(raw)}</div>`);
+  }
+
+  flushLists();
+  return out.join('');
+}
+
+// Strip markdown markers for plain-text rendering (used for SVG export)
+function stripMarkdown(text: string): string {
+  if (!text) { return ''; }
+  let s = text;
+  // remove headings
+  s = s.replace(/^#{1,6}\s+/gm, '');
+  // bold/italic/code/links
+  s = s.replace(/\*\*(.+?)\*\*/g, '$1');
+  s = s.replace(/\*(.+?)\*/g, '$1');
+  s = s.replace(/`([^`]+?)`/g, '$1');
+  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1');
+  // blockquote marker
+  s = s.replace(/^>\s+/gm, '');
+  // list markers
+  s = s.replace(/^[-\*]\s+/gm, '');
+  s = s.replace(/^\d+\.\s+/gm, '');
+  return s;
 }
