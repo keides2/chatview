@@ -2,76 +2,82 @@
   <img src="./media/ChatView-logo4.png" alt="ChatView Logo" width="512" height="512"/>
 </p>
 
-# 🗨️ ChatView — MarkdownをLINE風チャットUIでプレビュー表示
+**English** | [日本語](README_ja.md)
 
-**ChatView** は、Markdownファイル内の会話を、Visual Studio Code 上でLINE風のチャットUIとしてプレビュー表示できる拡張機能です。  
-スクリーンショット作成や、対話コンテンツの確認に最適です。
+# 🗨️ ChatView — Preview Markdown conversations in a LINE-style chat UI
+
+**ChatView** is a Visual Studio Code extension that renders conversation content written in Markdown as a LINE-style chat UI. It's useful for creating screenshots and for reviewing conversational content.
+
+---
+## 📷 Example
+
+![ChatView sample](./sample_2.jpg)
 
 ---
 
-## 👤 ユーザー向けガイド
+## 👤 User Guide
 
-### ✅ 主な特徴
+### ✅ Key features
 
-- Markdownの会話をチャットUIで表示  
-- スタイリッシュな吹き出し（色・角丸・影付き）  
-- スクリーンショット素材としても活用可能  
-- CSSで簡単に見た目をカスタマイズ可能
+- Render conversation text written in Markdown as a chat UI
+- Stylish chat bubbles (customizable colors, rounded corners, shadows)
+- Suitable as a screenshot asset generator
+- Appearance can be easily customized via CSS
 
-### 🚀 使い方
+### 🚀 How to use
 
-1. VS Code で Markdown ファイル（例：`sample.md`）を開く  
-2. `Ctrl+Shift+P` でコマンドパレットを開く  
-3. `ChatView: プレビュー表示` を実行  
-4. Webview にチャットUIが表示されます！
+1. Open a Markdown file in VS Code (for example, `sample.md`)
+2. Open the Command Palette with `Ctrl+Shift+P`
+3. Run `ChatView: Preview display`
+4. A chat-style preview will open in a webview
 
-### 💬 会話の書き方（@ai / @me の使い方）
+### 💬 Conversation markup (using @ai / @me)
 
-ChatView では、Markdown 内で発言者を簡単に指定できます。行頭にプレフィックス `@ai` または `@me` を置くと、それぞれ AI 側・ユーザー側の吹き出しとしてレンダリングされます。
+In ChatView, you indicate the speaker by prefixing a line with `@ai` or `@me`. Lines starting with `@ai` are rendered as AI messages; lines starting with `@me` are rendered as user messages.
 
-例（Markdown）:
+Example (Markdown):
 
 ```markdown
-@ai こんにちは、今日は何をしましょうか？
-@me 映画でも観ようかなと思ってる！
-@ai 『インターステラー』はどうでしょう。感動しますよ。
+@ai Hi — what would you like to do today?
+@me I was thinking about watching a movie.
+@ai How about "Interstellar"? It is very moving.
 ```
 
-重要（現在の実装の挙動、更新）:
+Important (current behavior and updates):
 
-- 各会話は行頭に `@ai` または `@me` を付けた行から開始します。以降の行で行頭にプレフィックスが無い行は、その直前の吹き出しの「継続行」として同一の吹き出し内にまとめられます。つまり、長いメッセージを複数行に分けて書いても、最初の行にだけ `@ai`/`@me` を書けば OK です。
-- プレフィックスは行の先頭で小文字の `@ai` / `@me` を用いてください（先頭に空白がある行や大文字の `@AI`/`@Me` は検出されません）。
-- 吹き出し内では限定的な Markdown 構文がレンダリングされます（見出し #, 太字 **, 斜体 *, インラインコード ``, リスト -, 数字リスト, 引用 >, リンク [text](url) などの簡易変換）。
-- SVG エクスポートでは Markdown 表記は除去されてプレーンテキストとして出力されます。HTML/PNG エクスポートやプレビューでは簡易的な Markdown レンダリングが行われます。
+- Each message starts with a line that begins with `@ai` or `@me`. Subsequent lines that do not start with a prefix are treated as continuation lines for the previous bubble. In other words, you can split a long message across multiple lines and only prefix the first line.
+- Prefixes must appear at the start of the line and be lowercase `@ai` / `@me`. Lines with leading spaces or uppercase `@AI`/`@Me` are not detected.
+- A limited subset of Markdown is rendered inside bubbles (headings `#`, bold `**`, italic `*`, inline code `` ` ``, unordered lists `-`, ordered lists, blockquotes `>`, links `[text](url)`, etc.).
+- For SVG export the Markdown formatting is stripped and plain text is used. HTML/PNG export and the preview support simple Markdown rendering.
 
-### 🎨 見た目を変えたいとき（重要）
+### 🎨 Customizing appearance (important)
 
-- UI の見た目は主に `media/style.css` で定義されています。ローカルで見た目を試すときはこのファイルを編集してください。  
-- ただし、注意点：
-  - 開発環境（リポジトリをクローンして自分の VS Code で F5 → 拡張機能ホストで実行）では、`media/style.css` を編集してプレビューを再表示することで変更を確認できます（手順は下記）。  
-  - Marketplace 等からインストールした「公開版」を使っているユーザー環境では、ローカルで `media/style.css` を編集してもそのインストール済み拡張に即時反映されません。公開版を変更するにはソースを修正して再ビルド・再パッケージ化し、拡張を再配布／再インストールする必要があります。
+- The UI styling is defined mainly in `media/style.css`. Edit that file locally to try different appearances.
+- Note:
+  - In a development environment (clone the repo and run the extension host via F5 in VS Code), editing `media/style.css` and reopening the preview will reflect the changes.
+  - If you installed the published extension from the Marketplace, editing `media/style.css` in your local copy will not update the installed extension. To change the published behavior you need to modify the source, rebuild, and republish / reinstall the extension.
 
 ---
 
-## 🧑‍💻 開発者向けガイド
+## 🧑‍💻 Developer Guide
 
-### 📦 プロジェクト構成
+### 📦 Project layout
 
-```typescript
+```text
 chatview/
-├── src/extension.ts       // 拡張機能のエントリーポイント（Webview の HTML を生成）
-├── media/style.css        // チャットUIのスタイル定義（色・レイアウト・フォント） 
-├── media/script.js        // Webview 内で Markdown を解析してメッセージを生成するスクリプト（行継続と吹き出し内の限定的な Markdown をサポート）  
-├── sample.md              // 表示テスト用Markdown
-├── .vscode/launch.json    // デバッグ構成
-├── .vscode/tasks.json     // ビルド/開発用タスク定義（例: `npm: watch` をバックグラウンドで実行して TypeScript の監視ビルドを行う）
-├── tsconfig.json          // TypeScript コンパイラ設定（出力先やターゲット、strict 等のコンパイルオプションを定義）
-└── package.json           // 拡張機能のメタ情報
+├── src/extension.ts       // Extension entry: generates the webview HTML
+├── media/style.css        // Chat UI styling (colors, layout, fonts)
+├── media/script.js        // Webview script that parses Markdown and generates messages (supports continuation lines and limited Markdown inside bubbles)
+├── sample.md              // Example Markdown for testing
+├── .vscode/launch.json    // Debug configuration
+├── .vscode/tasks.json     // Build/dev tasks (e.g. `npm: watch` for TS watch)
+├── tsconfig.json          // TypeScript compiler settings
+└── package.json           // Extension metadata
 ```
 
-### 🛠 ローカル開発手順
+### 🛠 Local development
 
-### 事前（必須）
+Prerequisites:
 
 ```powershell
 git clone https://github.com/keides2/chatview.git
@@ -79,23 +85,23 @@ cd chatview
 npm install
 ```
 
-### 動作確認（CSS変更を含む）
+Running and testing (including CSS changes):
 
-1. VS Code でプロジェクトを開く  
-2. `F5` を押して拡張機能ホストを起動（デバッグウィンドウが開きます）  
-3. デバッグ先ウィンドウで `sample.md` を開き、`Ctrl+Shift+P` → `ChatView: プレビュー表示` を実行  
-4. `media/style.css` を編集したら、プレビューを閉じて再度 `ChatView: プレビュー表示` を実行するか、拡張ホストウィンドウをリロード（Ctrl+R）して変更を反映してください。
+1. Open the project in VS Code
+2. Press `F5` to start the Extension Development Host (a debug window)
+3. In the debug window open `sample.md`, then run `Ctrl+Shift+P` → `ChatView: Preview display`
+4. If you edit `media/style.css`, close and reopen the preview or reload the extension host window (Developer: Reload Window / `Ctrl+R`) to see the updates
 
-補足:
+Notes:
 
-- CSS のみの変更なら TypeScript の再ビルドは不要です。ただし拡張が起動済みの場合は再表示／リロードが必要です。  
-- DOM 構造（メッセージのクラスや要素）を変えたい場合は `media/script.js` を編集する必要があります。
+- Editing CSS only does not require rebuilding TypeScript. However, if the extension is already running you must reload or reopen the preview to apply CSS changes.
+- If you change the DOM structure (message classes/elements), edit `media/script.js` as needed.
 
-### 🔧 カスタムHTML/CSSの例
+### 🔧 Example HTML/CSS
 
 ```html
-<div class="message ai">こんにちは、今日は何をしましょうか？</div>
-<div class="message me">映画でも観ようかなと思ってる！</div>
+<div class="message ai">Hi — what would you like to do today?</div>
+<div class="message me">I was thinking about watching a movie.</div>
 ```
 
 ```css
@@ -110,71 +116,64 @@ npm install
 
 ---
 
-## 📷 サンプル表示
+## 📥 Installation
 
-![ChatView サンプル](./sample.jpg)
+### Requirements
 
----
+- **Visual Studio Code**: version 1.103.0 or later
 
-## 📥 インストール方法
+### From the Marketplace
 
-### システム要件
+1. Search for "ChatView" in the Extensions view in VS Code
+2. Install and start using it
 
-- **Visual Studio Code**: バージョン 1.103.0 以上
+### From source (for developers)
 
-### Marketplaceから
-
-1. VS Code の拡張機能ビューで「ChatView」を検索
-2. インストールしてすぐ使えます！
-
-### ソースから（開発者向け）
-
-1. リポジトリをクローン  
-2. `npm install` で依存関係をインストール  
-3. `F5` で拡張機能ホストを起動
+1. Clone the repo
+2. Run `npm install` to install dependencies
+3. Press `F5` to run the extension host
 
 ---
 
-## 🧾 Puppeteer（レンダリング）に関する重要な注意
+## 🧾 Important note about Puppeteer rendering
 
-ChatView の高品質な画像出力（拡張側で HTML を忠実にレンダリングしてスクリーンショットを取る機能）は、Headless Chrome / Chromium（Puppeteer）を利用しています。本リポジトリは軽量化のため `puppeteer-core` を利用する設計になっており、ユーザー環境に既にインストールされている Chrome/Chromium を使うことを想定しています。以下を必ずご確認ください。
+High-quality image export (rendering the extension's HTML and taking screenshots) relies on Headless Chrome / Chromium via Puppeteer. This repository uses `puppeteer-core` to keep the package lightweight and expects Chrome/Chromium to be available on the user's machine.
 
-### なぜ `puppeteer-core` なのか？
-- `puppeteer-core` はブラウザ本体（Chromium）を含まないため、拡張パッケージのサイズを抑えられます。
-- フルの `puppeteer` を依存に入れると Chromium が自動でダウンロードされ、配布・インストール時に大きなダウンロードが発生します（拡張の配布サイズが数百MBになる可能性があります）。
+### Why `puppeteer-core`?
+- `puppeteer-core` does not include a browser binary, which keeps the extension package small.
+- Including full `puppeteer` triggers an automatic Chromium download which can drastically increase package size.
 
-### 動作に必要なもの
-- お使いのマシンに Chrome または Chromium がインストールされていること。
-- 拡張の設定 `chatPreview.puppeteerExecutablePath` に Chrome/Chromium の実行ファイルパスを設定するか、環境 PATH にある chrome/chromium 実行ファイルを利用できるようにしてください。
+### Requirements
+- A Chrome or Chromium binary must be installed on the machine.
+- Set the extension configuration `chatPreview.puppeteerExecutablePath` to the browser executable path, or ensure the browser is discoverable on PATH.
 
-例（settings.json）:
+Example (settings.json):
 
 ```json
 "chatPreview.puppeteerExecutablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
 ```
 
-### 動作確認（手元で試す手順）
-開発環境で Puppeteer を使ってエクスポート処理を試す手順の一例です（ローカルでテストする場合）。
+### Local testing (quick example)
 
-1. まずは依存をインストールします（開発者向け）:
+1. Install dependencies (developer):
 
 ```powershell
 npm install
 ```
 
-2. もし `puppeteer-core` を使う設定のまま試すなら、ローカルに Chrome があることを確認し、`chatPreview.puppeteerExecutablePath` を設定してください。
+2. If you're using `puppeteer-core`, make sure Chrome is available and `chatPreview.puppeteerExecutablePath` is set.
 
-3. 付属のテストスクリプトで動作検証する（このリポジトリに含まれる簡易テスト）:
+3. Run the included test script:
 
 ```powershell
-node scripts\puppeteer-test.js
+node scripts\\puppeteer-test.js
 ```
 
-実行すると `out/puppeteer-test.png` にスクリーンショットが保存されます。
+This will create `out/puppeteer-test.png` with a screenshot.
 
 ---
 
-## 📄 ライセンス
+## 📄 License
 
-MIT License  
-詳細は `LICENSE` ファイルをご確認ください。
+MIT License
+See the `LICENSE` file for details.

@@ -2,7 +2,7 @@
   "name": "chatview",
   "displayName": "ChatView",
   "description": "Markdown conversation preview in LINE style",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "keides2",
   "repository": {
     "type": "git",
