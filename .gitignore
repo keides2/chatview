@@ -28,3 +28,11 @@ evac/
 
 # テスト出力
 test-output/
+
+docs/*.html
+docs/*.png
+docs/*_tmp.html
+*.html
+report.md
+report.html
+playwright-test.js
