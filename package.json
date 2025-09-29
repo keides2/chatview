@@ -1,8 +1,8 @@
 {
   "name": "chatview",
   "displayName": "ChatView",
-  "description": "Markdown conversation preview in LINE style",
-  "version": "0.0.6",
+  "description": "ChatView Enterprise Edition",
+  "version": "0.1.0-enterprise",
   "publisher": "keides2",
   "repository": {
     "type": "git",
@@ -13,6 +13,16 @@
       "type": "object",
       "title": "ChatView",
       "properties": {
+        "chatPreview.playwrightBrowser": {
+          "type": "string",
+          "enum": ["firefox", "webkit", "chromium"],
+          "default": "firefox",
+          "description": "Playwrightで使用するブラウザエンジン (firefox推奨)"
+        },
+        "chatPreview.browserExecutablePath": {
+          "type": "string",
+          "description": "ブラウザ実行ファイルの明示的なパス（企業環境やカスタムインストール用）"
+        },
         "chatPreview.defaultFolder": {
           "type": "string",
           "default": "workspace",
@@ -51,10 +61,9 @@
   "icon": "media/icons/ChatView-icon-128.png",
   "scripts": {
     "vscode:prepublish": "npm run package",
-    "compile": "webpack",
+    "compile": "webpack --mode development",
     "package": "webpack --mode production --devtool hidden-source-map",
-    "compile-watch": "webpack --watch",
-    "watch": "tsc -watch -p ./",
+    "watch": "webpack --watch --mode development",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
     "test": "vscode-test"
@@ -74,7 +83,8 @@
     "webpack-cli": "^6.0.1"
   },
   "dependencies": {
-    "puppeteer": "^24.20.0",
+    "playwright": "^1.55.1",
+    "puppeteer": "^24.22.2",
     "puppeteer-core": "^24.20.0"
   }
 }

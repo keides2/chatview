@@ -57,64 +57,36 @@ export function activate(context: vscode.ExtensionContext) {
       });
     }),
 
+    // exportImageコマンドでSVGのみ提供
     vscode.commands.registerCommand('chatPreview.exportImage', async () => {
       if (!currentPanel) {
         vscode.window.showErrorMessage('プレビューを開いてください');
         return;
       }
-
-      const formatChoice = await vscode.window.showQuickPick(
-        [
-          { label: 'PNG画像', value: 'png', description: '高品質なビットマップ画像' },
-          { label: 'SVG画像', value: 'svg', description: 'ベクター形式（拡大縮小可能）' }
-        ],
-        { placeHolder: 'エクスポート形式を選択してください' }
-      );
-
-      if (formatChoice) {
-        currentPanel.webview.postMessage({ command: 'doExport', format: formatChoice.value });
-      }
-    }),
-
+    
+      // SVG固定で実行
+      currentPanel.webview.postMessage({ 
+        command: 'doExport', 
+        format: 'svg' 
+      });
+    })
   );
 }
 
+// extension.tsのhandleExport関数をSVG専用に簡略化
 async function handleExport(context: vscode.ExtensionContext, message: any) {
   try {
-    const puppeteer = require('puppeteer-core');
-
-    const config = vscode.workspace.getConfiguration('chatPreview');
-    let executablePath = config.get<string>('puppeteerExecutablePath');
-
-    if (!executablePath) {
-      executablePath = findChromeExecutable();
-    }
-
-    if (!executablePath) {
-      vscode.window.showErrorMessage(
-        'Chromeが見つかりません。設定でchatPreview.puppeteerExecutablePathを指定してください。'
-      );
-      return;
-    }
-
-    let browserOptions: any = {
-      executablePath: executablePath,
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
-    };
-
-    const browser = await puppeteer.launch(browserOptions);
-    const page = await browser.newPage();
-
+    // SVGのみサポート（Playwrightは使用しない）
+    const format = 'svg';
+    
     const styleUri = vscode.Uri.file(path.join(context.extensionPath, 'media', 'style.css'));
     const styleContent = await fs.promises.readFile(styleUri.fsPath, 'utf8');
-
-    const html = generateExportHtml(message.markdown || '', styleContent);
-
-    await page.setContent(html, { waitUntil: 'networkidle0' });
-
+    const svgContent = generateSvgContent(message.markdown || '', styleContent);
+    
+    // 既存の保存処理を使用
+    const config = vscode.workspace.getConfiguration('chatPreview');
     const defaultFolder = config.get<string>('defaultFolder') || 'workspace';
     let defaultUri: vscode.Uri;
-
     if (defaultFolder === 'workspace' && vscode.workspace.workspaceFolders) {
       defaultUri = vscode.workspace.workspaceFolders[0].uri;
     } else if (defaultFolder === 'home') {
@@ -122,42 +94,24 @@ async function handleExport(context: vscode.ExtensionContext, message: any) {
     } else {
       defaultUri = vscode.Uri.file(defaultFolder);
     }
-
-    const format = message.format || 'png';
-    const extension = format === 'svg' ? 'svg' : 'png';
-    const filters: { [name: string]: string[] } = format === 'svg'
-      ? { 'SVG画像': ['svg'], 'すべてのファイル': ['*'] }
-      : { 'PNG画像': ['png'], 'すべてのファイル': ['*'] };
-
-    // 元のファイル名からベース名を取得
+    
+    const filters: { [name: string]: string[] } = { 'SVG画像': ['svg'], 'すべてのファイル': ['*'] };
+    
     let baseName = 'chatview-export';
     if (currentPanel && (currentPanel as any).originalFileName) {
       const originalPath = (currentPanel as any).originalFileName;
       const parsed = path.parse(originalPath);
-      baseName = parsed.name; // 拡張子なしのファイル名
+      baseName = parsed.name;
     }
-
+    
     const saveUri = await vscode.window.showSaveDialog({
-      defaultUri: vscode.Uri.joinPath(defaultUri, `${baseName}.${extension}`),
+      defaultUri: vscode.Uri.joinPath(defaultUri, `${baseName}.svg`),
       filters: filters
     });
-
+    
     if (saveUri) {
-      if (format === 'svg') {
-        // SVGとして保存
-        const svgContent = generateSvgContent(message.markdown || '', styleContent);
-        await fs.promises.writeFile(saveUri.fsPath, svgContent, 'utf8');
-      } else {
-        // PNGとして保存
-        await page.screenshot({
-          path: saveUri.fsPath,
-          fullPage: true,
-          type: 'png'
-        });
-      }
-
-      await browser.close();
-
+      await fs.promises.writeFile(saveUri.fsPath, svgContent, 'utf8');
+      
       if (currentPanel) {
         currentPanel.webview.postMessage({
           command: 'saved',
@@ -165,10 +119,9 @@ async function handleExport(context: vscode.ExtensionContext, message: any) {
           uri: saveUri.toString()
         });
       }
-
-      vscode.window.showInformationMessage(`${format.toUpperCase()}ファイルを保存しました: ${saveUri.fsPath}`);
+      
+      vscode.window.showInformationMessage(`SVGファイルを保存しました: ${saveUri.fsPath}`);
     } else {
-      await browser.close();
       if (currentPanel) {
         currentPanel.webview.postMessage({
           command: 'saved',
@@ -177,8 +130,7 @@ async function handleExport(context: vscode.ExtensionContext, message: any) {
         });
       }
     }
-
-  } catch (error) {
+  } catch (error: any) {
     if (currentPanel) {
       currentPanel.webview.postMessage({
         command: 'saved',
@@ -186,7 +138,7 @@ async function handleExport(context: vscode.ExtensionContext, message: any) {
         reason: String(error)
       });
     }
-    vscode.window.showErrorMessage(`エクスポートエラー: ${error}`);
+    vscode.window.showErrorMessage(`エクスポートエラー: ${error?.message || String(error)}`);
   }
 }
 
@@ -194,7 +146,7 @@ function findChromeExecutable(): string | undefined {
   const possiblePaths = [
     'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
     'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
-    'C:\\Users\\' + require('os').userInfo().username + '\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe',
+    path.join(require('os').homedir(), 'AppData', 'Local', 'Google', 'Chrome', 'Application', 'chrome.exe'),
     'C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe',
     'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'
   ];
