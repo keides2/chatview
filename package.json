@@ -13,22 +13,22 @@
       "type": "object",
       "title": "ChatView",
       "properties": {
-        "chatPreview.playwrightBrowser": {
+  "chatPreviewEnterprise.playwrightBrowser": {
           "type": "string",
           "enum": ["firefox", "webkit", "chromium"],
           "default": "firefox",
           "description": "Playwrightで使用するブラウザエンジン (firefox推奨)"
         },
-        "chatPreview.browserExecutablePath": {
+  "chatPreviewEnterprise.browserExecutablePath": {
           "type": "string",
           "description": "ブラウザ実行ファイルの明示的なパス（企業環境やカスタムインストール用）"
         },
-        "chatPreview.defaultFolder": {
+  "chatPreviewEnterprise.defaultFolder": {
           "type": "string",
           "default": "workspace",
           "description": "保存ダイアログの既定フォルダ。'workspace'（ワークスペースのルート）、'home'（ユーザーホーム）、または絶対パスを指定できます。"
         },
-        "chatPreview.puppeteerExecutablePath": {
+  "chatPreviewEnterprise.puppeteerExecutablePath": {
           "type": "string",
           "default": "",
           "description": "Puppeteerで使用するChrome/Chromiumの実行ファイルパス。空の場合は自動検出を試みます。"
@@ -37,12 +37,12 @@
     },
     "commands": [
       {
-        "command": "chatPreview.showPreview",
-        "title": "ChatView: Preview display"
+  "command": "chatPreviewEnterprise.showPreview",
+  "title": "ChatView Enterprise: Preview display"
       },
       {
-        "command": "chatPreview.exportImage",
-        "title": "ChatView: Export view as image"
+  "command": "chatPreviewEnterprise.exportImage",
+  "title": "ChatView Enterprise: Export view as image"
       }
     ]
   },
@@ -50,15 +50,15 @@
     "vscode": "^1.103.0"
   },
   "activationEvents": [
-    "onCommand:chatPreview.showPreview",
-    "onCommand:chatPreview.exportImage"
+  "onCommand:chatPreviewEnterprise.showPreview",
+  "onCommand:chatPreviewEnterprise.exportImage"
   ],
   "license": "MIT",
   "categories": [
     "Other"
   ],
   "main": "./dist/extension.js",
-  "icon": "media/icons/ChatView-icon-128.png",
+  "icon": "media/icons/ChatView-Enterprise-icon-128.png",
   "scripts": {
     "vscode:prepublish": "npm run package",
     "compile": "webpack --mode development",

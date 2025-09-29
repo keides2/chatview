@@ -6,7 +6,7 @@ let currentPanel: vscode.WebviewPanel | undefined;
 
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(
-    vscode.commands.registerCommand('chatPreview.showPreview', () => {
+  vscode.commands.registerCommand('chatPreviewEnterprise.showPreview', () => {
       const editor = vscode.window.activeTextEditor;
       if (!editor) {
         vscode.window.showErrorMessage('Markdownファイルを開いてください');
@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
       const markdown = editor.document.getText();
       const originalFileName = editor.document.fileName;
       const panel = vscode.window.createWebviewPanel(
-        'chatPreview',
+        'chatPreviewEnterprise',
         'Chat Preview',
         vscode.ViewColumn.Beside,
         {
@@ -58,7 +58,7 @@ export function activate(context: vscode.ExtensionContext) {
     }),
 
     // exportImageコマンドでSVGのみ提供
-    vscode.commands.registerCommand('chatPreview.exportImage', async () => {
+  vscode.commands.registerCommand('chatPreviewEnterprise.exportImage', async () => {
       if (!currentPanel) {
         vscode.window.showErrorMessage('プレビューを開いてください');
         return;
@@ -84,7 +84,7 @@ async function handleExport(context: vscode.ExtensionContext, message: any) {
     const svgContent = generateSvgContent(message.markdown || '', styleContent);
     
     // 既存の保存処理を使用
-    const config = vscode.workspace.getConfiguration('chatPreview');
+  const config = vscode.workspace.getConfiguration('chatPreviewEnterprise');
     const defaultFolder = config.get<string>('defaultFolder') || 'workspace';
     let defaultUri: vscode.Uri;
     if (defaultFolder === 'workspace' && vscode.workspace.workspaceFolders) {

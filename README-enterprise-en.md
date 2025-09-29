@@ -1,5 +1,5 @@
 # <p align="center">
-  <img src="./media/ChatView-logo4.png" alt="ChatView Logo" width="512" height="512"/>
+  <img src="./media/ChatView-logo-Enterprise.png" alt="ChatView Enterprise Logo" width="512" height="512"/>
 </p>
 
 # 🗨️ ChatView Enterprise Edition — Lightweight Version for Corporate Environments
