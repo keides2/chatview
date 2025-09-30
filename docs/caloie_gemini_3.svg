@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1082" viewBox="0 0 720 1082">
+  <defs>
+    <style>
+      text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+        font-size: 14px;
+        fill: #0b2b2b;
+      }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#a7b6d9"/>
+  
+        <path d="
+          M 264 30
+          L 686 30
+          Q 700 30 700 44
+          L 700 144
+          Q 700 158 686 158
+          L 686 166
+          L 675 158
+          L 264 158
+          Q 250 158 250 144
+          L 250 44
+          Q 250 30 264 30
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="264" y="60" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">写真をアップロードして｢この食事に、食べ物の名前、カロリー密度</text>
+        
+          <text x="264" y="80" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">、おおよそのカロリーを注釈で付けてください。また塩分、タンパク</text>
+        
+          <text x="264" y="100" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">質、脂質、リンなどの成分とその含有量を推定してください。｣と毎</text>
+        
+          <text x="264" y="120" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">回入力するのが大変なので、コマンドにして登録できますか？</text>
+        
+          <text x="264" y="140" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 34 181
+          L 456 181
+          Q 470 181 470 195
+          L 470 375
+          Q 470 389 456 389
+          L 45 389
+          L 34 397
+          L 34 389
+          Q 20 389 20 375
+          L 20 195
+          Q 20 181 34 181
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="34" y="211" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">I cannot directly register or save commands like the</text>
+        
+          <text x="34" y="231" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">one you described. I don&apos;t have the functionality to</text>
+        
+          <text x="34" y="251" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">create custom shortcuts or macros for specific user</text>
+        
+          <text x="34" y="271" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">prompts.However, I can offer a solution that might make</text>
+        
+          <text x="34" y="291" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">things easier for you. You can save your prompt in a</text>
+        
+          <text x="34" y="311" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">text file or a note-taking app on your device. When you</text>
+        
+          <text x="34" y="331" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">want to use it, just copy and paste the text into our</text>
+        
+          <text x="34" y="351" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">conversation.</text>
+        
+          <text x="34" y="371" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 533 412
+          L 686 412
+          Q 700 412 700 426
+          L 700 448
+          Q 700 462 686 462
+          L 686 470
+          L 675 462
+          L 533 462
+          Q 519 462 519 448
+          L 519 426
+          Q 519 412 533 412
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="533" y="442" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">Google 翻訳します:</text>
+        
+        <path d="
+          M 264 485
+          L 686 485
+          Q 700 485 700 499
+          L 700 639
+          Q 700 653 686 653
+          L 686 661
+          L 675 653
+          L 264 653
+          Q 250 653 250 639
+          L 250 499
+          Q 250 485 264 485
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="264" y="515" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ご説明いただいたようなコマンドを直接登録したり保存したりする</text>
+        
+          <text x="264" y="535" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ことはできません。特定のユーザープロンプト用のカスタムショー</text>
+        
+          <text x="264" y="555" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">トカットやマクロを作成する機能はありません。ただし、より簡単</text>
+        
+          <text x="264" y="575" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">にご利用いただけるよう、解決策をご提案できます。プロンプトは</text>
+        
+          <text x="264" y="595" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">テキストファイルやデバイス上のメモアプリに保存できます。必要</text>
+        
+          <text x="264" y="615" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">な場合は、テキストをコピーして会話に貼り付けてください。</text>
+        
+          <text x="264" y="635" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 34 676
+          L 456 676
+          Q 470 676 470 690
+          L 470 712
+          Q 470 726 456 726
+          L 45 726
+          L 34 734
+          L 34 726
+          Q 20 726 20 712
+          L 20 690
+          Q 20 676 34 676
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="34" y="706" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">Here is the Japanese text for you to copy and paste:</text>
+        
+        <path d="
+          M 264 749
+          L 686 749
+          Q 700 749 700 763
+          L 700 803
+          Q 700 817 686 817
+          L 686 825
+          L 675 817
+          L 264 817
+          Q 250 817 250 803
+          L 250 763
+          Q 250 749 264 749
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="264" y="779" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">コピーして貼り付けるための日本語のテキストは次のとおりです。</text>
+        
+          <text x="264" y="799" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 34 840
+          L 456 840
+          Q 470 840 470 854
+          L 470 934
+          Q 470 948 456 948
+          L 45 948
+          L 34 956
+          L 34 948
+          Q 20 948 20 934
+          L 20 854
+          Q 20 840 34 840
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="34" y="870" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">「この食事に、食べ物の名前、カロリー密度、おおよそのカロリーを</text>
+        
+          <text x="34" y="890" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">注釈で付けてください。また塩分、タンパク質、脂質、リンなどの成</text>
+        
+          <text x="34" y="910" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">分とその含有量を推定してください。」</text>
+        
+          <text x="34" y="930" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 567 971
+          L 686 971
+          Q 700 971 700 985
+          L 700 1025
+          Q 700 1039 686 1039
+          L 686 1047
+          L 675 1039
+          L 567 1039
+          Q 553 1039 553 1025
+          L 553 985
+          Q 553 971 567 971
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="567" y="1001" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">そのまんまやね</text>
+        
+          <text x="567" y="1021" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+</svg>

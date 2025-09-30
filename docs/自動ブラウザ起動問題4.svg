@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1063" viewBox="0 0 720 1063">
+  <defs>
+    <style>
+      text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+        font-size: 14px;
+        fill: #0b2b2b;
+      }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#a7b6d9"/>
+  
+        <path d="
+          M 264 30
+          L 686 30
+          Q 700 30 700 44
+          L 700 144
+          Q 700 158 686 158
+          L 686 166
+          L 675 158
+          L 264 158
+          Q 250 158 250 144
+          L 250 44
+          Q 250 30 264 30
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="264" y="60" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">Error: Failed to launch the browser process! undefined</text>
+        
+          <text x="264" y="80" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">TROUBLESHOOTING: https://pptr.dev/troubleshooting</text>
+        
+          <text x="264" y="100" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="264" y="120" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ERROR: exportPdf()</text>
+        
+          <text x="264" y="140" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 264 181
+          L 686 181
+          Q 700 181 700 195
+          L 700 255
+          Q 700 269 686 269
+          L 686 277
+          L 675 269
+          L 264 269
+          Q 250 269 250 255
+          L 250 195
+          Q 250 181 264 181
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="264" y="211" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">自宅ではエラーが出ません。会社でエラーが出ます。crowdstrike,</text>
+        
+          <text x="264" y="231" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">skysea, がchrome.exe の起動を阻止していますか？</text>
+        
+          <text x="264" y="251" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 34 292
+          L 456 292
+          Q 470 292 470 306
+          L 470 1006
+          Q 470 1020 456 1020
+          L 45 1020
+          L 34 1028
+          L 34 1020
+          Q 20 1020 20 1006
+          L 20 306
+          Q 20 292 34 292
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="34" y="322" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">はい、CrowdStrikeやSKYSEA Client Viewなどのエンドポイントセ</text>
+        
+          <text x="34" y="342" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">キュリティ（EDR/IT資産管理）ソフトウェアは、会社のPCでchrome</text>
+        
+          <text x="34" y="362" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">.exeなどの外部プロセスの起動を制限・ブロックすることがあり</text>
+        
+          <text x="34" y="382" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ます。</text>
+        
+          <text x="34" y="402" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="422" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">Puppeteerは内部でChrome（またはEdge）を起動するため、これら</text>
+        
+          <text x="34" y="442" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">のセキュリティ製品が「不審な自動ブラウザ起動」とみなして遮断</text>
+        
+          <text x="34" y="462" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">するケースが多いです。</text>
+        
+          <text x="34" y="482" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="502" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">【よくある対策】</text>
+        
+          <text x="34" y="522" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="542" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">管理者に「PuppeteerでChrome/Edgeを自動起動したい」と申請し、</text>
+        
+          <text x="34" y="562" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">例外設定（ホワイトリスト）を依頼する</text>
+        
+          <text x="34" y="582" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">会社PCではPuppeteerの機能を使わず、手動で画像化・PDF化する運</text>
+        
+          <text x="34" y="602" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">用に切り替える</text>
+        
+          <text x="34" y="622" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">Edge（msedge.exe）も同様にブロックされる場合が多いです</text>
+        
+          <text x="34" y="642" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="662" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">【確認方法】</text>
+        
+          <text x="34" y="682" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="702" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">CrowdStrikeやSKYSEAの管理画面で「chrome.exeの起動ブロック履</text>
+        
+          <text x="34" y="722" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">歴」が記録されているか確認</text>
+        
+          <text x="34" y="742" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">PuppeteerのexecutablePathをchrome.exe以外（例：社内で許可</text>
+        
+          <text x="34" y="762" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">されたブラウザ）にしても同様のエラーが出るかテスト</text>
+        
+          <text x="34" y="782" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="802" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">【補足】</text>
+        
+          <text x="34" y="822" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="842" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">自宅PCで問題なく動作するのは、これらのセキュリティ制限がない</text>
+        
+          <text x="34" y="862" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ためです</text>
+        
+          <text x="34" y="882" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">会社PCのセキュリティポリシーは管理者権限がないと変更できま</text>
+        
+          <text x="34" y="902" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">せん</text>
+        
+          <text x="34" y="922" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ご参考までに、会社PCでの自動ブラウザ起動は多くの企業で制限さ</text>
+        
+          <text x="34" y="942" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">れています。</text>
+        
+          <text x="34" y="962" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">もし社内で例外申請が難しい場合は、Puppeteerを使ったエクスポ</text>
+        
+          <text x="34" y="982" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ート機能は利用できません。</text>
+        
+          <text x="34" y="1002" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+</svg>

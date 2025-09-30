@@ -142,28 +142,7 @@ async function handleExport(context: vscode.ExtensionContext, message: any) {
   }
 }
 
-function findChromeExecutable(): string | undefined {
-  const possiblePaths = [
-    'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
-    'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
-    path.join(require('os').homedir(), 'AppData', 'Local', 'Google', 'Chrome', 'Application', 'chrome.exe'),
-    'C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe',
-    'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'
-  ];
-
-  for (const chromePath of possiblePaths) {
-    try {
-      if (fs.existsSync(chromePath)) {
-        return chromePath;
-      }
-    } catch (error) {
-      // 無視
-    }
-  }
-
-  return undefined;
-}
-
+// SVGコンテンツ生成関数
 function generateSvgContent(markdown: string, styleContent: string): string {
   const messages = parseMessages(markdown);
   let yPosition = 30;
@@ -178,33 +157,27 @@ function generateSvgContent(markdown: string, styleContent: string): string {
     const text = msg.text;
 
     if (role) {
-      // テキストを適切な幅で折り返し（段落ごとの改行を保持）
-      const maxCharsPerLine = 20;  // より短く設定
-  const plain = stripMarkdown(text);
-  const paragraphs = plain.split('\n');
-      let textLines: string[] = [];
-      paragraphs.forEach((p, idx) => {
-        if (p === '') {
-          // 空行は段落区切りとして空行を追加
-          textLines.push('');
-        } else {
-          const wrapped = wrapText(p, maxCharsPerLine);
-          textLines.push(...wrapped);
-        }
-      });
+      // プレインテキストに変換
+      const plain = stripMarkdown(text);
+      
+      // テキストを適切に折り返し（より自然な方法）
+      const maxWidth = 450; // バブルの最大幅（ピクセル）
+      const textLines = wrapTextNaturally(plain, maxWidth);
+      
+      // バブルのサイズ計算
       const lineHeight = 20;
-      const padding = 16;
+      const padding = 14;
       const bubbleHeight = Math.max(50, textLines.length * lineHeight + padding * 2);
-
-      // 最長行の文字数から幅を計算（日本語考慮で余裕を持たせる）
-      const longestLineLength = Math.max(...textLines.map(line => line.length));
-      const estimatedWidth = longestLineLength * 16 + padding * 2;  // 文字幅16px想定（より広く）
-      const bubbleWidth = Math.max(300, Math.min(450, estimatedWidth));  // 最小幅を300pxに増加
-
-      const maxWidth = 720 - 40; // SVG幅 - マージン
-      const finalBubbleWidth = Math.min(bubbleWidth, maxWidth * 0.65);  // 最大幅を65%に変更（より余裕）
-
-      const xPosition = role === 'ai' ? 20 : (720 - finalBubbleWidth - 20);
+      
+      // 最長行から幅を計算
+      const longestLine = textLines.reduce((max, line) => 
+        line.length > max.length ? line : max, '');
+      const textWidth = measureTextWidth(longestLine);
+      const bubbleWidth = Math.min(maxWidth, textWidth + padding * 3);
+      
+      // 配置位置の計算
+      const svgWidth = 720;
+      const xPosition = role === 'ai' ? 20 : (svgWidth - bubbleWidth - 20);
       const fillColor = role === 'ai' ? '#ffffff' : '#9efb7a';
       const textColor = '#0b2b2b';
 
@@ -215,33 +188,33 @@ function generateSvgContent(markdown: string, styleContent: string): string {
       if (role === 'ai') {
         // AI: 左側の吹き出し（左下に尻尾）
         bubblePath = `
-          M ${xPosition + 15} ${yPosition}
-          L ${xPosition + finalBubbleWidth - 15} ${yPosition}
-          Q ${xPosition + finalBubbleWidth} ${yPosition} ${xPosition + finalBubbleWidth} ${yPosition + 15}
-          L ${xPosition + finalBubbleWidth} ${yPosition + bubbleHeight - 15}
-          Q ${xPosition + finalBubbleWidth} ${yPosition + bubbleHeight} ${xPosition + finalBubbleWidth - 15} ${yPosition + bubbleHeight}
+          M ${xPosition + 14} ${yPosition}
+          L ${xPosition + bubbleWidth - 14} ${yPosition}
+          Q ${xPosition + bubbleWidth} ${yPosition} ${xPosition + bubbleWidth} ${yPosition + 14}
+          L ${xPosition + bubbleWidth} ${yPosition + bubbleHeight - 14}
+          Q ${xPosition + bubbleWidth} ${yPosition + bubbleHeight} ${xPosition + bubbleWidth - 14} ${yPosition + bubbleHeight}
           L ${xPosition + 25} ${yPosition + bubbleHeight}
-          L ${xPosition + 15} ${yPosition + bubbleHeight + tailSize}
-          L ${xPosition + 15} ${yPosition + bubbleHeight}
-          Q ${xPosition} ${yPosition + bubbleHeight} ${xPosition} ${yPosition + bubbleHeight - 15}
-          L ${xPosition} ${yPosition + 15}
-          Q ${xPosition} ${yPosition} ${xPosition + 15} ${yPosition}
+          L ${xPosition + 14} ${yPosition + bubbleHeight + tailSize}
+          L ${xPosition + 14} ${yPosition + bubbleHeight}
+          Q ${xPosition} ${yPosition + bubbleHeight} ${xPosition} ${yPosition + bubbleHeight - 14}
+          L ${xPosition} ${yPosition + 14}
+          Q ${xPosition} ${yPosition} ${xPosition + 14} ${yPosition}
           Z
         `;
       } else {
         // User: 右側の吹き出し（右下に尻尾）
         bubblePath = `
-          M ${xPosition + 15} ${yPosition}
-          L ${xPosition + finalBubbleWidth - 15} ${yPosition}
-          Q ${xPosition + finalBubbleWidth} ${yPosition} ${xPosition + finalBubbleWidth} ${yPosition + 15}
-          L ${xPosition + finalBubbleWidth} ${yPosition + bubbleHeight - 15}
-          Q ${xPosition + finalBubbleWidth} ${yPosition + bubbleHeight} ${xPosition + finalBubbleWidth - 15} ${yPosition + bubbleHeight}
-          L ${xPosition + finalBubbleWidth - 15} ${yPosition + bubbleHeight + tailSize}
-          L ${xPosition + finalBubbleWidth - 25} ${yPosition + bubbleHeight}
-          L ${xPosition + 15} ${yPosition + bubbleHeight}
-          Q ${xPosition} ${yPosition + bubbleHeight} ${xPosition} ${yPosition + bubbleHeight - 15}
-          L ${xPosition} ${yPosition + 15}
-          Q ${xPosition} ${yPosition} ${xPosition + 15} ${yPosition}
+          M ${xPosition + 14} ${yPosition}
+          L ${xPosition + bubbleWidth - 14} ${yPosition}
+          Q ${xPosition + bubbleWidth} ${yPosition} ${xPosition + bubbleWidth} ${yPosition + 14}
+          L ${xPosition + bubbleWidth} ${yPosition + bubbleHeight - 14}
+          Q ${xPosition + bubbleWidth} ${yPosition + bubbleHeight} ${xPosition + bubbleWidth - 14} ${yPosition + bubbleHeight}
+          L ${xPosition + bubbleWidth - 14} ${yPosition + bubbleHeight + tailSize}
+          L ${xPosition + bubbleWidth - 25} ${yPosition + bubbleHeight}
+          L ${xPosition + 14} ${yPosition + bubbleHeight}
+          Q ${xPosition} ${yPosition + bubbleHeight} ${xPosition} ${yPosition + bubbleHeight - 14}
+          L ${xPosition} ${yPosition + 14}
+          Q ${xPosition} ${yPosition} ${xPosition + 14} ${yPosition}
           Z
         `;
       }
@@ -254,9 +227,10 @@ function generateSvgContent(markdown: string, styleContent: string): string {
       // テキストを行ごとに配置
       textLines.forEach((textLine, index) => {
         const textY = yPosition + padding + (index + 1) * lineHeight - 4;
+        const textX = xPosition + padding;
         svgElements += `
-          <text x="${xPosition + padding}" y="${textY}" fill="${textColor}"
-                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif"
+          <text x="${textX}" y="${textY}" fill="${textColor}"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
                 font-size="14">${escapeXml(textLine)}</text>
         `;
       });
@@ -272,7 +246,7 @@ function generateSvgContent(markdown: string, styleContent: string): string {
   <defs>
     <style>
       text {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
         font-size: 14px;
         fill: #0b2b2b;
       }
@@ -283,48 +257,90 @@ function generateSvgContent(markdown: string, styleContent: string): string {
 </svg>`;
 }
 
-function wrapText(text: string, maxCharsPerLine: number): string[] {
-  const lines: string[] = [];
-  let currentLine = '';
-
-  // 文字を一つずつ処理（日本語対応）
+// テキスト幅を推定（日本語・英語混在対応）
+function measureTextWidth(text: string): number {
+  let width = 0;
   for (let i = 0; i < text.length; i++) {
     const char = text[i];
-
-    // スペースで区切るか、文字数制限に達した場合に改行
-    if (char === ' ' && currentLine.length > 0) {
-      // スペースの場合、次の単語を確認
-      let nextWord = '';
-      let j = i + 1;
-      while (j < text.length && text[j] !== ' ') {
-        nextWord += text[j];
-        j++;
-      }
-
-      // 現在行 + スペース + 次の単語が制限を超える場合は改行
-      if (currentLine.length + 1 + nextWord.length > maxCharsPerLine) {
-        lines.push(currentLine);
-        currentLine = '';
-        continue; // スペースはスキップ
-      }
-    }
-
-    // 文字数制限チェック
-    if (currentLine.length >= maxCharsPerLine) {
-      lines.push(currentLine);
-      currentLine = char;
+    const code = char.charCodeAt(0);
+    
+    // 日本語文字（ひらがな、カタカナ、漢字）
+    if ((code >= 0x3040 && code <= 0x309F) || // ひらがな
+        (code >= 0x30A0 && code <= 0x30FF) || // カタカナ
+        (code >= 0x4E00 && code <= 0x9FFF) || // 漢字
+        (code >= 0xFF01 && code <= 0xFF5E)) { // 全角英数
+      width += 15; // 日本語文字幅
     } else {
-      currentLine += char;
+      width += 8; // 英数字幅
     }
   }
-
-  if (currentLine) {
-    lines.push(currentLine);
-  }
-
-  return lines.length > 0 ? lines : [text];
+  return width;
 }
 
+// 自然な折り返し（単語を途中で切らない）
+function wrapTextNaturally(text: string, maxWidth: number): string[] {
+  const lines: string[] = [];
+  const paragraphs = text.split('\n');
+  
+  paragraphs.forEach((paragraph, pIndex) => {
+    if (paragraph.trim() === '') {
+      if (pIndex > 0) lines.push(''); // 段落間の空行
+      return;
+    }
+    
+    let currentLine = '';
+    let i = 0;
+    
+    while (i < paragraph.length) {
+      // 次の単語または文字を取得
+      let word = '';
+      
+      // 英単語の場合はスペースまで取得
+      if (paragraph[i].match(/[a-zA-Z0-9]/)) {
+        while (i < paragraph.length && paragraph[i].match(/[a-zA-Z0-9]/)) {
+          word += paragraph[i];
+          i++;
+        }
+        // スペースも含める
+        if (i < paragraph.length && paragraph[i] === ' ') {
+          word += ' ';
+          i++;
+        }
+      } else {
+        // 日本語や記号は1文字ずつ
+        word = paragraph[i];
+        i++;
+      }
+      
+      // 現在行 + 新しい単語の幅を計算
+      const testLine = currentLine + word;
+      const testWidth = measureTextWidth(testLine);
+      
+      // 現在行に追加できるかチェック
+      if (testWidth <= maxWidth) {
+        currentLine = testLine;
+      } else {
+        // 現在行が空でない場合は確定して改行
+        if (currentLine.trim()) {
+          lines.push(currentLine.trimEnd());
+          currentLine = word.trimStart();
+        } else {
+          // 現在行が空の場合（1単語が長すぎる）、強制的に追加
+          currentLine = word;
+        }
+      }
+    }
+    
+    // 最後の行を追加
+    if (currentLine.trim()) {
+      lines.push(currentLine.trimEnd());
+    }
+  });
+  
+  return lines.length > 0 ? lines : [''];
+}
+
+// XMLエスケープ
 function escapeXml(text: string): string {
   return text
     .replace(/&/g, '&amp;')
@@ -366,6 +382,7 @@ function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , text: strin
   return messages;
 }
 
+// Escape HTML special characters to prevent XSS
 function escapeHtml(text: string): string {
   return text
     .replace(/&/g, '&amp;')
@@ -375,35 +392,7 @@ function escapeHtml(text: string): string {
     .replace(/'/g, '&#39;');
 }
 
-function generateExportHtml(markdown: string, styleContent: string): string {
-  const messages = parseMessages(markdown);
-  let messagesHtml = '';
-
-  messages.forEach(msg => {
-    const role = msg.role;
-    const text = msg.text;
-    if (role) {
-      const contentHtml = renderMarkdownToHtml(text);
-      messagesHtml += `<div class="message ${role}">${contentHtml}</div>\n`;
-    }
-  });
-
-  return `
-    <!DOCTYPE html>
-    <html lang="ja">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <style>${styleContent}</style>
-      <title>Chat Export</title>
-    </head>
-    <body>
-      <div id="chat-container">${messagesHtml}</div>
-    </body>
-    </html>
-  `;
-}
-
+// Generate the HTML content for the webview
 function getWebviewContent(scriptUri: vscode.Uri, styleUri: vscode.Uri): string {
   return `
     <!DOCTYPE html>
