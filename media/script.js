@@ -2,6 +2,10 @@ const DEBUG = true;
 
 let currentMarkdown = '';
 
+// デフォルトの絵文字
+const DEFAULT_AI_ICON = '🤖';
+const DEFAULT_ME_ICON = '👤';
+
 function parseMessages(markdown) {
   const lines = markdown.split('\n');
   const messages = [];
@@ -9,11 +13,31 @@ function parseMessages(markdown) {
 
   for (let rawLine of lines) {
     const line = rawLine.replace(/\r$/, '');
-    if (line.startsWith('@ai')) {
-      current = { role: 'ai', text: line.replace('@ai', '').trim() };
+    
+    // @ai[絵文字 名前] または @me[絵文字 名前] の形式をチェック
+    // [内容]をスペースで分割: 最初が絵文字、残りが名前
+    const aiMatch = line.match(/^@ai(?:\[([^\]]*)\])?\s*(.*)/);
+    const meMatch = line.match(/^@me(?:\[([^\]]*)\])?\s*(.*)/);
+    
+    if (aiMatch) {
+      let icon = DEFAULT_AI_ICON;
+      let name = '';
+      if (aiMatch[1] !== undefined) {
+        const parts = aiMatch[1].trim().split(/\s+/, 2);
+        icon = parts[0] || DEFAULT_AI_ICON;
+        name = parts.length > 1 ? parts.slice(1).join(' ') : '';
+      }
+      current = { role: 'ai', icon: icon, name: name, text: aiMatch[2] };
       messages.push(current);
-    } else if (line.startsWith('@me')) {
-      current = { role: 'me', text: line.replace('@me', '').trim() };
+    } else if (meMatch) {
+      let icon = DEFAULT_ME_ICON;
+      let name = '';
+      if (meMatch[1] !== undefined) {
+        const parts = meMatch[1].trim().split(/\s+/, 2);
+        icon = parts[0] || DEFAULT_ME_ICON;
+        name = parts.length > 1 ? parts.slice(1).join(' ') : '';
+      }
+      current = { role: 'me', icon: icon, name: name, text: meMatch[2] };
       messages.push(current);
     } else {
       if (current) {
@@ -38,6 +62,8 @@ function renderMarkdownToHtml(text) {
   const out = [];
   let inUl = false;
   let inOl = false;
+  let inCodeBlock = false;
+  let codeBuffer = [];
 
   const flush = () => {
     if (inUl) { out.push('</ul>'); inUl = false; }
@@ -45,15 +71,40 @@ function renderMarkdownToHtml(text) {
   };
 
   const inline = (s) => {
+    // イメージ ![alt](url)
+    s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" style="max-width: 100%; height: auto;" />');
+    // 太字 **text**
     s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    // イタリック *text* (太字の後に処理することが重要)
     s = s.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    // インラインコード `code`
     s = s.replace(/`([^`]+?)`/g, '<code>$1</code>');
+    // リンク [text](url)
     s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
     return s;
   };
 
   for (let raw of lines) {
     const line = raw.trim();
+    
+    // コードブロックの処理
+    if (line.startsWith('```')) {
+      if (!inCodeBlock) {
+        inCodeBlock = true;
+        codeBuffer = [];
+        continue;
+      } else {
+        inCodeBlock = false;
+        out.push(`<pre><code>${codeBuffer.join('\n')}</code></pre>`);
+        codeBuffer = [];
+        continue;
+      }
+    }
+    if (inCodeBlock) {
+      codeBuffer.push(escapeHtml(raw));
+      continue;
+    }
+    
     if (line.match(/^#{1,6}\s+/)) {
       flush();
       const m = line.match(/^(#{1,6})\s+(.*)$/);
@@ -83,6 +134,7 @@ function renderMarkdownToHtml(text) {
       out.push('<div class="md-paragraph"></div>');
       continue;
     }
+    // 通常のテキスト行
     out.push(`<div class="md-line">${inline(raw)}</div>`);
   }
 
@@ -101,10 +153,40 @@ window.addEventListener('message', event => {
 
   messages.forEach(msg => {
     if (!msg.role) { return; }
+    
+    // メッセージコンテナを作成
+    const messageContainer = document.createElement('div');
+    messageContainer.className = `message-container ${msg.role}`;
+    
+    // アイコンと名前のコンテナ
+    const infoContainer = document.createElement('div');
+    infoContainer.className = 'message-info';
+    
+    // アイコン要素（空文字列でない場合のみ）
+    if (msg.icon) {
+      const iconDiv = document.createElement('div');
+      iconDiv.className = 'message-icon';
+      iconDiv.textContent = msg.icon;
+      infoContainer.appendChild(iconDiv);
+    }
+    
+    // 名前要素（空文字列でない場合のみ）
+    if (msg.name) {
+      const nameDiv = document.createElement('div');
+      nameDiv.className = 'message-name';
+      nameDiv.textContent = msg.name;
+      infoContainer.appendChild(nameDiv);
+    }
+    
+    messageContainer.appendChild(infoContainer);
+    
+    // メッセージバブル
     const div = document.createElement('div');
-    div.className = `message ${msg.role}`;
+    div.className = 'message';
     div.innerHTML = renderMarkdownToHtml(msg.text);
-    container.appendChild(div);
+    messageContainer.appendChild(div);
+    
+    container.appendChild(messageContainer);
   });
 });
 

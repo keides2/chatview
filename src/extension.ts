@@ -155,11 +155,13 @@ function generateSvgContent(markdown: string, styleContent: string): string {
   messages.forEach(msg => {
     const role = msg.role;
     const text = msg.text;
+    const icon = msg.icon || '';
+    const name = msg.name || '';
 
     if (role) {
       // プレインテキストに変換
-      const plain = stripMarkdown(text);
-      
+      let plain = stripMarkdown(text);
+
       // テキストを適切に折り返し（より自然な方法）
       const maxWidth = 450; // バブルの最大幅（ピクセル）
       const textLines = wrapTextNaturally(plain, maxWidth);
@@ -177,7 +179,20 @@ function generateSvgContent(markdown: string, styleContent: string): string {
       
       // 配置位置の計算
       const svgWidth = 720;
-      const xPosition = role === 'ai' ? 20 : (svgWidth - bubbleWidth - 20);
+      // アイコンサイズとギャップを確保して、バブルはアイコンの外側に配置する
+      const iconSize = 40;
+      const iconGap = 10;
+      let iconX = 0;
+      let bubbleX = 0;
+      if (role === 'ai') {
+        // 左側にアイコン、バブルはその右
+        iconX = 20;
+        bubbleX = iconX + iconSize + iconGap;
+      } else {
+        // 右側にアイコン、バブルはその左
+        iconX = svgWidth - 20 - iconSize;
+        bubbleX = iconX - iconGap - bubbleWidth;
+      }
       const fillColor = role === 'ai' ? '#ffffff' : '#9efb7a';
       const textColor = '#0b2b2b';
 
@@ -188,34 +203,60 @@ function generateSvgContent(markdown: string, styleContent: string): string {
       if (role === 'ai') {
         // AI: 左側の吹き出し（左下に尻尾）
         bubblePath = `
-          M ${xPosition + 14} ${yPosition}
-          L ${xPosition + bubbleWidth - 14} ${yPosition}
-          Q ${xPosition + bubbleWidth} ${yPosition} ${xPosition + bubbleWidth} ${yPosition + 14}
-          L ${xPosition + bubbleWidth} ${yPosition + bubbleHeight - 14}
-          Q ${xPosition + bubbleWidth} ${yPosition + bubbleHeight} ${xPosition + bubbleWidth - 14} ${yPosition + bubbleHeight}
-          L ${xPosition + 25} ${yPosition + bubbleHeight}
-          L ${xPosition + 14} ${yPosition + bubbleHeight + tailSize}
-          L ${xPosition + 14} ${yPosition + bubbleHeight}
-          Q ${xPosition} ${yPosition + bubbleHeight} ${xPosition} ${yPosition + bubbleHeight - 14}
-          L ${xPosition} ${yPosition + 14}
-          Q ${xPosition} ${yPosition} ${xPosition + 14} ${yPosition}
+          M ${bubbleX + 14} ${yPosition}
+          L ${bubbleX + bubbleWidth - 14} ${yPosition}
+          Q ${bubbleX + bubbleWidth} ${yPosition} ${bubbleX + bubbleWidth} ${yPosition + 14}
+          L ${bubbleX + bubbleWidth} ${yPosition + bubbleHeight - 14}
+          Q ${bubbleX + bubbleWidth} ${yPosition + bubbleHeight} ${bubbleX + bubbleWidth - 14} ${yPosition + bubbleHeight}
+          L ${bubbleX + 25} ${yPosition + bubbleHeight}
+          L ${bubbleX + 14} ${yPosition + bubbleHeight + tailSize}
+          L ${bubbleX + 14} ${yPosition + bubbleHeight}
+          Q ${bubbleX} ${yPosition + bubbleHeight} ${bubbleX} ${yPosition + bubbleHeight - 14}
+          L ${bubbleX} ${yPosition + 14}
+          Q ${bubbleX} ${yPosition} ${bubbleX + 14} ${yPosition}
           Z
         `;
       } else {
         // User: 右側の吹き出し（右下に尻尾）
         bubblePath = `
-          M ${xPosition + 14} ${yPosition}
-          L ${xPosition + bubbleWidth - 14} ${yPosition}
-          Q ${xPosition + bubbleWidth} ${yPosition} ${xPosition + bubbleWidth} ${yPosition + 14}
-          L ${xPosition + bubbleWidth} ${yPosition + bubbleHeight - 14}
-          Q ${xPosition + bubbleWidth} ${yPosition + bubbleHeight} ${xPosition + bubbleWidth - 14} ${yPosition + bubbleHeight}
-          L ${xPosition + bubbleWidth - 14} ${yPosition + bubbleHeight + tailSize}
-          L ${xPosition + bubbleWidth - 25} ${yPosition + bubbleHeight}
-          L ${xPosition + 14} ${yPosition + bubbleHeight}
-          Q ${xPosition} ${yPosition + bubbleHeight} ${xPosition} ${yPosition + bubbleHeight - 14}
-          L ${xPosition} ${yPosition + 14}
-          Q ${xPosition} ${yPosition} ${xPosition + 14} ${yPosition}
+          M ${bubbleX + 14} ${yPosition}
+          L ${bubbleX + bubbleWidth - 14} ${yPosition}
+          Q ${bubbleX + bubbleWidth} ${yPosition} ${bubbleX + bubbleWidth} ${yPosition + 14}
+          L ${bubbleX + bubbleWidth} ${yPosition + bubbleHeight - 14}
+          Q ${bubbleX + bubbleWidth} ${yPosition + bubbleHeight} ${bubbleX + bubbleWidth - 14} ${yPosition + bubbleHeight}
+          L ${bubbleX + bubbleWidth - 14} ${yPosition + bubbleHeight + tailSize}
+          L ${bubbleX + bubbleWidth - 25} ${yPosition + bubbleHeight}
+          L ${bubbleX + 14} ${yPosition + bubbleHeight}
+          Q ${bubbleX} ${yPosition + bubbleHeight} ${bubbleX} ${yPosition + bubbleHeight - 14}
+          L ${bubbleX} ${yPosition + 14}
+          Q ${bubbleX} ${yPosition} ${bubbleX + 14} ${yPosition}
           Z
+        `;
+      }
+
+      // アイコンと名前を描画
+      const iconY = yPosition;
+      const iconCx = iconX + iconSize / 2;
+      const iconCy = iconY + iconSize / 2;
+      
+      // アイコン（絵文字）
+      if (icon) {
+        const iconFontSize = Math.floor(iconSize * 0.65);
+        svgElements += `
+          <text x="${iconCx}" y="${iconCy}" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="${iconFontSize}" fill="#0b2b2b">${escapeXml(icon)}</text>
+        `;
+      }
+      
+      // 名前（アイコンの下に小さく表示）
+      if (name) {
+        const nameY = iconY + iconSize + 12;
+        const nameFontSize = 11;
+        svgElements += `
+          <text x="${iconCx}" y="${nameY}" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="${nameFontSize}" fill="#666666">${escapeXml(name)}</text>
         `;
       }
 
@@ -225,13 +266,39 @@ function generateSvgContent(markdown: string, styleContent: string): string {
       `;
 
       // テキストを行ごとに配置
+      // SVG内で簡易Markdownを反映（**bold**, *italic*, `code` を tspan に変換）
+      const svgInlineFormat = (s: string, color: string, baseFontSize = 14) => {
+  if (!s) { return ''; }
+        // まず生テキストをエスケープ
+        let t = s;
+        // code (inline)
+        t = t.replace(/`([^`]+?)`/g, (m, g1) => {
+          return `<tspan font-family="monospace" font-size="${Math.floor(baseFontSize * 0.9)}" fill="${color}">${escapeXml(g1)}</tspan>`;
+        });
+        // bold
+        t = t.replace(/\*\*(.+?)\*\*/g, (m, g1) => {
+          return `<tspan font-weight="bold" fill="${color}">${escapeXml(g1)}</tspan>`;
+        });
+        // italic
+        t = t.replace(/\*(.+?)\*/g, (m, g1) => {
+          return `<tspan font-style="italic" fill="${color}">${escapeXml(g1)}</tspan>`;
+        });
+        // fallback: escape remaining
+        // Note: replacements already escaped inner content; escape any leftover < or &
+        t = t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        // restore allowed tspan tags (they were escaped) - but ensure we didn't double-escape
+        t = t.replace(/&lt;tspan/g, '<tspan').replace(/&lt;\/tspan&gt;/g, '</tspan>');
+        return t;
+      };
+
       textLines.forEach((textLine, index) => {
         const textY = yPosition + padding + (index + 1) * lineHeight - 4;
-        const textX = xPosition + padding;
+        const textX = bubbleX + padding;
+        const inner = svgInlineFormat(textLine, textColor, 14);
         svgElements += `
           <text x="${textX}" y="${textY}" fill="${textColor}"
                 font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
-                font-size="14">${escapeXml(textLine)}</text>
+                font-size="14">${inner}</text>
         `;
       });
 
@@ -247,7 +314,6 @@ function generateSvgContent(markdown: string, styleContent: string): string {
     <style>
       text {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-        font-size: 14px;
         fill: #0b2b2b;
       }
     </style>
@@ -284,7 +350,7 @@ function wrapTextNaturally(text: string, maxWidth: number): string[] {
   
   paragraphs.forEach((paragraph, pIndex) => {
     if (paragraph.trim() === '') {
-      if (pIndex > 0) lines.push(''); // 段落間の空行
+      if (pIndex > 0) { lines.push(''); } // 段落間の空行
       return;
     }
     
@@ -352,20 +418,40 @@ function escapeXml(text: string): string {
 
 // Parse markdown lines into message objects. Lines starting with @ai or @me start a new message.
 // Lines without a role prefix are treated as continuation lines and appended with a newline.
-function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , text: string }[] {
+function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , icon: string, name: string, text: string }[] {
   const lines = markdown.split('\n');
-  const messages: { role: 'ai' | 'me' | '' , text: string }[] = [];
-  let current: { role: 'ai' | 'me' | '' , text: string } | null = null;
+  const messages: { role: 'ai' | 'me' | '' , icon: string, name: string, text: string }[] = [];
+  let current: { role: 'ai' | 'me' | '' , icon: string, name: string, text: string } | null = null;
+
+  const DEFAULT_AI_ICON = '🤖';
+  const DEFAULT_ME_ICON = '👤';
 
   for (let rawLine of lines) {
     const line = rawLine.replace(/\r$/, '');
-    if (line.startsWith('@ai')) {
-      // start new ai message
-      current = { role: 'ai', text: line.replace('@ai', '').trim() };
+    
+    // @ai[絵文字 名前] または @me[絵文字 名前] の形式をチェック
+    const aiMatch = line.match(/^@ai(?:\[([^\]]*)\])?\s*(.*)/);
+    const meMatch = line.match(/^@me(?:\[([^\]]*)\])?\s*(.*)/);
+    
+    if (aiMatch) {
+      let icon = DEFAULT_AI_ICON;
+      let name = '';
+      if (aiMatch[1] !== undefined) {
+        const parts = aiMatch[1].trim().split(/\s+/);
+        icon = parts[0] || DEFAULT_AI_ICON;
+        name = parts.length > 1 ? parts.slice(1).join(' ') : '';
+      }
+      current = { role: 'ai', icon: icon, name: name, text: aiMatch[2] };
       messages.push(current);
-    } else if (line.startsWith('@me')) {
-      // start new user message
-      current = { role: 'me', text: line.replace('@me', '').trim() };
+    } else if (meMatch) {
+      let icon = DEFAULT_ME_ICON;
+      let name = '';
+      if (meMatch[1] !== undefined) {
+        const parts = meMatch[1].trim().split(/\s+/);
+        icon = parts[0] || DEFAULT_ME_ICON;
+        name = parts.length > 1 ? parts.slice(1).join(' ') : '';
+      }
+      current = { role: 'me', icon: icon, name: name, text: meMatch[2] };
       messages.push(current);
     } else {
       // continuation or unrelated line
@@ -420,6 +506,8 @@ function renderMarkdownToHtml(text: string): string {
   const out: string[] = [];
   let inUl = false;
   let inOl = false;
+  let inCodeBlock = false;
+  let codeBuffer: string[] = [];
 
   const flushLists = () => {
     if (inUl) { out.push('</ul>'); inUl = false; }
@@ -427,6 +515,8 @@ function renderMarkdownToHtml(text: string): string {
   };
 
   const inline = (s: string) => {
+    // images ![alt](url)
+    s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '<img src="$2" alt="$1" />');
     // bold **text**
     s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
     // italic *text*
@@ -441,6 +531,20 @@ function renderMarkdownToHtml(text: string): string {
   for (let i = 0; i < lines.length; i++) {
     const raw = lines[i];
     const line = raw.trim();
+    // fenced code block support
+    if (line.startsWith('```')) {
+      if (!inCodeBlock) {
+        inCodeBlock = true;
+        codeBuffer = [];
+        continue;
+      } else {
+        inCodeBlock = false;
+        out.push(`<pre><code>${codeBuffer.join('\n')}</code></pre>`);
+        codeBuffer = [];
+        continue;
+      }
+    }
+    if (inCodeBlock) { codeBuffer.push(escapeHtml(raw)); continue; }
     if (line.match(/^#{1,6}\s+/)) {
       flushLists();
       const m = line.match(/^(#{1,6})\s+(.*)$/)!;
@@ -490,10 +594,13 @@ function stripMarkdown(text: string): string {
   let s = text;
   // remove headings
   s = s.replace(/^#{1,6}\s+/gm, '');
-  // bold/italic/code/links
+  // fenced code blocks
+  s = s.replace(/```[\s\S]*?```/g, '');
+  // bold/italic/code/links/images
   s = s.replace(/\*\*(.+?)\*\*/g, '$1');
   s = s.replace(/\*(.+?)\*/g, '$1');
   s = s.replace(/`([^`]+?)`/g, '$1');
+  s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, '');
   s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1');
   // blockquote marker
   s = s.replace(/^>\s+/gm, '');
@@ -501,4 +608,6 @@ function stripMarkdown(text: string): string {
   s = s.replace(/^[-\*]\s+/gm, '');
   s = s.replace(/^\d+\.\s+/gm, '');
   return s;
+  // remove leading empty [] tokens (e.g. '[] text')
+  s = s.replace(/^\s*\[\s*\]\s*/g, '');
 }

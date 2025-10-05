@@ -12,18 +12,70 @@ body {
   gap: 10px;
 }
 
+/* メッセージコンテナ全体（アイコン + 名前 + バブル） */
+.message-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 8px; /* message-infoとバブルの間隔 */
+}
+
+.message-container.ai {
+  flex-direction: row; /* info→バブル */
+}
+
+.message-container.me {
+  flex-direction: row-reverse; /* バブル→info */
+  justify-content: flex-start;
+}
+
+/* アイコンと名前のコンテナ */
+.message-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+/* アイコン */
+.message-icon {
+  font-size: 32px; /* 絵文字のサイズ */
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  border-radius: 50%; /* 円形 */
+}
+
+/* 名前 */
+.message-name {
+  font-size: 11px;
+  color: #666;
+  white-space: nowrap;
+  max-width: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
 .message {
   max-width: 75%;
   padding: 10px 14px;
   border-radius: 14px;
   font-size: 14px;
   line-height: 1.5;
-  white-space: pre-wrap;
+  word-wrap: break-word; /* 長いテキストを折り返す */
   /* 吹き出し内ははっきり見えるダークテキスト */
   color: #0b2b2b;
 }
 
-.ai {
+.message-container.ai .message {
   align-self: flex-start;
   /* AI側は白に近い吹き出し（スクリーンショット準拠） */
   background-color: #ffffff;
@@ -34,7 +86,7 @@ body {
   margin-bottom: 8px;
 }
 
-.ai::after {
+.message-container.ai .message::after {
   content: '';
   position: absolute;
   bottom: -8px;
@@ -47,7 +99,7 @@ body {
   border-bottom: none;
 }
 
-.me {
+.message-container.me .message {
   align-self: flex-end;
   /* ユーザー側は明るく鮮やかなグリーン */
   background-color: #9efb7a; /* 添付画像に近い鮮やかなグリーン */
@@ -58,7 +110,7 @@ body {
   margin-bottom: 8px;
 }
 
-.me::after {
+.message-container.me .message::after {
   content: '';
   position: absolute;
   bottom: -8px;
@@ -69,4 +121,74 @@ body {
   border-right: 8px solid transparent;
   border-top: 8px solid #9efb7a;
   border-bottom: none;
+}
+
+/* マークダウン要素のスタイル */
+.message .md-heading {
+  font-weight: bold;
+  font-size: 1.1em;
+  margin: 0.5em 0 0.3em 0;
+}
+
+.message blockquote {
+  border-left: 3px solid rgba(11, 43, 43, 0.3);
+  padding-left: 10px;
+  margin: 0.5em 0;
+  font-style: italic;
+  color: rgba(11, 43, 43, 0.8);
+}
+
+.message ul,
+.message ol {
+  margin: 0.5em 0;
+  padding-left: 20px;
+}
+
+.message li {
+  margin: 0.2em 0;
+}
+
+.message code {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
+
+.message pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 0.5em 0;
+}
+
+.message pre code {
+  background-color: transparent;
+  padding: 0;
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+.message img {
+  border-radius: 8px;
+  margin: 0.5em 0;
+}
+
+.message a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
+
+.message .md-paragraph {
+  height: 0.5em;
+}
+
+.message .md-line {
+  margin: 0.2em 0;
 }
