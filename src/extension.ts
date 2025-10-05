@@ -157,6 +157,7 @@ function generateSvgContent(markdown: string, styleContent: string): string {
     const text = msg.text;
     const icon = msg.icon || '';
     const name = msg.name || '';
+    const timestamp = msg.timestamp || '';
 
     if (role) {
       // プレインテキストに変換
@@ -164,12 +165,18 @@ function generateSvgContent(markdown: string, styleContent: string): string {
 
       // テキストを適切に折り返し（より自然な方法）
       const maxWidth = 450; // バブルの最大幅（ピクセル）
-      const textLines = wrapTextNaturally(plain, maxWidth);
-      
+      let textLines = wrapTextNaturally(plain, maxWidth);
+
+      // バブルの末尾に不要な空行が入るケースを削除（段落内の空行は維持）
+      while (textLines.length > 0 && textLines[textLines.length - 1].trim() === '') {
+        textLines.pop();
+      }
+      if (textLines.length === 0) { textLines = ['']; }
+
       // バブルのサイズ計算
       const lineHeight = 20;
-      const padding = 14;
-      const bubbleHeight = Math.max(50, textLines.length * lineHeight + padding * 2);
+      const padding = 12;
+      const bubbleHeight = textLines.length * lineHeight + padding * 2;
       
       // 最長行から幅を計算
       const longestLine = textLines.reduce((max, line) => 
@@ -178,12 +185,14 @@ function generateSvgContent(markdown: string, styleContent: string): string {
       const bubbleWidth = Math.min(maxWidth, textWidth + padding * 3);
       
       // 配置位置の計算
-      const svgWidth = 720;
-      // アイコンサイズとギャップを確保して、バブルはアイコンの外側に配置する
-      const iconSize = 40;
+      const svgWidth = 800; // 720から800に拡大
+      // アイコンサイズとギャップを確保して、名前/時刻はアイコンの横に、バブルはその外側に配置する
+      const iconSize = 48; // 40から48に変更（名前/時刻表示スペース確保）
       const iconGap = 10;
+
       let iconX = 0;
       let bubbleX = 0;
+      // 名前/時刻はアイコンの下に表示するため横幅は特にバブル配置の考慮は不要
       if (role === 'ai') {
         // 左側にアイコン、バブルはその右
         iconX = 20;
@@ -196,6 +205,20 @@ function generateSvgContent(markdown: string, styleContent: string): string {
       const fillColor = role === 'ai' ? '#ffffff' : '#9efb7a';
       const textColor = '#0b2b2b';
 
+  // 名前/時刻はアイコンの下に表示する
+  const nameFontSize = 11;
+  const timeFontSize = 9;
+  const iconY = yPosition;
+  const nameSectionHeight = (name || timestamp) ? (Math.max(nameFontSize, timeFontSize) + 6) : 0;
+  // アイコン+名前領域（column）とバブルを横並びに配置する。
+  // バブルはアイコンの中央に対して垂直中央合わせにする（プレビューに近づける）
+  const columnHeight = iconSize + nameSectionHeight + 6;
+  // Slight upward nudge so bubble doesn't overlap the name text visually
+  const bubbleNudgeUp = 8; // pixels
+  let bubbleY = yPosition + Math.max(0, Math.floor((columnHeight - bubbleHeight) / 2)) - bubbleNudgeUp;
+  // prevent bubble from moving unreasonably high
+  if (bubbleY < yPosition - 20) { bubbleY = yPosition - 20; }
+
       // バブル背景（吹き出し形状）
       const tailSize = 8;
       let bubblePath = '';
@@ -203,45 +226,44 @@ function generateSvgContent(markdown: string, styleContent: string): string {
       if (role === 'ai') {
         // AI: 左側の吹き出し（左下に尻尾）
         bubblePath = `
-          M ${bubbleX + 14} ${yPosition}
-          L ${bubbleX + bubbleWidth - 14} ${yPosition}
-          Q ${bubbleX + bubbleWidth} ${yPosition} ${bubbleX + bubbleWidth} ${yPosition + 14}
-          L ${bubbleX + bubbleWidth} ${yPosition + bubbleHeight - 14}
-          Q ${bubbleX + bubbleWidth} ${yPosition + bubbleHeight} ${bubbleX + bubbleWidth - 14} ${yPosition + bubbleHeight}
-          L ${bubbleX + 25} ${yPosition + bubbleHeight}
-          L ${bubbleX + 14} ${yPosition + bubbleHeight + tailSize}
-          L ${bubbleX + 14} ${yPosition + bubbleHeight}
-          Q ${bubbleX} ${yPosition + bubbleHeight} ${bubbleX} ${yPosition + bubbleHeight - 14}
-          L ${bubbleX} ${yPosition + 14}
-          Q ${bubbleX} ${yPosition} ${bubbleX + 14} ${yPosition}
+          M ${bubbleX + 14} ${bubbleY}
+          L ${bubbleX + bubbleWidth - 14} ${bubbleY}
+          Q ${bubbleX + bubbleWidth} ${bubbleY} ${bubbleX + bubbleWidth} ${bubbleY + 14}
+          L ${bubbleX + bubbleWidth} ${bubbleY + bubbleHeight - 14}
+          Q ${bubbleX + bubbleWidth} ${bubbleY + bubbleHeight} ${bubbleX + bubbleWidth - 14} ${bubbleY + bubbleHeight}
+          L ${bubbleX + 25} ${bubbleY + bubbleHeight}
+          L ${bubbleX + 14} ${bubbleY + bubbleHeight + tailSize}
+          L ${bubbleX + 14} ${bubbleY + bubbleHeight}
+          Q ${bubbleX} ${bubbleY + bubbleHeight} ${bubbleX} ${bubbleY + bubbleHeight - 14}
+          L ${bubbleX} ${bubbleY + 14}
+          Q ${bubbleX} ${bubbleY} ${bubbleX + 14} ${bubbleY}
           Z
         `;
       } else {
         // User: 右側の吹き出し（右下に尻尾）
         bubblePath = `
-          M ${bubbleX + 14} ${yPosition}
-          L ${bubbleX + bubbleWidth - 14} ${yPosition}
-          Q ${bubbleX + bubbleWidth} ${yPosition} ${bubbleX + bubbleWidth} ${yPosition + 14}
-          L ${bubbleX + bubbleWidth} ${yPosition + bubbleHeight - 14}
-          Q ${bubbleX + bubbleWidth} ${yPosition + bubbleHeight} ${bubbleX + bubbleWidth - 14} ${yPosition + bubbleHeight}
-          L ${bubbleX + bubbleWidth - 14} ${yPosition + bubbleHeight + tailSize}
-          L ${bubbleX + bubbleWidth - 25} ${yPosition + bubbleHeight}
-          L ${bubbleX + 14} ${yPosition + bubbleHeight}
-          Q ${bubbleX} ${yPosition + bubbleHeight} ${bubbleX} ${yPosition + bubbleHeight - 14}
-          L ${bubbleX} ${yPosition + 14}
-          Q ${bubbleX} ${yPosition} ${bubbleX + 14} ${yPosition}
+          M ${bubbleX + 14} ${bubbleY}
+          L ${bubbleX + bubbleWidth - 14} ${bubbleY}
+          Q ${bubbleX + bubbleWidth} ${bubbleY} ${bubbleX + bubbleWidth} ${bubbleY + 14}
+          L ${bubbleX + bubbleWidth} ${bubbleY + bubbleHeight - 14}
+          Q ${bubbleX + bubbleWidth} ${bubbleY + bubbleHeight} ${bubbleX + bubbleWidth - 14} ${bubbleY + bubbleHeight}
+          L ${bubbleX + bubbleWidth - 14} ${bubbleY + bubbleHeight + tailSize}
+          L ${bubbleX + bubbleWidth - 25} ${bubbleY + bubbleHeight}
+          L ${bubbleX + 14} ${bubbleY + bubbleHeight}
+          Q ${bubbleX} ${bubbleY + bubbleHeight} ${bubbleX} ${bubbleY + bubbleHeight - 14}
+          L ${bubbleX} ${bubbleY + 14}
+          Q ${bubbleX} ${bubbleY} ${bubbleX + 14} ${bubbleY}
           Z
         `;
       }
 
-      // アイコンと名前を描画
-      const iconY = yPosition;
-      const iconCx = iconX + iconSize / 2;
-      const iconCy = iconY + iconSize / 2;
+  // アイコンと名前とタイムスタンプを描画
+  const iconCx = iconX + iconSize / 2;
+  const iconCy = iconY + iconSize / 2;
       
       // アイコン（絵文字）
       if (icon) {
-        const iconFontSize = Math.floor(iconSize * 0.65);
+        const iconFontSize = Math.floor(iconSize * 0.6);
         svgElements += `
           <text x="${iconCx}" y="${iconCy}" text-anchor="middle" dominant-baseline="middle"
                 font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
@@ -249,21 +271,29 @@ function generateSvgContent(markdown: string, styleContent: string): string {
         `;
       }
       
-      // 名前（アイコンの下に小さく表示）
-      if (name) {
-        const nameY = iconY + iconSize + 12;
-        const nameFontSize = 11;
+      // 名前とタイムスタンプ（アイコンの下に表示）
+      const nameTimeY = iconY + iconSize + 12; // アイコンの下に配置
+      if (name && timestamp) {
+        const nameText = escapeXml(name);
+        const timeText = escapeXml(timestamp);
         svgElements += `
-          <text x="${iconCx}" y="${nameY}" text-anchor="middle" dominant-baseline="middle"
+          <text x="${iconCx}" y="${nameTimeY}" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="${nameFontSize}" fill="#666666">${nameText} <tspan font-size="${timeFontSize}" fill="#999999">${timeText}</tspan></text>
+        `;
+      } else if (name) {
+        svgElements += `
+          <text x="${iconCx}" y="${nameTimeY}" text-anchor="middle" dominant-baseline="middle"
                 font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
                 font-size="${nameFontSize}" fill="#666666">${escapeXml(name)}</text>
         `;
+      } else if (timestamp) {
+        svgElements += `
+          <text x="${iconCx}" y="${nameTimeY}" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="${timeFontSize}" fill="#999999">${escapeXml(timestamp)}</text>
+        `;
       }
-
-      svgElements += `
-        <path d="${bubblePath}" fill="${fillColor}"
-              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
-      `;
 
       // テキストを行ごとに配置
       // SVG内で簡易Markdownを反映（**bold**, *italic*, `code` を tspan に変換）
@@ -291,8 +321,14 @@ function generateSvgContent(markdown: string, styleContent: string): string {
         return t;
       };
 
+      // バブルのパスを描画
+      svgElements += `
+        <path d="${bubblePath}" fill="${fillColor}"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      `;
+
       textLines.forEach((textLine, index) => {
-        const textY = yPosition + padding + (index + 1) * lineHeight - 4;
+        const textY = bubbleY + padding + index * lineHeight + 16;
         const textX = bubbleX + padding;
         const inner = svgInlineFormat(textLine, textColor, 14);
         svgElements += `
@@ -302,14 +338,16 @@ function generateSvgContent(markdown: string, styleContent: string): string {
         `;
       });
 
-      yPosition += bubbleHeight + tailSize + 15;
+  // advance yPosition by the greater of bubble height or column (icon+name) height
+  const blockHeight = Math.max(bubbleHeight, columnHeight);
+  yPosition += blockHeight + 15;
     }
   });
 
   const totalHeight = yPosition + 20;
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="720" height="${totalHeight}" viewBox="0 0 720 ${totalHeight}">
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="${totalHeight}" viewBox="0 0 800 ${totalHeight}">
   <defs>
     <style>
       text {
@@ -418,10 +456,10 @@ function escapeXml(text: string): string {
 
 // Parse markdown lines into message objects. Lines starting with @ai or @me start a new message.
 // Lines without a role prefix are treated as continuation lines and appended with a newline.
-function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , icon: string, name: string, text: string }[] {
+function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , icon: string, name: string, timestamp: string, text: string }[] {
   const lines = markdown.split('\n');
-  const messages: { role: 'ai' | 'me' | '' , icon: string, name: string, text: string }[] = [];
-  let current: { role: 'ai' | 'me' | '' , icon: string, name: string, text: string } | null = null;
+  const messages: { role: 'ai' | 'me' | '' , icon: string, name: string, timestamp: string, text: string }[] = [];
+  let current: { role: 'ai' | 'me' | '' , icon: string, name: string, timestamp: string, text: string } | null = null;
 
   const DEFAULT_AI_ICON = '🤖';
   const DEFAULT_ME_ICON = '👤';
@@ -429,9 +467,9 @@ function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , icon: strin
   for (let rawLine of lines) {
     const line = rawLine.replace(/\r$/, '');
     
-    // @ai[絵文字 名前] または @me[絵文字 名前] の形式をチェック
-    const aiMatch = line.match(/^@ai(?:\[([^\]]*)\])?\s*(.*)/);
-    const meMatch = line.match(/^@me(?:\[([^\]]*)\])?\s*(.*)/);
+    // @ai[絵文字 名前]{タイムスタンプ} または @me[絵文字 名前]{タイムスタンプ} の形式をチェック
+    const aiMatch = line.match(/^@ai(?:\[([^\]]*)\])?(?:\{([^}]*)\})?\s*(.*)/);
+    const meMatch = line.match(/^@me(?:\[([^\]]*)\])?(?:\{([^}]*)\})?\s*(.*)/);
     
     if (aiMatch) {
       let icon = DEFAULT_AI_ICON;
@@ -441,7 +479,8 @@ function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , icon: strin
         icon = parts[0] || DEFAULT_AI_ICON;
         name = parts.length > 1 ? parts.slice(1).join(' ') : '';
       }
-      current = { role: 'ai', icon: icon, name: name, text: aiMatch[2] };
+      const timestamp = aiMatch[2] || '';
+      current = { role: 'ai', icon: icon, name: name, timestamp: timestamp, text: aiMatch[3] };
       messages.push(current);
     } else if (meMatch) {
       let icon = DEFAULT_ME_ICON;
@@ -451,7 +490,8 @@ function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , icon: strin
         icon = parts[0] || DEFAULT_ME_ICON;
         name = parts.length > 1 ? parts.slice(1).join(' ') : '';
       }
-      current = { role: 'me', icon: icon, name: name, text: meMatch[2] };
+      const timestamp = meMatch[2] || '';
+      current = { role: 'me', icon: icon, name: name, timestamp: timestamp, text: meMatch[3] };
       messages.push(current);
     } else {
       // continuation or unrelated line
