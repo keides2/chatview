@@ -14,10 +14,10 @@ function parseMessages(markdown) {
   for (let rawLine of lines) {
     const line = rawLine.replace(/\r$/, '');
     
-    // @ai[絵文字 名前] または @me[絵文字 名前] の形式をチェック
-    // [内容]をスペースで分割: 最初が絵文字、残りが名前
-    const aiMatch = line.match(/^@ai(?:\[([^\]]*)\])?\s*(.*)/);
-    const meMatch = line.match(/^@me(?:\[([^\]]*)\])?\s*(.*)/);
+    // @ai[絵文字 名前]{タイムスタンプ} または @me[絵文字 名前]{タイムスタンプ} の形式をチェック
+    // タイムスタンプは省略可能
+    const aiMatch = line.match(/^@ai(?:\[([^\]]*)\])?(?:\{([^}]*)\})?\s*(.*)/);
+    const meMatch = line.match(/^@me(?:\[([^\]]*)\])?(?:\{([^}]*)\})?\s*(.*)/);
     
     if (aiMatch) {
       let icon = DEFAULT_AI_ICON;
@@ -27,7 +27,8 @@ function parseMessages(markdown) {
         icon = parts[0] || DEFAULT_AI_ICON;
         name = parts.length > 1 ? parts.slice(1).join(' ') : '';
       }
-      current = { role: 'ai', icon: icon, name: name, text: aiMatch[2] };
+      const timestamp = aiMatch[2] || '';
+      current = { role: 'ai', icon: icon, name: name, timestamp: timestamp, text: aiMatch[3] };
       messages.push(current);
     } else if (meMatch) {
       let icon = DEFAULT_ME_ICON;
@@ -37,7 +38,8 @@ function parseMessages(markdown) {
         icon = parts[0] || DEFAULT_ME_ICON;
         name = parts.length > 1 ? parts.slice(1).join(' ') : '';
       }
-      current = { role: 'me', icon: icon, name: name, text: meMatch[2] };
+      const timestamp = meMatch[2] || '';
+      current = { role: 'me', icon: icon, name: name, timestamp: timestamp, text: meMatch[3] };
       messages.push(current);
     } else {
       if (current) {
@@ -170,14 +172,27 @@ window.addEventListener('message', event => {
       infoContainer.appendChild(iconDiv);
     }
     
+    // 名前とタイムスタンプのコンテナ
+    const nameTimeContainer = document.createElement('div');
+    nameTimeContainer.className = 'message-name-time';
+    
     // 名前要素（空文字列でない場合のみ）
     if (msg.name) {
       const nameDiv = document.createElement('div');
       nameDiv.className = 'message-name';
       nameDiv.textContent = msg.name;
-      infoContainer.appendChild(nameDiv);
+      nameTimeContainer.appendChild(nameDiv);
     }
     
+    // タイムスタンプ要素（空文字列でない場合のみ）
+    if (msg.timestamp) {
+      const timeDiv = document.createElement('div');
+      timeDiv.className = 'message-timestamp';
+      timeDiv.textContent = msg.timestamp;
+      nameTimeContainer.appendChild(timeDiv);
+    }
+    
+    infoContainer.appendChild(nameTimeContainer);
     messageContainer.appendChild(infoContainer);
     
     // メッセージバブル
