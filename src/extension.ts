@@ -15,19 +15,32 @@ export function activate(context: vscode.ExtensionContext) {
 
       const markdown = editor.document.getText();
       const originalFileName = editor.document.fileName;
+      
+      // Markdownファイルのディレクトリをリソースルートに追加（icons/フォルダーのため）
+      const documentDir = path.dirname(editor.document.uri.fsPath);
+      
       const panel = vscode.window.createWebviewPanel(
         'chatPreviewEnterprise',
         'Chat Preview',
         vscode.ViewColumn.Beside,
         {
           enableScripts: true,
-          localResourceRoots: [vscode.Uri.file(path.join(context.extensionPath, 'media'))]
+          localResourceRoots: [
+            vscode.Uri.file(path.join(context.extensionPath, 'media')),
+            vscode.Uri.file(documentDir) // iconsフォルダーを含むディレクトリ
+          ]
         }
       );
 
       currentPanel = panel;
       (currentPanel as any).originalFileName = originalFileName;
-      (currentPanel as any).markdown = markdown;
+      
+      // 元のMarkdownを保存（SVGエクスポート用）
+      (currentPanel as any).originalMarkdown = markdown;
+      
+      // Markdownの画像パスをwebview URIに変換
+      const processedMarkdown = convertIconPathsToWebviewUris(markdown, documentDir, panel.webview);
+      (currentPanel as any).markdown = processedMarkdown;
 
       const scriptUri = panel.webview.asWebviewUri(
         vscode.Uri.file(path.join(context.extensionPath, 'media', 'script.js'))
@@ -37,7 +50,7 @@ export function activate(context: vscode.ExtensionContext) {
       );
 
       panel.webview.html = getWebviewContent(scriptUri, styleUri);
-      panel.webview.postMessage({ markdown });
+      panel.webview.postMessage({ markdown: processedMarkdown });
 
       // パネルがアクティブになった時にコンテンツを再送信
       panel.onDidChangeViewState(() => {
@@ -79,14 +92,27 @@ async function handleExport(context: vscode.ExtensionContext, message: any) {
     // SVGのみサポート（Playwrightは使用しない）
     const format = 'svg';
     
-    if (!message.markdown) {
+    // 元のMarkdownを使用（webview経由のものはアイコンパスが変換されているため）
+    const originalMarkdown = currentPanel && (currentPanel as any).originalMarkdown 
+      ? (currentPanel as any).originalMarkdown 
+      : message.markdown;
+    
+    if (!originalMarkdown) {
       throw new Error('Markdown content is missing');
     }
+    
+    console.log('[SVG Export] Using original markdown, length:', originalMarkdown.length);
+    console.log('[SVG Export] First 200 chars:', originalMarkdown.substring(0, 200));
     
     const styleUri = vscode.Uri.file(path.join(context.extensionPath, 'media', 'style.css'));
     const styleContent = await fs.promises.readFile(styleUri.fsPath, 'utf8');
     
-    const svgContent = generateSvgContent(message.markdown || '', styleContent);
+    // Markdownファイルのディレクトリを取得
+    const markdownDir = currentPanel && (currentPanel as any).originalFileName 
+      ? path.dirname((currentPanel as any).originalFileName)
+      : '';
+    
+    const svgContent = generateSvgContent(originalMarkdown, styleContent, markdownDir);
     
     // 既存の保存処理を使用
   const config = vscode.workspace.getConfiguration('chatPreviewEnterprise');
@@ -148,7 +174,7 @@ async function handleExport(context: vscode.ExtensionContext, message: any) {
 }
 
 // SVGコンテンツ生成関数
-function generateSvgContent(markdown: string, styleContent: string): string {
+function generateSvgContent(markdown: string, styleContent: string, markdownDir: string = ''): string {
   try {
     const messages = parseMessages(markdown);
     
@@ -162,9 +188,78 @@ function generateSvgContent(markdown: string, styleContent: string): string {
   messages.forEach(msg => {
     const role = msg.role;
     const text = msg.text;
-    const icon = msg.icon || '';
+    let icon = msg.icon || '';
+    let iconImageData = ''; // Base64 PNG data for SVG <image>
     const name = msg.name || '';
     const timestamp = msg.timestamp || '';
+
+    // <img>タグの場合はPNG画像をBase64に変換してSVGに埋め込む
+    if (icon.startsWith('<img')) {
+      const srcMatch = icon.match(/src="([^"]+)"/);
+      if (srcMatch) {
+        const iconPath = srcMatch[1];
+        
+        // デバッグ: 最初のアイコンだけ確認
+        if (messages.indexOf(msg) === 0) {
+          vscode.window.showInformationMessage(`[DEBUG] First icon path: ${iconPath}`);
+        }
+        
+        // vscode-webview:// URIの場合はデコードして実際のパスを取得
+        if (iconPath.startsWith('vscode-webview://')) {
+          // vscode-webview://... のURIをデコード
+          try {
+            const decodedPath = decodeURIComponent(iconPath.replace(/^vscode-webview:\/\/[^/]+\//, ''));
+            console.log('[SVG Export] Decoded vscode-webview path:', decodedPath);
+            if (fs.existsSync(decodedPath)) {
+              const imageBuffer = fs.readFileSync(decodedPath);
+              const base64Data = imageBuffer.toString('base64');
+              iconImageData = `data:image/png;base64,${base64Data}`;
+              icon = ''; // 絵文字はクリア（画像を使用）
+              console.log('[SVG Export] Successfully loaded icon from vscode-webview URI');
+            } else {
+              console.error('[SVG Export] File not found:', decodedPath);
+              icon = role === 'ai' ? '🤖' : '👤';
+            }
+          } catch (error) {
+            console.error('[SVG Export] Failed to load vscode-webview icon:', error);
+            icon = role === 'ai' ? '🤖' : '👤';
+          }
+        } else if (iconPath.startsWith('icons/')) {
+          // 相対パスの場合、Markdownファイルのディレクトリから読み込む
+          try {
+            const fullIconPath = markdownDir ? path.join(markdownDir, iconPath) : iconPath;
+            
+            // デバッグ: 最初のアイコンだけ確認
+            if (messages.indexOf(msg) === 0) {
+              vscode.window.showInformationMessage(`[DEBUG] Full path: ${fullIconPath}, exists: ${fs.existsSync(fullIconPath)}`);
+            }
+            
+            if (fs.existsSync(fullIconPath)) {
+              const imageBuffer = fs.readFileSync(fullIconPath);
+              const base64Data = imageBuffer.toString('base64');
+              iconImageData = `data:image/png;base64,${base64Data}`;
+              icon = ''; // 絵文字はクリア（画像を使用）
+              
+              // デバッグ: 最初のアイコンだけ確認
+              if (messages.indexOf(msg) === 0) {
+                vscode.window.showInformationMessage(`[DEBUG] Image loaded successfully, base64 length: ${base64Data.length}`);
+              }
+            } else {
+              console.error('[SVG Export] Icon file not found:', fullIconPath);
+              icon = role === 'ai' ? '🤖' : '👤';
+            }
+          } catch (error) {
+            console.error('Failed to load icon:', error);
+            icon = role === 'ai' ? '🤖' : '👤';
+          }
+        } else {
+          // その他の場合は絵文字フォールバック
+          icon = role === 'ai' ? '🤖' : '👤';
+        }
+      } else {
+        icon = role === 'ai' ? '🤖' : '👤';
+      }
+    }
 
     if (role) {
       // プレインテキストに変換
@@ -280,8 +375,16 @@ function generateSvgContent(markdown: string, styleContent: string): string {
   const iconCx = iconX + iconSize / 2;
   const iconCy = iconY + iconSize / 2;
       
-      // アイコン（絵文字）
-      if (icon) {
+      // アイコン描画（画像 or 絵文字）
+      if (iconImageData) {
+        // PNG画像をSVG <image>タグで埋め込み
+        svgElements += `
+          <image x="${iconX}" y="${iconY}" width="${iconSize}" height="${iconSize}"
+                 href="${iconImageData}"
+                 style="border-radius: 50%;" />
+        `;
+      } else if (icon) {
+        // 絵文字をテキストとして表示
         const iconFontSize = Math.floor(iconSize * 0.6);
         svgElements += `
           <text x="${iconCx}" y="${iconCy}" text-anchor="middle" dominant-baseline="middle"
@@ -296,7 +399,9 @@ function generateSvgContent(markdown: string, styleContent: string): string {
       try {
         if (name && timestamp) {
           // 名前に改行が含まれている場合は複数行で表示
-          const nameLines = name.split('\n').filter(line => line.trim());
+          // ただし、src= を含む行は除外（デバッグ用パス表示を防ぐ）
+          const nameLines = name.split('\n')
+            .filter(line => line.trim() && !line.includes('src='));
           let currentY = nameTimeY;
           
           for (let i = 0; i < Math.min(nameLines.length, 3); i++) {
@@ -318,7 +423,9 @@ function generateSvgContent(markdown: string, styleContent: string): string {
           `;
         } else if (name) {
           // 名前に改行が含まれている場合は複数行で表示
-          const nameLines = name.split('\n').filter(line => line.trim());
+          // ただし、src= を含む行は除外（デバッグ用パス表示を防ぐ）
+          const nameLines = name.split('\n')
+            .filter(line => line.trim() && !line.includes('src='));
           let currentY = nameTimeY;
           
           for (let i = 0; i < Math.min(nameLines.length, 3); i++) {
@@ -546,24 +653,55 @@ function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , icon: strin
       let icon = DEFAULT_AI_ICON;
       let name = '';
       if (aiMatch[1] !== undefined) {
-        const parts = aiMatch[1].trim().split(/\s+/);
-        icon = parts[0] || DEFAULT_AI_ICON;
-        if (parts.length > 1) {
-          // 英語名と漢字名の間に改行を挿入
-          const restParts = parts.slice(1);
-          let englishPart: string[] = [];
-          let japanesePart: string[] = [];
-          for (const part of restParts) {
-            if (/^[a-zA-Z]+$/.test(part)) {
-              englishPart.push(part);
-            } else {
-              japanesePart.push(part);
+        const content = aiMatch[1].trim();
+        
+        // <img>タグがある場合は特別処理
+        if (content.startsWith('<img')) {
+          const imgEndIndex = content.indexOf('/>');
+          if (imgEndIndex !== -1) {
+            // <img ... />全体を抽出
+            icon = content.substring(0, imgEndIndex + 2);
+            // 残りの部分を名前として処理
+            const remainingText = content.substring(imgEndIndex + 2).trim();
+            if (remainingText) {
+              const restParts = remainingText.split(/\s+/);
+              let englishPart: string[] = [];
+              let japanesePart: string[] = [];
+              for (const part of restParts) {
+                if (/^[a-zA-Z]+$/.test(part)) {
+                  englishPart.push(part);
+                } else {
+                  japanesePart.push(part);
+                }
+              }
+              if (englishPart.length > 0 && japanesePart.length > 0) {
+                name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+              } else {
+                name = restParts.join(' ');
+              }
             }
           }
-          if (englishPart.length > 0 && japanesePart.length > 0) {
-            name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
-          } else {
-            name = restParts.join(' ');
+        } else {
+          // 通常の絵文字の場合
+          const parts = content.split(/\s+/);
+          icon = parts[0] || DEFAULT_AI_ICON;
+          if (parts.length > 1) {
+            // 英語名と漢字名の間に改行を挿入
+            const restParts = parts.slice(1);
+            let englishPart: string[] = [];
+            let japanesePart: string[] = [];
+            for (const part of restParts) {
+              if (/^[a-zA-Z]+$/.test(part)) {
+                englishPart.push(part);
+              } else {
+                japanesePart.push(part);
+              }
+            }
+            if (englishPart.length > 0 && japanesePart.length > 0) {
+              name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+            } else {
+              name = restParts.join(' ');
+            }
           }
         }
       }
@@ -574,24 +712,55 @@ function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , icon: strin
       let icon = DEFAULT_ME_ICON;
       let name = '';
       if (meMatch[1] !== undefined) {
-        const parts = meMatch[1].trim().split(/\s+/);
-        icon = parts[0] || DEFAULT_ME_ICON;
-        if (parts.length > 1) {
-          // 英語名と漢字名の間に改行を挿入
-          const restParts = parts.slice(1);
-          let englishPart: string[] = [];
-          let japanesePart: string[] = [];
-          for (const part of restParts) {
-            if (/^[a-zA-Z]+$/.test(part)) {
-              englishPart.push(part);
-            } else {
-              japanesePart.push(part);
+        const content = meMatch[1].trim();
+        
+        // <img>タグがある場合は特別処理
+        if (content.startsWith('<img')) {
+          const imgEndIndex = content.indexOf('/>');
+          if (imgEndIndex !== -1) {
+            // <img ... />全体を抽出
+            icon = content.substring(0, imgEndIndex + 2);
+            // 残りの部分を名前として処理
+            const remainingText = content.substring(imgEndIndex + 2).trim();
+            if (remainingText) {
+              const restParts = remainingText.split(/\s+/);
+              let englishPart: string[] = [];
+              let japanesePart: string[] = [];
+              for (const part of restParts) {
+                if (/^[a-zA-Z]+$/.test(part)) {
+                  englishPart.push(part);
+                } else {
+                  japanesePart.push(part);
+                }
+              }
+              if (englishPart.length > 0 && japanesePart.length > 0) {
+                name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+              } else {
+                name = restParts.join(' ');
+              }
             }
           }
-          if (englishPart.length > 0 && japanesePart.length > 0) {
-            name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
-          } else {
-            name = restParts.join(' ');
+        } else {
+          // 通常の絵文字の場合
+          const parts = content.split(/\s+/);
+          icon = parts[0] || DEFAULT_ME_ICON;
+          if (parts.length > 1) {
+            // 英語名と漢字名の間に改行を挿入
+            const restParts = parts.slice(1);
+            let englishPart: string[] = [];
+            let japanesePart: string[] = [];
+            for (const part of restParts) {
+              if (/^[a-zA-Z]+$/.test(part)) {
+                englishPart.push(part);
+              } else {
+                japanesePart.push(part);
+              }
+            }
+            if (englishPart.length > 0 && japanesePart.length > 0) {
+              name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+            } else {
+              name = restParts.join(' ');
+            }
           }
         }
       }
@@ -755,4 +924,17 @@ function stripMarkdown(text: string): string {
   return s;
   // remove leading empty [] tokens (e.g. '[] text')
   s = s.replace(/^\s*\[\s*\]\s*/g, '');
+}
+
+// iconsディレクトリの画像パスをwebview URIに変換
+function convertIconPathsToWebviewUris(markdown: string, baseDir: string, webview: vscode.Webview): string {
+  // <img src="icons/speaker_XXX.png" のパターンを検索して変換
+  return markdown.replace(
+    /<img\s+src="(icons\/[^"]+)"/g,
+    (match, iconPath) => {
+      const fullPath = path.join(baseDir, iconPath);
+      const webviewUri = webview.asWebviewUri(vscode.Uri.file(fullPath));
+      return `<img src="${webviewUri.toString()}"`;
+    }
+  );
 }

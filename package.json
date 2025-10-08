@@ -37,12 +37,12 @@
     },
     "commands": [
       {
-  "command": "chatPreviewEnterprise.showPreview",
-  "title": "ChatView Enterprise: Preview display"
+        "command": "chatPreviewEnterprise.showPreview",
+        "title": "ChatView Enterprise: プレビュー表示"
       },
       {
-  "command": "chatPreviewEnterprise.exportImage",
-  "title": "ChatView Enterprise: Export view as image"
+        "command": "chatPreviewEnterprise.exportImage",
+        "title": "ChatView Enterprise: SVGエクスポート"
       }
     ]
   },

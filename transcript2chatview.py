@@ -12,24 +12,121 @@ Microsoft Teams DOCX文字起こしをChatView形式のマークダウンに変�
 
 import argparse
 import re
+import base64
 from pathlib import Path
 from docx import Document
+from docx.oxml.ns import qn
 
 
-def parse_teams_docx_simple(docx_file):
+def extract_paragraph_images(docx_file, output_dir=None, use_files=True):
+    """
+    DOCXファイルから段落ごとに画像を抽出
+    
+    Args:
+        docx_file: DOCXファイルのパス
+        output_dir: 画像ファイルを保存するディレクトリ（use_files=Trueの場合）
+        use_files: Trueの場合はファイルとして保存、Falseの場合はBase64エンコード
+        
+    Returns:
+        dict: {paragraph_index: {'path': str} or {'data_uri': str, 'content_type': str}}
+    """
+    doc = Document(docx_file)
+    
+    # すべての画像リレーションシップを取得
+    image_parts = {}
+    for rel in doc.part.rels.values():
+        if "image" in rel.reltype.lower():
+            image_parts[rel.rId] = rel.target_part
+    
+    # 画像保存用ディレクトリを作成
+    if use_files and output_dir:
+        icons_dir = Path(output_dir) / 'icons'
+        icons_dir.mkdir(parents=True, exist_ok=True)
+    
+    # 段落ごとに画像を抽出
+    paragraph_images = {}
+    
+    for para_idx, para in enumerate(doc.paragraphs):
+        # 段落内のdrawing要素を検索
+        para_element = para._element
+        ns = {
+            'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main',
+            'a': 'http://schemas.openxmlformats.org/drawingml/2006/main',
+            'r': 'http://schemas.openxmlformats.org/officeDocument/2006/relationships'
+        }
+        
+        # drawing要素を検索
+        drawings = para_element.findall('.//w:drawing', ns)
+        
+        for drawing in drawings:
+            # blip要素から画像IDを取得
+            blips = drawing.findall('.//a:blip', ns)
+            
+            for blip in blips:
+                embed_id = blip.get(qn('r:embed'))
+                if embed_id and embed_id in image_parts:
+                    image_part = image_parts[embed_id]
+                    image_data = image_part.blob
+                    content_type = image_part.content_type
+                    
+                    if use_files and output_dir:
+                        # ファイルとして保存
+                        ext = content_type.split('/')[-1]
+                        icon_filename = f"speaker_{para_idx:03d}.{ext}"
+                        icon_path = icons_dir / icon_filename
+                        
+                        with open(icon_path, 'wb') as f:
+                            f.write(image_data)
+                        
+                        paragraph_images[para_idx] = {
+                            'path': f"icons/{icon_filename}"
+                        }
+                    else:
+                        # Base64エンコード
+                        base64_image = base64.b64encode(
+                            image_data).decode('utf-8')
+                        data_uri = f"data:{content_type};base64,"
+                        data_uri += f"{base64_image}"
+                        
+                        paragraph_images[para_idx] = {
+                            'data_uri': data_uri,
+                            'content_type': content_type
+                        }
+                    break  # 最初の画像のみ使用
+            
+            if para_idx in paragraph_images:
+                break  # 最初のdrawingのみ使用
+    
+    return paragraph_images
+
+
+def parse_teams_docx_simple(docx_file, output_dir=None, use_icon_files=True):
     """
     Teams通常形式のDOCXファイルをパース
     話者名 タイムスタンプ
     本文
     の形式に対応（1つの段落内に改行で含まれる場合も対応）
+    画像アイコンも抽出して話者と紐づけ
+    
+    Args:
+        docx_file: DOCXファイルパス
+        output_dir: アイコン画像を保存するディレクトリ
+        use_icon_files: Trueの場合は画像ファイルとして保存、
+                        Falseの場合はBase64埋め込み
     """
     doc = Document(docx_file)
+    
+    # 段落ごとの画像を抽出
+    paragraph_images = extract_paragraph_images(
+        docx_file, output_dir, use_files=use_icon_files)
+    
     transcript = []
+    speaker_icons = {}  # 話者名 -> path or data_uri のマッピング
     
     # 話者情報のパターン
     speaker_pattern = re.compile(r'^(.+?)\s{2,}(\d+:\d+)')
     
-    for para in doc.paragraphs:
+    for para_idx, para in enumerate(doc.paragraphs):
         text = para.text.strip()
         if not text:
             continue
@@ -46,15 +143,29 @@ def parse_teams_docx_simple(docx_file):
                 speaker = speaker_match.group(1).strip()
                 timestamp = '00:' + speaker_match.group(2)  # 00:を追加
                 
+                # この段落に画像があれば、話者と紐づけ
+                if para_idx in paragraph_images:
+                    # 初めて見る話者の場合のみアイコンを登録
+                    if speaker not in speaker_icons:
+                        img_info = paragraph_images[para_idx]
+                        if 'path' in img_info:
+                            speaker_icons[speaker] = img_info['path']
+                        else:
+                            speaker_icons[speaker] = img_info['data_uri']
+                
                 # 残りの行を本文として結合
                 content_lines = lines[1:]
                 content = '\n'.join(content_lines).strip()
                 
                 if content:  # 本文がある場合のみ追加
+                    # 話者に紐づいたアイコンを使用
+                    icon_ref = speaker_icons.get(speaker, '')
+                    
                     transcript.append({
                         'start': timestamp + '.000',
                         'end': timestamp + '.000',
                         'speaker': speaker,
+                        'icon': icon_ref,
                         'text': content
                     })
     
@@ -263,17 +374,35 @@ def convert_to_chatview_markdown(transcript, show_timestamp=True, show_icon=True
         text = entry['text'].strip()
         timestamp = entry['start']
         
+        # entryにアイコンが含まれているかチェック
+        entry_icon = entry.get('icon', '')
+        
         # 初出の話者にロールとアイコンを割り当て
         if speaker not in speaker_roles:
             speaker_roles[speaker] = role_toggle[role_index % 2]
-            speaker_icons[speaker] = get_speaker_icon(speaker, role_index)
+            # entryにアイコンがあればそれを使用、なければデフォルト絵文字
+            if entry_icon:
+                # ファイルパスかBase64かを判定
+                if entry_icon.startswith('data:image'):
+                    # Base64画像の場合はHTMLのimg形式で埋め込む
+                    img_tag = f'<img src="{entry_icon}" '
+                    img_tag += 'width="20" height="20" />'
+                    speaker_icons[speaker] = img_tag
+                else:
+                    # ファイルパスの場合もimg形式
+                    img_tag = f'<img src="{entry_icon}" '
+                    img_tag += 'width="20" height="20" />'
+                    speaker_icons[speaker] = img_tag
+            else:
+                speaker_icons[speaker] = get_speaker_icon(
+                    speaker, role_index)
             role_index += 1
         
         role = speaker_roles[speaker]
         icon = speaker_icons[speaker]
         
-        # ChatView形式で出力: @ai[絵文字 話者名]{タイムスタンプ} または @me[絵文字 話者名]{タイムスタンプ}
-        if show_icon:
+        # ChatView形式で出力
+        if show_icon and icon:
             header = f'@{role}[{icon} {speaker}]'
         else:
             header = f'@{role}[{speaker}]'
@@ -318,6 +447,11 @@ def main():
         action='store_true',
         help='アイコン絵文字を非表示'
     )
+    parser.add_argument(
+        '--icon-files',
+        action='store_true',
+        help='アイコンを別ファイルとして保存（Base64埋め込みを避ける）'
+    )
     
     args = parser.parse_args()
     
@@ -326,9 +460,19 @@ def main():
         print(f'エラー: ファイルが見つかりません: {args.input}')
         return 1
     
+    # 出力ディレクトリを決定
+    if args.output:
+        output_dir = args.output.parent
+    else:
+        output_dir = args.input.parent
+    
     # DOCXファイルをパース
     print(f'文字起こしファイルを読み込んでいます: {args.input}')
-    transcript = parse_teams_docx(args.input)
+    transcript = parse_teams_docx_simple(
+        args.input,
+        output_dir=output_dir,
+        use_icon_files=args.icon_files
+    )
     print(f'  → {len(transcript)}件のエントリを検出')
     
     # オプション: 連続話者を結合

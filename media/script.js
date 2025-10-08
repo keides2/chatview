@@ -23,26 +23,52 @@ function parseMessages(markdown) {
       let icon = DEFAULT_AI_ICON;
       let name = '';
       if (aiMatch[1] !== undefined) {
-        const parts = aiMatch[1].trim().split(/\s+/);
-        icon = parts[0] || DEFAULT_AI_ICON;
-        if (parts.length > 1) {
-          // 英語名と漢字名の間に改行を挿入
-          // 例: "HASUIKE Shoichi 蓮池 祥一" → "HASUIKE Shoichi\n蓮池 祥一"
-          const restParts = parts.slice(1);
-          // アルファベット部分と漢字部分を分離
-          let englishPart = [];
-          let japanesePart = [];
-          for (const part of restParts) {
-            if (/^[a-zA-Z]+$/.test(part)) {
-              englishPart.push(part);
-            } else {
-              japanesePart.push(part);
+        const content = aiMatch[1].trim();
+        // <img タグがある場合は特別処理
+        if (content.startsWith('<img')) {
+          const imgEndIndex = content.indexOf('/>');
+          if (imgEndIndex !== -1) {
+            icon = content.substring(0, imgEndIndex + 2).trim();
+            const remainingText = content.substring(imgEndIndex + 2).trim();
+            if (remainingText) {
+              // 名前を処理
+              const nameParts = remainingText.split(/\s+/);
+              let englishPart = [];
+              let japanesePart = [];
+              for (const part of nameParts) {
+                if (/^[a-zA-Z]+$/.test(part)) {
+                  englishPart.push(part);
+                } else {
+                  japanesePart.push(part);
+                }
+              }
+              if (englishPart.length > 0 && japanesePart.length > 0) {
+                name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+              } else {
+                name = nameParts.join(' ');
+              }
             }
           }
-          if (englishPart.length > 0 && japanesePart.length > 0) {
-            name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
-          } else {
-            name = restParts.join(' ');
+        } else {
+          // 通常の絵文字処理
+          const parts = content.split(/\s+/);
+          icon = parts[0] || DEFAULT_AI_ICON;
+          if (parts.length > 1) {
+            const restParts = parts.slice(1);
+            let englishPart = [];
+            let japanesePart = [];
+            for (const part of restParts) {
+              if (/^[a-zA-Z]+$/.test(part)) {
+                englishPart.push(part);
+              } else {
+                japanesePart.push(part);
+              }
+            }
+            if (englishPart.length > 0 && japanesePart.length > 0) {
+              name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+            } else {
+              name = restParts.join(' ');
+            }
           }
         }
       }
@@ -53,24 +79,52 @@ function parseMessages(markdown) {
       let icon = DEFAULT_ME_ICON;
       let name = '';
       if (meMatch[1] !== undefined) {
-        const parts = meMatch[1].trim().split(/\s+/);
-        icon = parts[0] || DEFAULT_ME_ICON;
-        if (parts.length > 1) {
-          // 英語名と漢字名の間に改行を挿入
-          const restParts = parts.slice(1);
-          let englishPart = [];
-          let japanesePart = [];
-          for (const part of restParts) {
-            if (/^[a-zA-Z]+$/.test(part)) {
-              englishPart.push(part);
-            } else {
-              japanesePart.push(part);
+        const content = meMatch[1].trim();
+        // <img タグがある場合は特別処理
+        if (content.startsWith('<img')) {
+          const imgEndIndex = content.indexOf('/>');
+          if (imgEndIndex !== -1) {
+            icon = content.substring(0, imgEndIndex + 2).trim();
+            const remainingText = content.substring(imgEndIndex + 2).trim();
+            if (remainingText) {
+              // 名前を処理
+              const nameParts = remainingText.split(/\s+/);
+              let englishPart = [];
+              let japanesePart = [];
+              for (const part of nameParts) {
+                if (/^[a-zA-Z]+$/.test(part)) {
+                  englishPart.push(part);
+                } else {
+                  japanesePart.push(part);
+                }
+              }
+              if (englishPart.length > 0 && japanesePart.length > 0) {
+                name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+              } else {
+                name = nameParts.join(' ');
+              }
             }
           }
-          if (englishPart.length > 0 && japanesePart.length > 0) {
-            name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
-          } else {
-            name = restParts.join(' ');
+        } else {
+          // 通常の絵文字処理
+          const parts = content.split(/\s+/);
+          icon = parts[0] || DEFAULT_ME_ICON;
+          if (parts.length > 1) {
+            const restParts = parts.slice(1);
+            let englishPart = [];
+            let japanesePart = [];
+            for (const part of restParts) {
+              if (/^[a-zA-Z]+$/.test(part)) {
+                englishPart.push(part);
+              } else {
+                japanesePart.push(part);
+              }
+            }
+            if (englishPart.length > 0 && japanesePart.length > 0) {
+              name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+            } else {
+              name = restParts.join(' ');
+            }
           }
         }
       }
@@ -189,56 +243,101 @@ window.addEventListener('message', event => {
   const container = document.getElementById('chat-container');
   container.innerHTML = '';
 
-  messages.forEach(msg => {
-    if (!msg.role) { return; }
+  // 初期表示件数を制限（パフォーマンス対策）
+  const INITIAL_LOAD = 50;
+  const LOAD_MORE = 50;
+  let currentIndex = 0;
+
+  function renderMessages(startIndex, count) {
+    const endIndex = Math.min(startIndex + count, messages.length);
     
-    // メッセージコンテナを作成
-    const messageContainer = document.createElement('div');
-    messageContainer.className = `message-container ${msg.role}`;
-    
-    // アイコンと名前のコンテナ
-    const infoContainer = document.createElement('div');
-    infoContainer.className = 'message-info';
-    
-    // アイコン要素（空文字列でない場合のみ）
-    if (msg.icon) {
-      const iconDiv = document.createElement('div');
-      iconDiv.className = 'message-icon';
-      iconDiv.textContent = msg.icon;
-      infoContainer.appendChild(iconDiv);
+    for (let i = startIndex; i < endIndex; i++) {
+      const msg = messages[i];
+      if (!msg.role) { continue; }
+      
+      // メッセージコンテナを作成
+      const messageContainer = document.createElement('div');
+      messageContainer.className = `message-container ${msg.role}`;
+      
+      // アイコンと名前のコンテナ
+      const infoContainer = document.createElement('div');
+      infoContainer.className = 'message-info';
+      
+      // アイコン要素（空文字列でない場合のみ）
+      if (msg.icon) {
+        const iconDiv = document.createElement('div');
+        iconDiv.className = 'message-icon';
+        // HTMLタグの場合はinnerHTMLを使用
+        if (msg.icon.startsWith('<img')) {
+          // loading="lazy"属性を追加して遅延読み込み
+          const lazyIcon = msg.icon.replace('<img ', '<img loading="lazy" ');
+          iconDiv.innerHTML = lazyIcon;
+        } else {
+          iconDiv.textContent = msg.icon;
+        }
+        infoContainer.appendChild(iconDiv);
+      }
+      
+      // 名前とタイムスタンプのコンテナ
+      const nameTimeContainer = document.createElement('div');
+      nameTimeContainer.className = 'message-name-time';
+      
+      // 名前要素（空文字列でない場合のみ）
+      if (msg.name) {
+        const nameDiv = document.createElement('div');
+        nameDiv.className = 'message-name';
+        nameDiv.textContent = msg.name;
+        nameTimeContainer.appendChild(nameDiv);
+      }
+      
+      // タイムスタンプ要素（空文字列でない場合のみ）
+      if (msg.timestamp) {
+        const timeDiv = document.createElement('div');
+        timeDiv.className = 'message-timestamp';
+        timeDiv.textContent = msg.timestamp;
+        nameTimeContainer.appendChild(timeDiv);
+      }
+      
+      infoContainer.appendChild(nameTimeContainer);
+      messageContainer.appendChild(infoContainer);
+      
+      // メッセージバブル
+      const div = document.createElement('div');
+      div.className = 'message';
+      div.innerHTML = renderMarkdownToHtml(msg.text);
+      messageContainer.appendChild(div);
+      
+      container.appendChild(messageContainer);
     }
     
-    // 名前とタイムスタンプのコンテナ
-    const nameTimeContainer = document.createElement('div');
-    nameTimeContainer.className = 'message-name-time';
+    currentIndex = endIndex;
     
-    // 名前要素（空文字列でない場合のみ）
-    if (msg.name) {
-      const nameDiv = document.createElement('div');
-      nameDiv.className = 'message-name';
-      nameDiv.textContent = msg.name;
-      nameTimeContainer.appendChild(nameDiv);
+    // 「もっと見る」ボタンの表示/非表示
+    updateLoadMoreButton();
+  }
+
+  function updateLoadMoreButton() {
+    // 既存のボタンを削除
+    let loadMoreBtn = document.getElementById('load-more-btn');
+    if (loadMoreBtn) {
+      loadMoreBtn.remove();
     }
     
-    // タイムスタンプ要素（空文字列でない場合のみ）
-    if (msg.timestamp) {
-      const timeDiv = document.createElement('div');
-      timeDiv.className = 'message-timestamp';
-      timeDiv.textContent = msg.timestamp;
-      nameTimeContainer.appendChild(timeDiv);
+    // まだメッセージが残っている場合は新しいボタンを作成
+    if (currentIndex < messages.length) {
+      loadMoreBtn = document.createElement('button');
+      loadMoreBtn.id = 'load-more-btn';
+      loadMoreBtn.textContent = `もっと見る (残り ${messages.length - currentIndex} 件)`;
+      loadMoreBtn.style.cssText = 'display: block; margin: 20px auto; padding: 10px 20px; font-size: 14px; cursor: pointer; background-color: #007acc; color: white; border: none; border-radius: 4px;';
+      loadMoreBtn.onclick = () => {
+        renderMessages(currentIndex, LOAD_MORE);
+      };
+      container.appendChild(loadMoreBtn);
     }
-    
-    infoContainer.appendChild(nameTimeContainer);
-    messageContainer.appendChild(infoContainer);
-    
-    // メッセージバブル
-    const div = document.createElement('div');
-    div.className = 'message';
-    div.innerHTML = renderMarkdownToHtml(msg.text);
-    messageContainer.appendChild(div);
-    
-    container.appendChild(messageContainer);
-  });
+  }
+
+  // 初回読み込み
+  renderMessages(0, INITIAL_LOAD);
 });
 
 // single acquisition of VS Code API

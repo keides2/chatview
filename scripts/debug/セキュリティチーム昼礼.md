@@ -1,0 +1,1394 @@
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:0:07.000}
+えっと先週なんですけども、えっと金曜日ですね。えっとエスボムの進め方の相談ということで、えっとIT推進部からああ、ちょっと話がありましたが。
+ええとPwCさんも入ってなんですけど、ええと結果的にええ。IT推進部はもうエスボムの方に関してはええとあれですね。自分たちなんか取り持つつもりはほぼほぼないというかような感じのことをちょっと急に言われました。ええと。
+まあ、一応たちIT推進部の方がやっていくことは、エスボムのフォーマットのガイドライン作って、それのええ指導とか、あとそれのええと相談とかを受け付けるけど、ええとそれ以上については、もう各事業部でええとかやってください。
+みたいな、そういうような、ああ感じのことをを考えているということで、急遽方針変更しますっていうようなお話がありましたというところです。えっとはいえっと木村さんの方から、まあ、そういう説明があって、まあ、その背景とかを聞くと、やっぱりIT推進部の部長の方が。
+あえっとそういうふうなえっとことで進めたいっていうことでえっと自分たちではあの引き受けないっていうような、ああ、動きというところでそうなりましたというところで、ええ、話がありました。えっと、そんなあたりかな？
+ええ？
+とあとそこでまあ藤本真一郎主義とか、いろんなとこからまあ、そのあたりの質問とかさせてもらってたっていうところです。はいえっと。そしてお昼以降ですねえっとITソリューション全体。
+の昼礼ですけど、えっと何があったかな。えっとごめんなさいええ、メモ取ってたんですけど、ちょっと書き損じました。ええと言われていたのは確か。坪井さんがえっと今週11月あ、10月9日からかな？中国に赴任するので。
+えっとitsの方では今日、この3日が最後ということで、えっとお別れの挨拶があったかと思います。あとはあれですねえ。この3日のところで、確かあの淀川花火大会のえっと有料観覧席の締め切りがあるという。
+ところとでそれからえっと10月のえっと15日でしたっけ？えっとあ、この先かだったかな。えっとこれですね。組合の方のええ10月20日。
+2組合の方のえっと職場集会あの全体集会ですね。がえっとサンケイブリーゼの方でありますので、えっとこちらの方にえっと欠席の場合はえっと別途欠席届け。
+をええ、記載してええと提示の方、ええ、提出のほどお願いしますということでええと連絡があなされてたかと思います。はい、そのあたりだったかなと思います。ええと。そしてええとその後ですけども、ええ。
+Oh。
+えっとgpfのえっ？と予算会議はちょっと出れなくてえっとitsのえっと築地教育としてえっと千波さんの方がエアネットシステムについての説明をされてました。
+えっとエーアーネットチームに入った。えっと、新人の方向けにエーアーネットってこういうもんだよっていう内容とえっと過去30年間分のあの蓄積されたあのノウハウがこういうところにおいてますっていうはい、そういう説明がなされてましたというところです。
+はいええとそれであとはええと上期の面談シートについてええと良二さんの方とええと話をさせてもらってましたというところです。ええと、あといろんなちょっと問い合わせなり対応なりがいっぱい入ってきて、それの対応をずっと発生させてもらってました。
+で今日はえっと朝からなんですけども、えっと金子さんの方から新規脆弱性の確認の方がありました。えっと今日は2件ですかねえっとあったのと、あと丹波さんの方からえっとedrを入れ。
+言ってたけど、海外の拠点でちょっとインシデントが発生してるっていうところで、多分、あのIT推進部からの指導ですかねのような内容がちょっと来てましたっていうその内容のええと確認というか、ええさせてもらってました。新しい脆弱性の方は2件。いずれも一ドル管理システムの方のカーネルの方で。
+えっと9.8のものが出ているっていうことでした。えっと、あとはちょっと大井さんと話をさせてもらってて、えっ？ともともと明日予定していたこのits品質中例なんですけれども、ちょっとデバイスの都合でですね。
+えっと8日に変更になりました。で、えっと8日になります。ちょっと当初蓮池がえ？説明予定してたんですけど、ちょっとできないので代理でちょっと大井さんの方でやっていただけないかということでえっと話をさせてもらってましたというところです。はい。
+えっとちょっと実は金曜日ぐらいからデバイスの方やからかなりこれせっつかれてて早く資料を出せとちょっとはい言われてましてはいええ、そのあたりの対応とかちょっとさせてもらってますでえっと今日はお昼以降ですねえっとマネ会の方でがあり。
+ますええと今日はマネ会蓮池確かええと初期やったんかな？ええ、初期をさせてもらうという形になってますでええと。そしてそれからビーセの臨時サムがええとこちらのあります。
+ええと明日です。明日の方はちょっと朝からいろいろ盛りだくさんなんですけども、ええとセキュリティジャッジKということで、他党管理アプリについてワンさんの方がですねええと、この10時から11時のところでええとやりますというこ。
+ことですでええとお昼からなんですけれども、ええと中ええとお昼前にええと。そして昼礼を今日と同じくさせてくださいで、お昼以降なんですけど、ええと明日のIPS品質昼礼はええと多分キャンセルになりますので。
+えっと北村手技ラーインの昼礼があるという形になります。えっと、それからえっと目標面談を各自えやっていくという形にさせてください。であとごめんなさい。小集団活動の方なんですけども、えっと14時からとさせてもらっているんですけど。
+えっと面談もありますんで、えっと14時半からにええさせてください。えっとこの後、松浦さんも入れてええにチャットも入れて、ちょっと14時半からということで、ええ時刻変更させてもらいたいと思ってます。
+です。その後ですね。東電EPとか住宅IoTのジャージとかが入ってきてますが、長谷家の方はえっと？スマートビルディングの競争機構の方の予定の方がありますので、えっと、こちらの二つの方はもう基本的には欠席させ。
+させてもらってえっとこちらのsbcoの方に出席させてもらう予定をしておりますでえっとその後ですねえっと6時半からえっと金子さん、大井さん、蓮池の方の面談をさせてもらった後。
+ええと申し訳ないんですけど、ええと今日明日ですね。21時から22時でええとCRAについてええと全部の方と打ち合わせという予定になっております。ええとちょっと打ち合わせない。
+資料の資料とかは何もなく、ざっくばらんな話ということになってはいるんですけども、ええとちょっと夜遅くになって申し訳ないんですけど、お願いいたします。はい。あとは明日面談の時できればあれかなええと北村さんはええと直接対面で話ししたいということは、あの言われてはい。
+ましたが、まああの都合つかなければ、もうあれですね。チームズでも良いっていう話はああ言っていただいております。はい。蓮池は一応ちょっと出勤しようかなとはい思っております。えっと蓮池の方はこんなあたりです。ええ。
+と、そしてえっと今週ですねえっと水曜日からえっと来週のえっとごめんなさいえっと水曜日までにかけてなんですけど、えっとご連休いただく予定とさせてもらってます。はいええ。
+ちょっとその間、ちょっと何もできないんですけど、えっとなんか緊急のことがあったら、またあの電話でもはいいただいたらできる範囲はちょっと動こうかとは思います。えっと蓮池の方はそのあたりです。そしたらすいませんが、またちょっと皆様の方の進捗えっと教えてください。
+えっと、そうしたら金子さんの方いかがでしょうか？
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:9:41.000}
+はい。
+エスモム絡みは特になくて、あのまあこの毎月のエスモムの情報共有はえっとまあ、来週？長谷池さんもお休みあ、今週かなんでちょっとまたあの皆さんいるタイミング見計らってさせてもらおうかなと思います。
+でえっとディフェンシックスですけど、ちょっと金曜日わかったのがちょっと五世代アダプターがIPV六がそれ実はできてないと広瀬さんに聞いたら、ちょっとまあわかりましたんで、ちょっとIPV六はちょっとどうしようかなというところで。
+まあ、ちょっとまだ確定とかっていうのじゃないんですけど、一旦この今、プロトコルあるものがこれあの表の一部抜粋ですけど、まあ、あのアダプター以外で言うと、バックネットゲートウェイとバックネットエージーで実はバックネットエージーユーはまあ、あの今年の1月ぐらいですか？ちょっと一旦これ。
+あの五世代が使えない場合の予備としてやってはいるんであと、まあ、パックネットゲートウェイをちょっとまあ、あの稲田君が多分、あのエージーシーユーの彼がえっと今週今月ですかね？あの梅田に来るような話もあるんで、ちょっとそこ。11月中旬までにやるかどうかかな。
+っていうようなところかと思ってます。
+はいはいはいはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:11:04.000}
+えっとこれでもIPV四でもいいんでしょう？V6にこだわってるような感じになってるけど。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:11:12.000}
+えV4がいいっていうのははい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:11:14.000}
+ええとあごめんごめんなさい。テストスイートってこれ共通違いましたっけ？V6とV4って？
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:11:16.000}
+はい。
+あいやえっとね。V4とV6は別別ではい。一応これテストスイートなんです。はい、なんでV6これはいはいなんでそうですね。この中から選ぶってところですかね？はい、ちょっと稲田君にも聞いてみようかなとはいっていうところです。はいはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:11:20.000}
+IT tube。
+あ、別か？
+あはい。
+あ、わかりました。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:11:38.000}
+あであのHTTPは、あのインターオペラビリティがオッケーだったんで、まあいけると思うんですけど、はい、ちょっと一応こういうV6をどうしようかというところです。まあ、なんかもうちょっと調べて、またちょっと随時お伝えしますでえっとジャッジ周りで言うと、あの良い判定が二つあって、この。
+海上コンテナの方がえっと水曜日寒気なので、ちょっと今日にはちょっと欲しいところなので、ちょっと今日昼からあのあのチームズ賞もちょっと今日の期限で依頼はしてるんですけど、今日1回ちょっとあのフォローしようかなと思います。
+とそれからえはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:12:15.000}
+ええと海上コンテナのやつってえっ？と寒気やるって言ってたけど、設変って言ってなかったっけ？
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:12:24.000}
+えっと寒気をやって、そこで設変で行き進めますっていう宣言をするんだと思います確かに。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:12:31.000}
+えっとその場合、えっとごめんなさいねえっと要否判定書を出すっていう話になってましたっけ？
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:12:32.000}
+はい。
+はい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:12:38.000}
+っていうか、あのやるっていう方向になってたような気がするんだが、どういうフォローするんかなって思って。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:12:43.000}
+あいや。
+あいやあ、これはいや、扶養判定を出し、あの確認の依頼になりますね。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:12:55.000}
+あようで出てるんかすでに向こうは出してて、北村さんがえっとそれをまだあの承認っていうか確認してないっていう状況っていうことね。はいああ、わかりました。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:12:55.000}
+えっと？
+はい。
+あ、そうです。はいはい、あえごめんなさい。今聞き間違えたんですけど、え？不要不要ですけど、今必要と不要が今なんか逆のような気がしててしゃべってて。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:13:18.000}
+あれえっとようで出すん違ったんでしたっけ？
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:13:21.000}
+こちらは不要だ。えーとね、これですよね？
+あ、これですよねえなあの前打ち出した時に。
+あの前回の記録を使って。
+前回のあの議事録を引用して不要で出しましょうだったと思いますけど、これ、今このまさにこれですけど、冷凍コンテナこちらです。はいはいこの。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:13:54.000}
+あ、わかりましたええと榎本さんのやってるやつがそういう動きするんやっけ？ちょっともうどれがどれかわかんなくなってきてるんだけど。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:14:01.000}
+あすああ、ごめんなさいこれ榎本さんとは別件です。はいあ、別件の方です。はい、あすいません。はいで、これをちょっと今日フォローします。はい。榎本さんの方は、あのちょっとエクセルでちょっとまた質問来たら、一旦ちょっと。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:14:05.000}
+別件のやつねはいはい。
+はい。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:14:18.000}
+あの私の方から金曜日返しました。まあ、基本的にあのこっちからこれはなんでしょう？リスク共有できるよみたいなことをちょっと断言するような答えはしなくて、あのあの一旦ちょっと案を出してもらって、あのセキティジャッジで一応審議者ともそこは審議。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:14:34.000}
+はい。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:14:35.000}
+してくださいというふうに、そういう形で返してますで、それからあとサムはえっと今週であこれ今日ちょっとあの臨時があります。まあこれサムワンです。まあ、ジャージ自体終わってますであと水曜日がちょっと2件あるんですけど、ちょっとこれ。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:14:38.000}
+はい。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:14:51.000}
+水曜日の方はバッティングしているので、サムエフの方はちょっと欠席させてもらって滋賀の方ですで金岡の方に出ますで金岡はちょっとあの1件だけ先ほどのフォローしますって言ってた。海上コンテナが今、北村さん待ちなんですけど、ちょっとこれが。
+オッケーなればあの全部問題なしになるなります。はいであと部門手順は一旦まあ一通り終わってホームページのイントラの方も対応したんですけど、あのあれです。スペースファインダーのをちょっと今カリヤーゾーンさんに金曜日ちょっとあの。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:15:10.000}
+はい。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:15:23.000}
+確認問い合わせはしたんですが、ちょっと今のところまだ元はないですねはい。
+であとええ、そうですね。あとはそれぐらいですかね。あと、まあ、私はまあ面談しと明日に向けて書くのとダイキンピープルが10月17までなのと、あとちょっと冷やしの北川村さんから質問来てるんで、ちょっとあの。
+あのAWS連携でちょっとグループ増えちゃうで、ちょっとちょっと都合が悪いですかねっていうのは問い合わせきたちょっとフューチャー社になんかあのグループ増やさずにAWS連携とか増やせませんか？みたいな。ちょっと一応問い合わせをして帰ってきたら、川村さんにあの結果を伝えようかなと思います。
+あとすいません、あのちょっとここには書いてないんですけど、今朝ちょっとあのえっとフューチャーバルスちょっとあのスクリプトがですね。あのどうも動いてなかったんで、島田にちょっと質問させていただいて、いろいろ確認いただいて。まあ、あとはあの私の方で、ちょっとスクリプトを実行するということでまあいけるのではないかというところですね。
+ちょっとまあ毎回ちょっとあの柴谷さんにやっていただくのもあれ？なんで一応自分で調べて。まあマウントして実行すればいいのかなというところなんですけど、はい。一旦今回スクリプトの実行をちょっと私の方ではいしようと思います。はいあ、以上です。
+Okay。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:16:42.000}
+あ、はい、金子さんありがとうございます。ええとそうですねえはいああと何だったかな。えっと蓮池の方に個別に来たメールで言ったら、あのええと北米商品グループの今田さんかなの方からあのセキュリティジャッジ実施手順の書いてってどうなってる？
+かっていうようなであとえっと要否判定書送ってくれっていうようなはい、ちょっと話が来たんでああ、今出してもらってるようにあのはいメール。そういう形で返信させてもらってます。一応、開発企画に対してはもう言い切ってて。あと開発企画待ちなんよね。基本的には。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:17:12.000}
+あはいこちらですかねはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:17:22.000}
+手順concrete。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:17:22.000}
+あいや、もうホームページも更新されてますよ。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:17:26.000}
+ああ、そうなったんですね。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:17:27.000}
+あホームペーそのイントラの方も更新されていて、もちろん我々が管理しているセキュリティジャッジのは更新してますし、あとあのメールもね、配信されてましたよ。あのなんかじゃ手順書が更新されました。ちょっとごめんなさい。パッとすぐ出てこないんですけど、はい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:17:44.000}
+Oh。
+わかりました。了解です。ほんじゃ開発局はちゃんと仕事してるから今田さんが認識してないっていうことっていうことでいいんやねこれ多分ほんじゃ。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:17:52.000}
+はい。
+あ、ちょっと待ってください。これいつもえっとね。配信されたのがね。9月30日だったんですけど、えっとこの今田さんの質問でも10月んいつでしょうね来たのがえっとあ、10月六だったらはいもうすでにもうはいメールも行ってるし、イントラも。
+あの開発規格管理のイントラもあの更新されてます。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:18:15.000}
+はい。
+うんっていうことですね。あ、わかりました。了解です。はいえっとじゃあ金子さん以上ですね。はい、じゃあ次は大井さんの方いかがですか？ちょっとご連休明けなんで多分整理してる頃かなとはい思いますけど。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:18:22.000}
+はい。
+はい、ちょっと。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:18:41.000}
+聞こえてますか？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:18:41.000}
+あ、大井さん、あはい聞こえています。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:18:44.000}
+はい。先週はご連休いただいてました。それから今に従っていくとか、えっと？まずermsの脆弱性報告、今日のえっと先週見つかっていて、今日報告分っていうのはこれは。
+どなたが報告することになりますか？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:19:03.000}
+えっとはい。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:19:04.000}
+私が報告しようと思ってます。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:19:06.000}
+はい、金子さんが報告してくれるとで今日erms関連の制作性って上がってましたか？
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:19:08.000}
+はい。
+はい、2件上がってました。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:19:14.000}
+あ、2件上がってる？
+2件上がってる？
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:19:22.000}
+はい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:19:23.000}
+あはいうん。また、問い合わせをせなあかんということですね。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:19:28.000}
+あ、はい、そうなります。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:19:30.000}
+はい、わかりました。それからそれ以外のところだとええと月替わり。10月入って6日、今週10日になりますね。NSWさんの方には実績比が上がっ上げて見積もり。
+出してくださいということだけ早めに言っておきます。ちょっと今の担当者はいろんなことが遅れがちなんで、気になるところですねええと。それから面談の原稿を今日中にまあ書いて入れておきますということとええといろいろあるけど。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:19:53.000}
+はい。
+あ、わかりました。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:20:08.000}
+言っとかなかのは明日の夜の全部との打ち合わせは一旦。もう面接が終わったら家に帰って家から遠隔で入ろうと思います。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:20:16.000}
+はい。
+はい、了解です。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:20:29.000}
+それから棚卸しは完了して黙読問題なし、そのまま完了しています。それからかジェシスターの取得手順書の。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:20:38.000}
+うん。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:20:44.000}
+レンズデータを送れっていうのを認識してますんで、この後今日にはやっときますということとえっと東電EPがまたなんか言ってきたっていうのは言ってに入ってますね。明日の15時ですね。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:20:49.000}
+あ。
+すいません、ありがとうございます。
+はい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:21:01.000}
+うん。
+えっとそれからか木曜日ermsのサーバーバージョンアップの打ち合わせえっと、先週の木曜日は打ち合わせがあったんでしたっけ？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:21:06.000}
+あはい。
+はい。
+はいやりました。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:21:14.000}
+はいえっと今週もやるっていうことですね。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:21:17.000}
+あいえ、今週はやらないです。ごめんなさい。どっかで説明せなあかんかなってちょっと思ってたんですけど、はいで今度から金曜日にするっていう予定になってます。ちょっと画面共有しておきます。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:21:23.000}
+今週はスキップですかわかりましたはい。
+あ、そうですか？はい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:21:32.000}
+あの良二さんの方が出席できなくなるから。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:21:36.000}
+うんうん。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:21:38.000}
+ええと一応やること。ああ、今見えてますかね？一応10月2日の打ち合わせはこんな感じで、やることの内容とで、それから新しくメンバーが増えたっていうところと、次回以降は10月17日でええと金曜日15時からでやっていきます。
+っていうはいことになりました。また、ちょっと予定入れ直しますはい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:21:59.000}
+はい、了解です、あれ？
+えっと17から実施だから今週は金曜日もなし木金なしですね。はい、了解です。えっと他は？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:22:07.000}
+はい。
+なしはい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:22:17.000}
+言っとくべきことははい。来週15日水曜日有給いただきます。それかなうんあとは小ネタのところで言うと、iOS 26はまだ？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:22:23.000}
+あはい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:22:33.000}
+社内iPhoneはアップの用紙が出てないようですね。はい。ゼロ一も出ましたけれどもはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:22:37.000}
+あうん。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:22:42.000}
+それ。
+そうですかね、はい、以上です。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:22:49.000}
+あはい、ありがとうございます。ちょっとええとこの1週間あったやつ、全部が全部ちょっと覚えきれてないんですけど、ええとはいそのあたりだったかとは思います。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:23:01.000}
+メールはやっと水曜日の午後に入ってきましたはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:23:04.000}
+はい、すみません。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:23:08.000}
+Teams関連はまだ全然見てないです。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:23:10.000}
+はいええとそうですね。なんかJCスターハラミのやつですが、ちょっとややこしい話がちょっとまた来てますね。えっとなんかふどこだったかな。小西電機だったっけ？っていうところからなんか話しさせてほしいっていうのが、なんかちょっと来てるみたいです。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:23:29.000}
+え、なんなんですか？それ、どういうこと？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:23:29.000}
+****。
+えーと営業の方からはい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:23:34.000}
+Send IT。
+はい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:23:38.000}
+えっと？
+結局のところ、まあいかんでいいって思ってるっていって、営業は言ってきてるけど。
+いつ出ていかなあかんようになるかわかんないんだけど、藤井さんやったっけな？
+これかな？
+ああ、ごめんなさい。画面共有してなかったですね。すいません。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:24:06.000}
+OK right。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:24:10.000}
+えっともともと行くと。
+なんかええと営業の担当の酒井課長の方がええと福西電機っていうとこからええとダイキン製品のサイバーセキュリティ担当者と意見交換したいっていうことを。
+いう打診があって、えっと。
+を来たんで、ちょっとなんか誰か出れないのかっていう話がええと営業とええとかにええと回ってきましたっていうところです。さいこれがええとIT推進部と生保では私にちょっと来てたんですけど、はい。
+なんかあ、パナソニック系列の会社あらしいです。で一応とはいえ、あのちょっとごめんなさい。今週私動けないんでもし話になったら、これらのメンバー呼んでねっていうええ形でええと話させてもらってます。
+一応なんかそこまではいいよってええ。藤田課長の方は思ってるみたいなんですけど、いつあの巻き込まれるかわからへんのではい認識で。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:25:25.000}
+何聞きたいのかがわかんねえな。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:25:28.000}
+そうそうなんです。何聞きたいのかがわかんないんで、それ聞いてからやとは思いますけど。
+はい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:25:39.000}
+現場の開発者の話なのかどうなのか？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:25:45.000}
+うん。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:25:46.000}
+外向きに対してどれぐらいのこと話していいのかの感覚がわからに入れないと。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:25:53.000}
+そうですね。
+まあ、どこまでのことをどういうのっていう話もあるし、はい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:25:59.000}
+IT。
+うんうんでどれぐらい真面目に対応せな相手なのかあかん相手なの？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:26:06.000}
+あはい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:26:08.000}
+それがわかんないね。はいきっと大臣せなあかん空いてないやろうとは思うけど、ここまでこう来てるならうん。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:26:10.000}
+うんで。
+うん。
+でなんかどうもそれを受けてこの埴岡課長の方がえっとこのええJCスターについてのなんかあの説明資料をちょうだいっていうのを、なぜか石関さんの方に言ったみたい。ではいはいで、石関さん。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:26:29.000}
+ふんふんふんはいはいあれはもう話ついてるんだよね？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:26:33.000}
+あれはついてますね。はい。一応渡しといてはい、なんとか話はついたみたいです。ちょっとそんな動きがあるんで、急になんか動くかもしれんので、ちょっと注意だけしておいていただけますか？はい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:26:34.000}
+はい。
+わかりました。これ、最終的に私のところに今来てるのねはい、わかりました。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:26:46.000}
+Hello。
+はい。最終的には入れさせてもらってるんではい認識だけ？
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:26:51.000}
+木曜日はまだ読んでないですはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:26:53.000}
+はい、ちょっと上から急に降ってくる可能性もあるんではい。そういうやつです。はいええと。そうしたら大井さんの方以上ですね。はい、じゃあ次は良二さんの方いかがですか？
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:27:04.000}
+はい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:27:08.000}
+はい。
+はいええとすみません。あのヘイトステップ超えてるんで、ちょっとイヤホンでやってるんで、ちょっと声詳しいかもしれないです。はいああはいええと先々週があのちょっと六。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:27:16.000}
+あ、大丈夫です。よく聞こえますよはい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:27:24.000}
+でものあの村田製作所のsqt監査やってですねであの先週があのコビートアップデートだったんですが、それらのあちょっと。あとあのあの作業やってます。ええ、一度この管理シス。あとあ、ええはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:27:38.000}
+あとの作業、ああはい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:27:41.000}
+エストクランシステムの方ですね。あのええと12月にあのええとメンテナンス日設定するんであのメンテナンスの担当者あの相談先ええと小松工場もあの中国の工場も合わせてあの前の方。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:27:49.000}
+うん。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:28:00.000}
+と同じでいいんですかねってちょっと今、聞いてますでまあ回答あったらはいええとレグザムさん、ええとええどうだった？ええレグザムさんとあのええええたちこうあ、そうだ、コントクトさんですね。ええ、皆さんはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:28:00.000}
+うん。
+あはい。
+コンテックさんというeiさん。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:28:17.000}
+確認調整あのしますでええ、越路会社です。まあ、一応それくらいはいかなであの神戸店の方なんですけど、ちょっと画面共有しますねええとええとですね。あの。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:28:29.000}
+はい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:28:35.000}
+ええ、コビリティのアドミンのパスワードなんですけど、もはい、あのええずっと同じパスワード来てたんですけども、あの今回パスワードのあの制限であの？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:28:40.000}
+はい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:28:50.000}
+ええと記号を入れなさいっていうふうにちょっと制限かかってしまいまして、今までのカソード使い回しできなくなったんで、ちょっとはい記号を入れてます。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:28:56.000}
+はい。
+はい。シャープが入ったっていうこと。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:29:02.000}
+ああ調べです。はいであのここはですね、あのえっと追加しました。はい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:29:08.000}
+え、追加したってことですか？
+その前は一緒。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:29:12.000}
+アイスですはい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:29:14.000}
+はい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:29:15.000}
+はい、すみません。あのええええあ。このファイルはあのええと。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:29:16.000}
+でこれはどこにあるんでしたっけ？このファイルは？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:29:27.000}
+あはい、あごめんなさい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:29:28.000}
+人物の方のうん。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:29:29.000}
+清水ですね。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:29:29.000}
+はい。ああ、すみません。それで前も1回あのはい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:29:34.000}
+Aは小文字A以外も小文字あったんじゃないですか？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:29:38.000}
+いや、ごめんなさいあのちょっと待って、ちょっとそうそう。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:29:39.000}
+はい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:29:45.000}
+そうするときにちょっと待ってください。ちょっとまさに今ちょっとおかしくなってちょっと。
+えっとですね。あのSharePointでちょっとここなんですけど、あのセキュリティ、あごめんなさい。Teamsの方にあのチャンネルで前出てたと思うんですけど、やっぱりまたちょっと見えなくなってしまう。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:30:15.000}
+出なくなるんですか？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:30:17.000}
+ああいや、ここにITセキュリティチームのチャンネルがあったと思うんですけど、今なんか出なくてですね。あのシェアポイントの方からちょっと今行ってます？はい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:30:30.000}
+Teamsのやつやんね。でも、もともというとある場所は？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:30:32.000}
+ああ、はい。TeamsではいTeamsであの今まで触ってたんですけど。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:30:38.000}
+それ見えなくなったっていうのはえっ？と良二さんのインターフェースがおかしくなってるっていうか、えっと当初使っているものと変わっちゃったっていうことよね。チームズの。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:30:47.000}
+ああ、そうです。そうです。はいあ、だからみんな。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:30:48.000}
+私は見えてるっぽいけど。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:30:51.000}
+ああ、見えてますなんだかな？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:30:53.000}
+モビリティ認証情報っていうとこですか？はいはい、これなんでしたっけ？アクセス少ないと消えるんでしたっけ？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:30:56.000}
+あ、そうです。そうです。それあ、折れてバケちゃった。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:31:02.000}
+えっとなんか追いやられたような気もするな。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:31:07.000}
+うん。
+で探すことはできるんですよね。きっと探すか再表示。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:31:13.000}
+そうですね。うん、チャンネル名入れて検索とか。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:31:15.000}
+はいちょちょ？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:31:17.000}
+うん。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:31:19.000}
+はい。あ、ちょっとやってたんです。ちょっと前こといかなくて、今ちょっとはい失敗してます。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:31:23.000}
+あ、そうか。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:31:24.000}
+ファイルフォルダー、アドミンパスワードテキストあ、出てきました。3日前はい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:31:28.000}
+はい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:31:31.000}
+えっと多分なんですけど、良二さん、あのあぼ、僕とちょっとインターフェースが違うんですけど、あのチームも全部チャットのとこにまとめているでしょう。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:31:43.000}
+ああ、はいはいここの一つはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:31:45.000}
+チャットの中にチャネルってしたら多分なんですけど、あのどんどんどんどんチャネルでなんか投稿あるたびにえっと一番最後の後者を後ろに追いやられるんで、多分それで消えたやと思いますよ。
+あのもともとそのチャット以外に一番左のそのところに実はチームってあったでしょう昔。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:32:09.000}
+あ、はいはいはいあ。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:32:12.000}
+あれを表示する設定したら前に戻せますよ。ちなみにやり方はえっとチームの中の右上にある自分のアイコンか三点マークやったかな？三点マークやったと思うんやけど、これで設定を押して。
+で確かねええとチャットとチャンネルやったかな？
+左の方にある。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:32:37.000}
+あ、はいですか？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:32:38.000}
+これでねチャネルを表示するんやったかな。なんかえっと全部チャットの中に入れないみたいな設定をしたらえっとチームが。
+として別扱いできたと思います。あ一緒に表示じゃなくて区切るってしたらいいんですよ。それ今ラジオボタンで見れてるやつ。
+一番上の。
+チャットチームチャネルの表示っていうのを一緒に表示ってなってるでしょ**、*れをして設定を変更ってし。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:33:06.000}
+あああ、これこれですかこれこれはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:33:11.000}
+ああ、ごめんなさいね。そっちあれやねええあもう今これでチャットとチーム分離されたから、それでチームって出てるでしょ？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:33:20.000}
+はい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:33:22.000}
+そうすると過去見た時にまずえっと最初お気に入りばっかり入ってるのかな？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:33:30.000}
+ああああ、出ました出ました。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:33:32.000}
+**、*れでよくあの固定的に見るやつとか見れるようになるから、これでしといた方がはいいいと思います。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:33:37.000}
+はいあ、ありがとうございます。
+はいはいあ、わかりました、すみません。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:33:45.000}
+私も直しときますとぎるなってないよあれまた戻ったあれじゃこれ？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:33:47.000}
+ああ、はい。
+おお。
+あまあ、まあまあ、そのインターフェースは私が使ってるやつやけど、絶対こっちのえ、勝手に戻ります。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:33:54.000}
+あれ？
+勝手に戻る。
+うん、区切るってやっても一緒に表示に変わるよ。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:34:01.000}
+あはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:34:05.000}
+ええ？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:34:06.000}
+別のとこの設定があるみたいなんかここじゃないとこでやった気がする気もするんではい、どうぞ続けてくださいはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:34:14.000}
+ああ、はい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:34:14.000}
+ああ、はいあはいああ、すみません。あのずっとあのこのパスワード言ってたんですけど、はい、シャープ。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:34:20.000}
+あのKは小文字っていうのはいらんのであります。他もあると思う。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:34:22.000}
+いやいや、ごめんなさい。僕もこのKがパッて見た時に小文字か大文字かなんかどっちかわからへんかったんであの書いたんですけど、明確ですか？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:34:32.000}
+あ良二さんがいつ出したんですか？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:34:36.000}
+はい。あのこのKってね。パッと右を文字か文字かちょっと迷うかなと思って、ちょっと入れたんですけど、あとはあのEとかPとかRとかAとかは大文字で明確なんです。ちょっとKがちょっと迷うかなと思って。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:34:37.000}
+うん。
+ああ。
+はいはいああ、わかりましたはい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:34:51.000}
+はいはいはい、すみません。あすみません、ちょっと下田さん、ちょっと話なんですけど、あのコミュニティポートのサイトでですね、あのお知らせのとこここあかねしてたんですけど、あのあのえっとね。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:35:04.000}
+Uh huh。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:35:07.000}
+あのお見せするためにリストを作ってここに赤にしたんですけど、あ、これ本番のあのあのリストのね。ここの属性がちょっとあの変な属性で作ってしまっててね。ここにちょっと今あの赤にできないんですよ。今。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:35:07.000}
+はい。
+はあは、あはあ。
+はあはあ。
+あー。
+わからないわかりました。もう太字も何もできない書籍はわかりました。気づくかなみんな。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:35:25.000}
+できないんですよ、はい。
+あすみませんはい。
+はい。あの時間、時間あったらちょっとちょっと通い思うんですけど。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:35:36.000}
+あ3日はもう注意してくれって言うしかない。すんねん。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:35:40.000}
+はい。
+はいはいあで、まああのメールの案内の方にもちょっとあの書いてるんで、まあわかるかはいはい。ではいあのこちらのポーターページの方がはい、メンテナンスしてますです。はい。あのマニュアルとか、みんな新しいやつに変え。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:35:47.000}
+あ、はいはい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:35:59.000}
+なってますですはいでえっとな山田すいませんええとまずポーターサイト欲しいはい。それがこのはいであのえっとですね。
+今後、あの今後の作業でちょっとあのええとすみません。ちょっと中断してました。あのパワーオートメイトのあの12月までにちょっと新しいプラットフォームに行こうぜっていうをですね。ちょっと私もちょっと忘れてましたが、この。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:36:23.000}
+ああ、はい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:36:31.000}
+証明したかったあの良い判定の方は、あのえっと大事なやつなんでちょっとあのテストプランをちょっと作ってはいええ、確認するようにちょっとはい計画立てます。はい、これ私の方でやってます。ですはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:36:43.000}
+あはい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:36:46.000}
+で。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:36:47.000}
+ちょっと何せなあかんのか完全に忘れちゃったんですけど、またあのこれ見たらいいっていうやつを教えていただけません。蓮池のやつ山ほどなんかあったような気がし。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:36:55.000}
+あ、はいはいあはいただちょっとそうですね。はい、ちょっとあのえっと地名ってあごめんなさい。まあ致命的でないと言って要素としたんですけど。ただ、あの連絡を忘れることにはちょっと対応ね、遅れるかもしれないんです。はい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:37:12.000}
+あはい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:37:12.000}
+いくつかありますよね。あすかさんはいすいません。ちょっと読んだのはちょっと。これは見逃すと大変なんではいちょっと確認します。はいですいません、ちょっとなんか今あの北村市議からあのええとなんかメールが来てですね明日の。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:37:18.000}
+あはい。
+はい。
+なんかメールが来てはい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:37:31.000}
+あの面談の時間12時半から3時半にできないですか？って、開発グループ全体で中でかぶってしまいましたね。ちょっとまあ見てたんですけど、開発グループ全体の中でってちょっと。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:37:37.000}
+Yeah。
+一瞬。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:37:47.000}
+まだあのあの入ってきてないんですけどね。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:37:52.000}
+開発グループ全体の中例。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:37:57.000}
+高橋の特権言ってますかね？ちょっと今。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:37:59.000}
+あの蓮池さんが追い出された現状になってるやつよ。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:38:00.000}
+北村さんの予定を見たらいいのかな？
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:38:03.000}
+迷惑でなんか来てたような気がするけど。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:38:06.000}
+あええとまず蓮池から言えばええと2時半から3時ですか？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:38:07.000}
+Amazing。
+はい、だから小手段かぶってるから無理ですってちょっと返そうと思ってる。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:38:17.000}
+あすいません、ちょっと聞けなく聞こえなくなりました。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:38:22.000}
+はい、あすみません。あのこの下半分があの北村さんが来たやつをメールでではいはい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:38:28.000}
+ああ、良二さん。
+うん、多分だから機械的なトラブル。
+蓮池さんが聞き取れない多分入り直すんちゃうかな？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:38:46.000}
+聞こえませんか今聞こえます。
+聞こえる？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:38:59.000}
+明日小集団はやるんでしたっけ？これかぶってるけど。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:39:02.000}
+なんか北村さんのところにだけ開発グループ全体昼礼っていう予定が入ってるね。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:39:09.000}
+んだから、その金岡でみんな集まってやるって言ってるやつやんね。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:39:09.000}
+すすみません。
+あ、田村さん、ああ、すみません、ちょっと。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:39:14.000}
+あ、聞こえてないんか？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:39:15.000}
+あすいません。蓮池の方がちょっと調子悪いのかもしれませんので、ちょっと入り直します。すいません。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:39:21.000}
+うん。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:39:21.000}
+すみません。井上の声は聞こえてます。
+あすみません。井上の声聞こえてないですか？ちょっと入り直します。あはいすみません。ありがとうございます。じゃあ蓮池さんの問題か？
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:39:30.000}
+大井には聞こえてます。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:39:43.000}
+あすみませんでした、入り直しました。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:39:48.000}
+聞こえますか？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:39:49.000}
+あはい、聞こえます。申し訳ないですでえっとごめんなさいね。途中から聞こえなくなってたんですけど、北村さんの方から開発グループ全体中例があるから、良二さんのえっと予定を変更させてほしい3時から。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:39:50.000}
+ああ、はいはい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:39:50.000}
+はいはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:40:07.000}
+できたのかな？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:40:08.000}
+あ、2時半から3時までってきたんですか？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:40:11.000}
+2時半から3時までってきたっていうことですね。で、どう見ると開発グループ全体昼礼って入ってるのは北村拓也さんだけの状況で、他の人は誰も入ってないんですけども。
+ええと2時半から3時可能ですけど、そうすると小集団活動をなしにするかどうかっていう判断になりますどうします？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:40:37.000}
+うん。
+2時からは私ですもんね。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:40:42.000}
+あ、そうそうそうそうそう、もうもうなしにしちゃいます。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:40:43.000}
+うん。
+なしにうん。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:40:49.000}
+えっと、じゃあリョウジさん、あのもうなしでいきましょうか。えっと小集団活動ほんで2時半から3時でお願いできますか？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:40:53.000}
+あはい。
+あああ、わかりますはいじゃちょっとはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:40:59.000}
+Yes。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:41:01.000}
+はい、わかりました。ちょっと意見話あ、北村さんにははい返しときますはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:41:06.000}
+うんであともし可能やったら？その開発グループ全体昼礼って何かって聞いといてもらえません。誰の予定にも入ってないって。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:41:14.000}
+あああ。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:41:14.000}
+橋本さんから目があったんちゃうかな？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:41:16.000}
+橋本さんから？
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:41:18.000}
+んだから金岡の食堂にみんな集めてなんかやるっていうたぶんいるもんやったような気がする。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:41:23.000}
+わかりました。ちょっと見ときます。
+今日かなんか来てるっていうことか？
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:41:35.000}
+午前中に見たような覚えがあるな。
+ちょっと。
+あれか10月1日14時48分。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:41:49.000}
+10月1日14時48分終わりました。
+ちょっと完全に抜けてた。
+10 10何時でしたっけ？
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:42:05.000}
+14時48分。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:42:06.000}
+14時48分。
+あ、はい了解です。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:42:14.000}
+出てます。どれですか？14時14時。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:42:22.000}
+あすみません、えあえっと井上はいあ、一旦以上ですはい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:42:22.000}
+もうちょっと方がいいか？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:42:27.000}
+はい。10月1日14時48分に橋本智子さんからメールが来てましたね。
+はい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:42:40.000}
+ああはいあ、井上もはい確認できましたはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:42:46.000}
+これか？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:42:49.000}
+来てないよ。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:42:50.000}
+えうそえうそっていうの？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:42:52.000}
+えあ、貸してたかちょっと待って、え？画面出てます。ちょっと待ってくださいあ、画面ない。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:42:58.000}
+あ良二さん画面出せます。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:43:01.000}
+ああ、出しますはい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:43:05.000}
+全員ですか？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:43:07.000}
+うーん。全員のように読み取れますね。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:43:09.000}
+Do you like to？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:43:09.000}
+あああああ、ITソリューションも入ってますね。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:43:12.000}
+Azure in。
+安全エース移動者挨拶あれ？
+うん。
+はい、探します。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:43:27.000}
+え？
+はい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:43:33.000}
+うん、ただ、チームズ中継があるかどうかの謎っていうことか。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:43:35.000}
+えでも。
+あはい。Teamsのリンクないですよね、これ。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:43:41.000}
+Oh what？
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:43:43.000}
+内容的には休校当てやもんな？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:43:45.000}
+うん。
+そうですね。
+基本金岡の人当てみたいな感じやから金岡やから全員いるでしょうぐらいのノリで言ってるような気がするな。でも一応hitsは宛先に入ってるから、なんか意識はしてくれてるんやろうけどってとこああhitsじゃない？
+うんhitsか入ってるかな？認識はしてくれてるんやろうけど。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:44:14.000}
+あれやっぱ来てないの？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:44:17.000}
+来てないです。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:44:19.000}
+10 10 4時14時ないですね。全ええメールボックス全体橋本智子さんで出てこない。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:44:29.000}
+裕二さんは入ってます。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:44:29.000}
+えっ？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:44:31.000}
+あはいあ、入ってますだから。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:44:34.000}
+うん、入ってるから画面に今出てるんだろうなと。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:44:39.000}
+はい。
+はい。
+はい。
+ああ、すごいか。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:44:49.000}
+あ、それ展開して島谷さんの名前あるかどうかか？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:44:52.000}
+あけ展開しましたか？はいはい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:44:53.000}
+そうそう、そこそれないとまずい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:44:55.000}
+すごい数出るんじゃん。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:44:57.000}
+うん。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:44:57.000}
+116目来た。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:44:59.000}
+検索できるのか？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:45:02.000}
+コピーしてテキストに貼って検索かけたらできるけど。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:45:03.000}
+うん。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:45:11.000}
+ちょっとこう。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:45:13.000}
+あそこでなんか選んでctrlえって押したら選べません。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:45:18.000}
+あはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:45:19.000}
+でコピーしてメモ帳かどっかに貼って。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:45:21.000}
+はい。
+はいはいはい。
+え？
+あ、ちょっとごめんなさいたにまにす。
+これでいいですよね、島谷さんって。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:46:06.000}
+はい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:46:06.000}
+うん。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:46:07.000}
+ああ、ありますよ。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:46:09.000}
+あります。検索で出てけへん？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:46:10.000}
+あれ、もしまたね。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:46:12.000}
+メールアドレスの方間違えてるっていうことないよね。今、ちょっと右手だけに。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:46:19.000}
+えええあはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:46:19.000}
+スライドさせて。
+あっ、その横。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:46:22.000}
+一番左出てますね。けいすく合ってるっぽいですね。なんかもれたんかな？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:46:24.000}
+ここあ、これですけ。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:46:26.000}
+ああ、そうか。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:46:27.000}
+これ。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:46:29.000}
+じゃあ一応。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:46:29.000}
+これ、ちょっとこっちのこっちの画面見てもらっていいですか？うん。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:46:33.000}
+Oh。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:46:34.000}
+はい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:46:36.000}
+なってる時間あるんかどうか知らんけど。
+これ橋本さんで現在のメールボックス。
+大丈夫？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:46:54.000}
+これ自動的にフィルターで橋本さんだけをここに入れるってやってる感じです。です。ああ。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:46:59.000}
+あ、そうそうそうします。
+Good night。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:47:03.000}
+現PRのボックスに入ってないっていう可能性はなないんかな？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:47:08.000}
+いや、全部ですね。
+全部のARじゃなくて？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:47:15.000}
+おー。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:47:18.000}
+あのツールはどうやって話します？仕事あれうん。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:47:24.000}
+差出人で橋本さんにした方がかなりきっちりくるかもしれないですけど。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:47:31.000}
+うんうん。
+What？
+友岡さん出てくるこれか10月これ違うの日？
+いやないないんじゃん、あれいいか。
+Nicely。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:48:01.000}
+うん、Outlookの検索の問題かなりするんだけど、なんでだっていう。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:48:11.000}
+これってんじゃあの送信エラーじゃん？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:48:16.000}
+ああ。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:48:17.000}
+メール。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:48:21.000}
+でも、それまでのやつなんとなく入ってますよね。10月6日のやつとかもhiっていう。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:48:25.000}
+うん、それだからそれはこの時あったんだ。なんかロスロストが。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:48:31.000}
+この時だけあったんかロストがあったのかな？そんな怖いメール送ってどうなんだろう？
+まあええと、とりあえずどうしましょうかね。じゃあええとちょっと島谷さんには全然情報が来てないようだからええとアウトルック。とりあえず蓮池予定そのままメール入れ込んでやったんで、それ、島谷さんにも共有しておきますね。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:49:02.000}
+ああ、すみませんはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:49:02.000}
+えはいえっとよかった。じゃああとえっとあれですねえっと来週ああ、明日はえっと小集団活動はなしということでえっとお願いします。
+はいえっとえっ？と良二さんの方以上ですかね？
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:49:23.000}
+あ、はい、大丈夫ですはい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:49:25.000}
+はい、ちょっと待ってくださいね。はい、セキュリティも全員に入れとけこうしとけそのままそうし。
+はいえっと？そしたら次はえっと島谷さんの方、いかがですか？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:49:42.000}
+はい。あの金子さんのえっと今朝の報告で調べたんですけど。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:49:47.000}
+はい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:49:50.000}
+おかしなことがわかって、これがあのログなんですけどね。先頭です。十が10月5日の午前3時36分に最初のエラーが発生してますよ。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:49:55.000}
+はい。
+いつか。
+はい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:50:07.000}
+日曜日。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:50:09.000}
+おお。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:50:09.000}
+マントが切れたみたい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:50:13.000}
+ああ。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:50:14.000}
+で31時間だから結構、あの上の方のあるこのエラーが続いてるんですけどね。最初が日曜日だから10月1日に私パスワード変更して水曜日、その5日の3時36分何秒までは。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:50:18.000}
+はい。
+はい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:50:31.000}
+あの生きてたみたいで、日曜日になんか夜中3時死んだみたいな。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:50:33.000}
+へえ。
+5日の35。ええ、そんなところで切れるですか？切れないよな。普通考えてどう考えて？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:50:44.000}
+うん。
+いや、なんかやるみたいです。で問い合わせしようかなと報告兼ねて。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:50:51.000}
+うんうん。
+わかりましたけどこ怖いですね。急にいつ権限こんな？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:51:00.000}
+うんだから今までなんかよくありましたやんかなんかわけわからん。切断ってなんかそういうことがあるみたいです。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:51:04.000}
+あー、はい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:51:11.000}
+でもきっかけはパスワード変更かもしれん。いつもなんかその後なんか起きるもんで。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:51:16.000}
+うんでもパスワード変更は1日やったんですよね。結構引いてあるけど、はい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:51:19.000}
+そうそうそうだから、その時はなんか成功すんねんけどで、なんか調べるとね。ウィンドウズのドメインのあの連携みたいなあってcifsっていうかで、それがなんかうまくいかないとか、そもそも遅延があるらしいんやけど。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:51:27.000}
+はい。
+ああ。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:51:38.000}
+1日の日からその3日まではできてたんで、なんかその後再起動したんか？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:51:41.000}
+うん。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:51:47.000}
+わからんけど。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:51:48.000}
+わからんけど。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:51:50.000}
+IT部門側の問題みたい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:51:53.000}
+うん。
+まあなんかありそうな気もしていくこと。
+わかりました。了解です。まあ、原因はわからへんけど、とりあえずはい、夜中に切れてたっていうことですね。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:52:10.000}
+うん、夜中に切れてたぜ。日曜日それもわかるかなと思ったけど、ブロードが教えてくれました。調べ方。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:52:20.000}
+ほほ。
+はい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:52:25.000}
+あとは特にないです。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:52:28.000}
+了解です。えっとこちらの方、金子さんもう1回マウントし直して今はできるように、ああそっか。島谷さんがやってくれたんだっけ？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:52:30.000}
+まあ、ちょっとそうか？
+本当はやりました。
+はい、ちょっと調べてるうちに、そのパスワードどれでマウントできるのかなとチャートやっぱり新しいやつでマウントできるんで、古いやつも試した。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:52:43.000}
+うん。
+あー、はい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:52:48.000}
+この上かな、これかこれこれ、古いやつ試してる？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:52:51.000}
+ああ。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:52:52.000}
+あ、これ新しいうん、もう一つ上か。
+これこれ、古いやつ、あの人。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:52:57.000}
+あはい。
+で古いやつは弾かれたのかな了解です。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:53:08.000}
+だからあのWindows側のパスワードとそのLinux側のパスワードの不一致なんですね。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:53:14.000}
+うーん。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:53:16.000}
+でLinux側ずっと1日の更新が生きてるみたい。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:53:21.000}
+うーん。
+アリナックス側がそれが生きてるか？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:53:29.000}
+うんでWindows側がなんかリセットされてる？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:53:31.000}
+うん。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:53:32.000}
+ドメイン側が。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:53:38.000}
+これ見ました。
+はいえっと島谷さん以上になるのかな？はいえっと？そしたら他に何か全体でありますか？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:53:43.000}
+はい。
+はい。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:53:54.000}
+ないです。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:53:54.000}
+ええと今日の残業9時、いや、19時で。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:53:57.000}
+ああはいわかりましたええと理由はもう書いてくれてるやつでいいですかね？はい。
+
+@ai[<img src="icons/speaker_041.png" width="20" height="20" /> OI Katsuji 大井 勝司]{00:54:05.000}
+出たっけ？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:54:05.000}
+あ、そうやあの面談の話で。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:54:08.000}
+はい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:54:09.000}
+えっと？
+えっと個別の話やけど、あのえっと前回やりましたやんか蓮池さんと打ち合わせして。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:54:19.000}
+ああ、先週ですかねはい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:54:20.000}
+でえっと。
+ドキュメントじゃないや、あの基準か？鍋島基準のなんか話しましたよね。でもう1回あれ？前回な石関さんがに報告済みですよって話したんですけど、もう1回書いとこうとか言ってあったけど、伊勢崎さん知ってるからやっぱりこれダブってるって言うと思いますよ。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:54:29.000}
+あー、はい。
+うん。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:54:43.000}
+Yes。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:54:43.000}
+わかります。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:54:45.000}
+まあ書いててもいいけど、北村さんがそれこれそれを言った時に、石関さんが指摘する可能性がある。
+覚えてたり出席してたがうん。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:54:55.000}
+覚えてたら？
+じゃあ消しときましょうか？うん、わかりました。了解。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:55:01.000}
+うん、あれでもモンキーでしたっけ？ちょっと時期も忘れちゃったけど。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:55:07.000}
+あれ？3月から4月にかけてずっとやってるやつなんですようん。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:55:08.000}
+3月4月ああなんか選挙やねん。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:55:15.000}
+ただね、その評価の時にはあれ？決着はついてなかったはずなんですけどね。うん。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:55:20.000}
+うん、そうかそうか。ああ、だからさっき前倒しでのかしが立ったら？
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:55:27.000}
+可能性はありますね。まあ、あのまあ消しておきます。なんかすごく中途半端な状況ではあるんで、そしたらはい。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:55:32.000}
+はい。
+うん。
+以上ですで文字起こしすみません。ちょっとすぐ消しますんで、今回文字起こしちょっとさせてもらった。どんなテキスト出るのかな？と思って。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:55:38.000}
+はい、ありがとうございます。
+あー、はい。
+Oh。
+あええとこれ出席してあの文字起こしですね。Teamsのなんか出てたなと思いつつ。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:55:52.000}
+ああ、はいはいちょっとできるっちゅうんではい、ありがとうございます。ああ、そうですか？ああなんか画面出てますよ。その他からその他レコーディング文字起こしでトランスクリプトを表示とかやったら出てると思います。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:55:57.000}
+ああ、1回また見せてください。どんな感じで出てるか？
+する。
+ああ、出てますね。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:56:14.000}
+うん。
+でなんかね。独自形式でファイルに落ちるとか言うからどんなんかなと思って見てみようと思ってんです。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:56:23.000}
+うん。
+わかりました。各自のアイコンもリンクして見えるんだこれは？
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:56:32.000}
+うん。
+
+@ai[<img src="icons/speaker_003.png" width="20" height="20" /> HASUIKE Shoichi 蓮池 祥一]{00:56:35.000}
+了解です。
+はい、ありがとうございます。えっとそしたら他に特にないですかね。はい、じゃあ以上で昼礼終了したいと思います。ありがとうございました。失礼しました。
+
+@ai[<img src="icons/speaker_118.png" width="20" height="20" /> SHIMATANI Keisuke 嶋谷 圭介]{00:56:51.000}
+はい、失礼します。
+
+@me[<img src="icons/speaker_103.png" width="20" height="20" /> INOUE Ryoji 井上 良二]{00:56:52.000}
+あはい、ありがとうございます。失礼します。
+
+@me[<img src="icons/speaker_004.png" width="20" height="20" /> KANEKO Masahiro 金子 雅裕]{00:56:52.000}
+ありがとうございます。

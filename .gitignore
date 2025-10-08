@@ -6,6 +6,7 @@ node_modules
 
 # Generated icons from scripts
 # media/icons/
+extracted_icons/
 
 # VS Code workspace/user settings
 # Keep project-level files in the repo so contributors have the debug/tasks/extensions setup.
@@ -24,11 +25,13 @@ Thumbs.db
 out/
 dist/
 
+# 一時ファイル・退避フォルダ
 evac/
 
 # テスト出力
 test-output/
 
+# ドキュメントの生成ファイル
 docs/*.html
 docs/*.png
 docs/*_tmp.html
