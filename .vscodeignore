@@ -38,3 +38,15 @@ node_modules/**/examples/**
 # Test files
 **/*.test.*
 out/test/**
+
+# Node modules (bundled with webpack)
+node_modules/**
+
+# Test output and temporary files
+test-output/**
+evac/**
+docs/**
+report*.html
+report*.md
+*.tmp.html
+playwright-test.js
