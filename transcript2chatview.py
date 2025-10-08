@@ -16,6 +16,111 @@ from pathlib import Path
 from docx import Document
 
 
+def parse_teams_docx_simple(docx_file):
+    """
+    Teams通常形式のDOCXファイルをパース
+    話者名 タイムスタンプ
+    本文
+    の形式に対応（1つの段落内に改行で含まれる場合も対応）
+    """
+    doc = Document(docx_file)
+    transcript = []
+    
+    # 話者情報のパターン
+    speaker_pattern = re.compile(r'^(.+?)\s{2,}(\d+:\d+)')
+    
+    for para in doc.paragraphs:
+        text = para.text.strip()
+        if not text:
+            continue
+        
+        # 段落内の改行で分割
+        lines = text.split('\n')
+        
+        # 最初の行が話者情報かチェック
+        if lines and speaker_pattern.match(lines[0]):
+            first_line = lines[0]
+            speaker_match = speaker_pattern.match(first_line)
+            
+            if speaker_match:
+                speaker = speaker_match.group(1).strip()
+                timestamp = '00:' + speaker_match.group(2)  # 00:を追加
+                
+                # 残りの行を本文として結合
+                content_lines = lines[1:]
+                content = '\n'.join(content_lines).strip()
+                
+                if content:  # 本文がある場合のみ追加
+                    transcript.append({
+                        'start': timestamp + '.000',
+                        'end': timestamp + '.000',
+                        'speaker': speaker,
+                        'text': content
+                    })
+    
+    return transcript
+
+
+def parse_webvtt_from_docx(docx_file):
+    """
+    Teams DOCXファイル（WEBVTT形式を含む）をパースして構造化データに変換
+    
+    Args:
+        docx_file: DOCXファイルのパス
+        
+    Returns:
+        list: [{'start': str, 'end': str, 'speaker': str, 'text': str}, ...]
+    """
+    doc = Document(docx_file)
+    transcript = []
+    
+    # すべての段落を結合してテキストとして取得
+    full_text = '\n'.join([para.text for para in doc.paragraphs])
+    
+    # デバッグ: 最初の500文字を表示
+    # print(f"DEBUG: Full text preview:\n{full_text[:500]}\n")
+    # print(f"DEBUG: Total lines: {len(full_text.split(chr(10)))}\n")
+    
+    # WEBVTT形式のパターン: <v 話者名>テキスト</v>
+    # タイムスタンプ行とテキスト行を抽出
+    lines = full_text.split('\n')
+    
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+        
+        # タイムスタンプ行を検出
+        timestamp_match = re.match(
+            r'(\d+:\d+:\d+\.\d+)\s*-->\s*(\d+:\d+:\d+\.\d+)', line)
+        
+        if timestamp_match:
+            start_time = timestamp_match.group(1)
+            end_time = timestamp_match.group(2)
+            
+            # 次の行がVTT形式のテキスト
+            i += 1
+            if i < len(lines):
+                text_line = lines[i].strip()
+                
+                # <v 話者名>テキスト</v> の形式をパース
+                vtt_match = re.match(r'<v\s+([^>]+)>(.*?)</v>', text_line)
+                
+                if vtt_match:
+                    speaker = vtt_match.group(1).strip()
+                    text = vtt_match.group(2).strip()
+                    
+                    transcript.append({
+                        'start': start_time,
+                        'end': end_time,
+                        'speaker': speaker,
+                        'text': text
+                    })
+        
+        i += 1
+    
+    return transcript
+
+
 def parse_teams_docx(docx_file):
     """
     Teams DOCXファイルをパースして構造化データに変換
@@ -26,6 +131,17 @@ def parse_teams_docx(docx_file):
     Returns:
         list: [{'start': str, 'end': str, 'speaker': str, 'text': str}, ...]
     """
+    # まず通常のTeams形式を試す
+    transcript = parse_teams_docx_simple(docx_file)
+    if transcript:
+        return transcript
+    
+    # 次にWEBVTT形式を試す
+    transcript = parse_webvtt_from_docx(docx_file)
+    if transcript:
+        return transcript
+    
+    # WEBVTT形式でない場合、従来の形式でパース
     doc = Document(docx_file)
     transcript = []
     current_entry = {}
@@ -232,7 +348,7 @@ def main():
     # 出力
     if args.output:
         args.output.write_text(markdown, encoding='utf-8')
-        print(f'✓ 変換完了: {args.output}')
+        print(f'変換完了: {args.output}')
     else:
         print('\n--- 変換結果 ---\n')
         print(markdown)

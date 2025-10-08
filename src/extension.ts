@@ -79,8 +79,13 @@ async function handleExport(context: vscode.ExtensionContext, message: any) {
     // SVGのみサポート（Playwrightは使用しない）
     const format = 'svg';
     
+    if (!message.markdown) {
+      throw new Error('Markdown content is missing');
+    }
+    
     const styleUri = vscode.Uri.file(path.join(context.extensionPath, 'media', 'style.css'));
     const styleContent = await fs.promises.readFile(styleUri.fsPath, 'utf8');
+    
     const svgContent = generateSvgContent(message.markdown || '', styleContent);
     
     // 既存の保存処理を使用
@@ -144,13 +149,15 @@ async function handleExport(context: vscode.ExtensionContext, message: any) {
 
 // SVGコンテンツ生成関数
 function generateSvgContent(markdown: string, styleContent: string): string {
-  const messages = parseMessages(markdown);
-  let yPosition = 30;
-  let svgElements = '';
+  try {
+    const messages = parseMessages(markdown);
+    
+    let yPosition = 30;
+    let svgElements = '';
 
-  // CSSから背景色を抽出
-  const backgroundColorMatch = styleContent.match(/background-color:\s*([^;]+)/);
-  const backgroundColor = backgroundColorMatch ? backgroundColorMatch[1].trim() : '#a7b6d9';
+    // CSSから背景色を抽出
+    const backgroundColorMatch = styleContent.match(/background-color:\s*([^;]+)/);
+    const backgroundColor = backgroundColorMatch ? backgroundColorMatch[1].trim() : '#a7b6d9';
 
   messages.forEach(msg => {
     const role = msg.role;
@@ -209,7 +216,19 @@ function generateSvgContent(markdown: string, styleContent: string): string {
   const nameFontSize = 11;
   const timeFontSize = 9;
   const iconY = yPosition;
-  const nameSectionHeight = (name || timestamp) ? (Math.max(nameFontSize, timeFontSize) + 6) : 0;
+  // 名前に改行が含まれている場合は行数分の高さを計算（最大3行まで）
+  let nameLineCount = 0;
+  if (name) {
+    const lines = name.split('\n').filter(line => line.trim());
+    nameLineCount = Math.min(lines.length, 3);
+  }
+  const nameSectionHeight = (name && timestamp) 
+    ? (nameLineCount * (nameFontSize + 2) + timeFontSize + 6)  // 名前の行数 + タイムスタンプ
+    : (name) 
+      ? (nameLineCount * (nameFontSize + 2) + 4)  // 名前の行数のみ
+      : (timestamp)
+        ? (timeFontSize + 6)  // タイムスタンプのみ
+        : 0;
   // アイコン+名前領域（column）とバブルを横並びに配置する。
   // バブルはアイコンの中央に対して垂直中央合わせにする（プレビューに近づける）
   const columnHeight = iconSize + nameSectionHeight + 6;
@@ -273,26 +292,68 @@ function generateSvgContent(markdown: string, styleContent: string): string {
       
       // 名前とタイムスタンプ（アイコンの下に表示）
       const nameTimeY = iconY + iconSize + 12; // アイコンの下に配置
-      if (name && timestamp) {
-        const nameText = escapeXml(name);
-        const timeText = escapeXml(timestamp);
-        svgElements += `
-          <text x="${iconCx}" y="${nameTimeY}" text-anchor="middle" dominant-baseline="middle"
-                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
-                font-size="${nameFontSize}" fill="#666666">${nameText} <tspan font-size="${timeFontSize}" fill="#999999">${timeText}</tspan></text>
-        `;
-      } else if (name) {
-        svgElements += `
-          <text x="${iconCx}" y="${nameTimeY}" text-anchor="middle" dominant-baseline="middle"
-                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
-                font-size="${nameFontSize}" fill="#666666">${escapeXml(name)}</text>
-        `;
-      } else if (timestamp) {
-        svgElements += `
-          <text x="${iconCx}" y="${nameTimeY}" text-anchor="middle" dominant-baseline="middle"
-                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
-                font-size="${timeFontSize}" fill="#999999">${escapeXml(timestamp)}</text>
-        `;
+      
+      try {
+        if (name && timestamp) {
+          // 名前に改行が含まれている場合は複数行で表示
+          const nameLines = name.split('\n').filter(line => line.trim());
+          let currentY = nameTimeY;
+          
+          for (let i = 0; i < Math.min(nameLines.length, 3); i++) {
+            const line = nameLines[i];
+            svgElements += `
+              <text x="${iconCx}" y="${currentY}" text-anchor="middle" dominant-baseline="middle"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                    font-size="${nameFontSize}" fill="#666666">${escapeXml(line)}</text>
+            `;
+            currentY += nameFontSize + 2;
+          }
+          
+          // タイムスタンプを最後に表示
+          const timeText = escapeXml(timestamp);
+          svgElements += `
+            <text x="${iconCx}" y="${currentY}" text-anchor="middle" dominant-baseline="middle"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                  font-size="${timeFontSize}" fill="#999999">${timeText}</text>
+          `;
+        } else if (name) {
+          // 名前に改行が含まれている場合は複数行で表示
+          const nameLines = name.split('\n').filter(line => line.trim());
+          let currentY = nameTimeY;
+          
+          for (let i = 0; i < Math.min(nameLines.length, 3); i++) {
+            const line = nameLines[i];
+            svgElements += `
+              <text x="${iconCx}" y="${currentY}" text-anchor="middle" dominant-baseline="middle"
+                    font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                    font-size="${nameFontSize}" fill="#666666">${escapeXml(line)}</text>
+            `;
+            currentY += nameFontSize + 2;
+          }
+        } else if (timestamp) {
+          svgElements += `
+            <text x="${iconCx}" y="${nameTimeY}" text-anchor="middle" dominant-baseline="middle"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                  font-size="${timeFontSize}" fill="#999999">${escapeXml(timestamp)}</text>
+          `;
+        }
+      } catch (error) {
+        console.error('Error rendering name/timestamp:', error);
+        // フォールバック: シンプルな1行表示
+        if (name) {
+          svgElements += `
+            <text x="${iconCx}" y="${nameTimeY}" text-anchor="middle" dominant-baseline="middle"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                  font-size="${nameFontSize}" fill="#666666">${escapeXml(name.replace(/\n/g, ' '))}</text>
+          `;
+        }
+        if (timestamp) {
+          svgElements += `
+            <text x="${iconCx}" y="${nameTimeY + nameFontSize + 2}" text-anchor="middle" dominant-baseline="middle"
+                  font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                  font-size="${timeFontSize}" fill="#999999">${escapeXml(timestamp)}</text>
+          `;
+        }
       }
 
       // テキストを行ごとに配置
@@ -345,7 +406,7 @@ function generateSvgContent(markdown: string, styleContent: string): string {
   });
 
   const totalHeight = yPosition + 20;
-
+  
   return `<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="${totalHeight}" viewBox="0 0 800 ${totalHeight}">
   <defs>
@@ -359,6 +420,16 @@ function generateSvgContent(markdown: string, styleContent: string): string {
   <rect width="100%" height="100%" fill="${backgroundColor}"/>
   ${svgElements}
 </svg>`;
+  } catch (error) {
+    console.error('generateSvgContent: error', error);
+    // エラー時は最小限のSVGを返す
+    return `<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#a7b6d9"/>
+  <text x="400" y="300" text-anchor="middle" fill="#333" font-size="16">エラー: SVG生成に失敗しました</text>
+  <text x="400" y="330" text-anchor="middle" fill="#666" font-size="12">${String(error).substring(0, 100)}</text>
+</svg>`;
+  }
 }
 
 // テキスト幅を推定（日本語・英語混在対応）
@@ -477,7 +548,24 @@ function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , icon: strin
       if (aiMatch[1] !== undefined) {
         const parts = aiMatch[1].trim().split(/\s+/);
         icon = parts[0] || DEFAULT_AI_ICON;
-        name = parts.length > 1 ? parts.slice(1).join(' ') : '';
+        if (parts.length > 1) {
+          // 英語名と漢字名の間に改行を挿入
+          const restParts = parts.slice(1);
+          let englishPart: string[] = [];
+          let japanesePart: string[] = [];
+          for (const part of restParts) {
+            if (/^[a-zA-Z]+$/.test(part)) {
+              englishPart.push(part);
+            } else {
+              japanesePart.push(part);
+            }
+          }
+          if (englishPart.length > 0 && japanesePart.length > 0) {
+            name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+          } else {
+            name = restParts.join(' ');
+          }
+        }
       }
       const timestamp = aiMatch[2] || '';
       current = { role: 'ai', icon: icon, name: name, timestamp: timestamp, text: aiMatch[3] };
@@ -488,7 +576,24 @@ function parseMessages(markdown: string): { role: 'ai' | 'me' | '' , icon: strin
       if (meMatch[1] !== undefined) {
         const parts = meMatch[1].trim().split(/\s+/);
         icon = parts[0] || DEFAULT_ME_ICON;
-        name = parts.length > 1 ? parts.slice(1).join(' ') : '';
+        if (parts.length > 1) {
+          // 英語名と漢字名の間に改行を挿入
+          const restParts = parts.slice(1);
+          let englishPart: string[] = [];
+          let japanesePart: string[] = [];
+          for (const part of restParts) {
+            if (/^[a-zA-Z]+$/.test(part)) {
+              englishPart.push(part);
+            } else {
+              japanesePart.push(part);
+            }
+          }
+          if (englishPart.length > 0 && japanesePart.length > 0) {
+            name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+          } else {
+            name = restParts.join(' ');
+          }
+        }
       }
       const timestamp = meMatch[2] || '';
       current = { role: 'me', icon: icon, name: name, timestamp: timestamp, text: meMatch[3] };

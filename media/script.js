@@ -23,9 +23,28 @@ function parseMessages(markdown) {
       let icon = DEFAULT_AI_ICON;
       let name = '';
       if (aiMatch[1] !== undefined) {
-        const parts = aiMatch[1].trim().split(/\s+/, 2);
+        const parts = aiMatch[1].trim().split(/\s+/);
         icon = parts[0] || DEFAULT_AI_ICON;
-        name = parts.length > 1 ? parts.slice(1).join(' ') : '';
+        if (parts.length > 1) {
+          // 英語名と漢字名の間に改行を挿入
+          // 例: "HASUIKE Shoichi 蓮池 祥一" → "HASUIKE Shoichi\n蓮池 祥一"
+          const restParts = parts.slice(1);
+          // アルファベット部分と漢字部分を分離
+          let englishPart = [];
+          let japanesePart = [];
+          for (const part of restParts) {
+            if (/^[a-zA-Z]+$/.test(part)) {
+              englishPart.push(part);
+            } else {
+              japanesePart.push(part);
+            }
+          }
+          if (englishPart.length > 0 && japanesePart.length > 0) {
+            name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+          } else {
+            name = restParts.join(' ');
+          }
+        }
       }
       const timestamp = aiMatch[2] || '';
       current = { role: 'ai', icon: icon, name: name, timestamp: timestamp, text: aiMatch[3] };
@@ -34,9 +53,26 @@ function parseMessages(markdown) {
       let icon = DEFAULT_ME_ICON;
       let name = '';
       if (meMatch[1] !== undefined) {
-        const parts = meMatch[1].trim().split(/\s+/, 2);
+        const parts = meMatch[1].trim().split(/\s+/);
         icon = parts[0] || DEFAULT_ME_ICON;
-        name = parts.length > 1 ? parts.slice(1).join(' ') : '';
+        if (parts.length > 1) {
+          // 英語名と漢字名の間に改行を挿入
+          const restParts = parts.slice(1);
+          let englishPart = [];
+          let japanesePart = [];
+          for (const part of restParts) {
+            if (/^[a-zA-Z]+$/.test(part)) {
+              englishPart.push(part);
+            } else {
+              japanesePart.push(part);
+            }
+          }
+          if (englishPart.length > 0 && japanesePart.length > 0) {
+            name = englishPart.join(' ') + '\n' + japanesePart.join(' ');
+          } else {
+            name = restParts.join(' ');
+          }
+        }
       }
       const timestamp = meMatch[2] || '';
       current = { role: 'me', icon: icon, name: name, timestamp: timestamp, text: meMatch[3] };
@@ -214,6 +250,14 @@ window.addEventListener('message', async event => {
   if (msg && msg.command === 'export') {
     // debug: show message arrived
     console.log('script.js: received export request', msg.format);
+    
+    // エクスポートするMarkdownがあるか確認
+    if (!currentMarkdown) {
+      console.error('No markdown content to export');
+      vscodePost({ command: 'saved', success: false, reason: 'マークダウンコンテンツがありません' });
+      return;
+    }
+    
     var dbg = document.getElementById('chatview-debug');
     if (!dbg) { dbg = document.createElement('div'); dbg.id = 'chatview-debug'; dbg.style.position = 'fixed'; dbg.style.right = '8px'; dbg.style.top = '8px'; dbg.style.background = '#fffa'; dbg.style.padding = '4px 8px'; dbg.style.zIndex = '9999'; document.body.appendChild(dbg); }
     dbg.textContent = 'Export request: ' + msg.format;
@@ -337,7 +381,7 @@ window.addEventListener('message', async event => {
                 try { window.open('data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgString), '_blank'); } catch (e) {}
               }
               // ask extension to render from markdown so puppeteer produces a faithful image
-              vscodePost({ command: 'export', format: 'svg', markdown: currentMarkdown || markdown });
+              vscodePost({ command: 'export', format: 'svg', markdown: currentMarkdown });
               return;
             } catch (e) {
               if (temp.parentNode) { temp.parentNode.removeChild(temp); }
@@ -349,7 +393,7 @@ window.addEventListener('message', async event => {
         }
       } else {
         // PNG export: delegate to extension puppeteer for consistent output
-        vscodePost({ command: 'export', format: 'png', markdown: currentMarkdown || markdown });
+        vscodePost({ command: 'export', format: 'png', markdown: currentMarkdown });
       }
     } catch (err) {
       vscodePost({ command: 'saved', success: false, reason: String(err) });
