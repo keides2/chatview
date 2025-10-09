@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="2463" viewBox="0 0 800 2463">
+  <defs>
+    <style>
+      text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+        fill: #0b2b2b;
+      }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#a7b6d9"/>
+  
+          <image x="20" y="30" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 27
+          L 430 27
+          Q 444 27 444 41
+          L 444 57
+          Q 444 71 430 71
+          L 103 71
+          L 92 79
+          L 92 71
+          Q 78 71 78 57
+          L 78 41
+          Q 78 27 92 27
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="55" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">こんにちは！今日はどんなお話をしましょうか？</text>
+        
+          <image x="732" y="99" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAExUlEQVR4nOWa228bRRTGfzOzN68vSdpAaWlQpdAiHig8VEUIVFUIIV54oRL/B8+88R/xRisBKjyUSwUFGomiFoki6AUnMfFl7zM8OLGbeO3s2k4TiU+ytN7ZmfN9c87MmZldYYxhbvjKK9bYpVDMy6SYWUBR0uMwo5jpBMxKehymECNLGzko8lO2XdwDB0k8DwW9UcwDT5t8CZv7CzgM8iVsTxZwmOQLchgv4CiQ38EELvkCjhL5HYzhNCrgKJLfQQ436zB4AKTxs2TxClnmI2WI5TxCOX8iRLn+250HnkLvG20Rtt8gS1ZGyagNKo2vkao7uZEncsRQwBTks+QYcbhK67FLr52h0SjVYWG5yfGTj3LrBP9eJktOgQhwKneQ1iY6rZOE5zC6gZBb+ItXETIpJGLqEErCVaLO6wAI0SYIHm+X1IgjO1dAGq0MyPtLnyFl0C9wHmBXfidovY3OlomDl3CrtwvxKL8WArR2CdsXBv+9irervFKNcuul0QqQ9MNkh/w2hEhxaze3nztTmEtfQMnwScNVhFDcuLPB3xshlm1jWUNnOp6XW8/xf6F67FOU3cwnY29ijEZn1f1JbHMu7IGr353kyier3Fq7TNQ9D8AXt5vcfdgBoL640CchJVX/FMaMrsWk1UbIeLwRbSOEnPzMHhQeA1VngWfqLp61hBB93R9fOTcoX1haxK9VkVIhlSTqvopbvQVY6KyKyapoXcXoKjqrYbQPZFjOA+zKHYTISIKzACj7n8IChLnuFgqfLDlOr/UuQhTfcxijB2InklCb2O4fA8/6i9dQ9kYhG4VDSNnruPEPmDQtWqUQeQCTLRH3XgPAq90sTB5KTqPy5ybO2rfYHzXBCKLuhf60OCf4i5+XCh8oKUC9t456ZwOh+lEnZP50OS2kapWuU0qAEID95JDRpQ1ONlC+ylSJbGBvTzI6DMwkQDkP58Vjasy0nFbWY6RqorPlwT33zCtYtWOAGA0JA+nmQ6K/fp3F7C7MFkICvMY3wHAwCyURtouwHYS156ck2vVIdX7qMZlbnkPRRDYJwdZbZPELAHiN6/z20ymMtgDDyxdvIuXOczb3bp9n+bkT1Oq1kXaMCKnUb2A5DwrbltOeTSbBi3TX36fd/JA0Oj24L0SI63UxWmO0IQ5sMCmYlF6nAUC71UKbbKRNYTzCrTcpfNp5KSyYKvcgjU8SdS9iTB2BNci4QnaQVgu3Mpydwl5lcN1r93s9CiOE+hFEL6d1hzJDc6pBnMbPD6776x2NsNap1L5HiAzPHwqInhDQ7dQH15XGPZS6SxqdJg7OYrIT01DZFnApFGX2BFIGGFIEBn/xy5H1/S4PBD4ASWyTRv1BansBlpVtX9/H9u7TXv8AYfL3EbmYZUvp+Gs4/trYctcfDaFee9j71Xp7pI5gurlkpml0HBw3Rsj+qjUJXbQW9LaGs45f78zN1lDAHF/7ANQaW0iVoKyMJHKIQxdlJSgrptrYGnleyBAjQhAB7OeN3GOVHRzlkzkY6egDCaGniVEBcw6luSKHW74HjqKIMZzGh9BREjGBy+QxcBRE7MNh/0F8mCIK2C42Cx2GiII2y7+pP+g8UbKzyueBg/TGFG3/Tz/2GIdD+NzmPyvR4KzRn/FyAAAAAElFTkSuQmCC"
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 497 96
+          L 708 96
+          Q 722 96 722 110
+          L 722 126
+          Q 722 140 708 140
+          L 708 148
+          L 697 140
+          L 497 140
+          Q 483 140 483 126
+          L 483 110
+          Q 483 96 497 96
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="495" y="124" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">わんわん！散歩に行きたいな〜</text>
+        
+          <image x="20" y="168" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 165
+          L 393 165
+          Q 407 165 407 179
+          L 407 195
+          Q 407 209 393 209
+          L 103 209
+          L 92 217
+          L 92 209
+          Q 78 209 78 195
+          L 78 179
+          Q 78 165 92 165
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="193" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">いいですね！今日は天気も良さそうですよ。</text>
+        
+          <image x="732" y="237" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEVklEQVR4nO2ayW8bVRzHP2/GszipYydOnKA4G01VUlrRlU0CBOqll16R4ACl6aEH/gFuiCMHuMEh4gIXblzgDkJqUQpEhR6axCkmzVInceIl9RJ7hkNISOKx/WbsNBbwlSxZecvv853fe/OWWNi2TbOUGBqX6iwSnxDNiikaNSALXU2NmvFkoFHoavJiRnHb4LDgvfYtnYHDBHeSbDakMvCk4d3ErGvgKODdxK5p4CjhZRmqGmgF+B3VYnE00ErwO6rGVGGgbsqCBTrejtF+ZQGU5vjUBrMEr81inl+rWc+Jzec2WNsby5gvJAFQI3nSX46A5Xo52ZU2kiF0cxphWhhn1slPdbrqb19NmaEjDAtWLFiyMc+vEXwnBorlAX0PvFWGuAWWhdBqIxxkVKoV1NQ6sALMg3F2neB7swjV3XDShrPb8OUyzNmQEvBYbiexl9V77gE2gAc2xrMbBK/PIFS5TGiDGUI37yOKZYjZYHnfz7meAxXKCkja6KdTdH3wO9Zm/S59fTmE8Tc8je2sfdDga9OwIbQNofYUUHsKkg0F9AKLNgj3JhJD43YkPiEay4AfGBHg8/gUewSowEPvmfBmoB3QgEFAbfBw1SVAtWHZBtN9c5+n4dPf2NyvUFCBoPtmiaFxu8kkT17/G9irr38QvPWxymraufyz7wTXPlXIyb6oJNRUA1MPBEvrgnjCufznmOCPhMJKunmb3aYaeCZqE/Db9Iedy8ei0N1hEw40L6Z4NHhd6nH4BxfQu5NwXMN4JVO3vhUPUvzoCtigvhhHu3GrfpAti83Pe9HDa6zfviCDJZ+B/HwfxdVO9M0VuJODjXLtjodSqK/NgH8L9erduuDEivB9Dl97lvTdMVks+QzsqOPNGGZ0GeZKcFaHztproV0SCF+dELdy4BcwqrHy4SXsgirN43oltoUCQ/r254CWJ6OY4U0C0RSlxzqr93pZux9h+PI07X0ZtrIGy7/0M/DqHKq+Z+f6kt8txj8GIvEJ4WY1FrYFf27BbBHOGfsyoHcUuPPJ6xVtEr8O7H4Pn1pi+PLs/go/5aBdwHHNFXwkPiGk54AQFv6BBYzMIiRKcMGsGD5dJ1cIn1qq2ofiKzF69V5lwTkDNAV+zHNsdBbFyEubkDZgDiyh9yQpKE/BRT8EncfpmXcn6T69WPF3rS3PczduE+h3WOV0BU7q2C+3YRU1Qhd/kzawezcqO4z0EylC70/XrZd52EE63km5qGJ25QiPPdo/7h1UmAqR+uKEDMbu3anrSVycCZKf7MK8lKxZLxBNE4hW2VM4yMqqZL8ZqF/xgDydB9JfPU1pvg3z+TWUYLGhU6FdUNmaO8bmt/2Uk+4PBPuu11vxRs5Je6/elWoFraqDjP++80ArZ8GJzTEDrWiiGlPVIdRKJmqx1JwDrWCiHkPdSXyUJmRiS72FjsKEbEzX/6k/7MXO7cNyvQ4cZja89P3f/LFHNR3Fz23+AmswpduMel4bAAAAAElFTkSuQmCC"
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 459 234
+          L 708 234
+          Q 722 234 722 248
+          L 722 264
+          Q 722 278 708 278
+          L 708 286
+          L 697 278
+          L 459 278
+          Q 445 278 445 264
+          L 445 248
+          Q 445 234 459 234
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="457" y="262" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">にゃーん。私は家でゆっくりするわ。</text>
+        
+          <image x="20" y="306" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 303
+          L 461 303
+          Q 475 303 475 317
+          L 475 333
+          Q 475 347 461 347
+          L 103 347
+          L 92 355
+          L 92 347
+          Q 78 347 78 333
+          L 78 317
+          Q 78 303 92 303
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="331" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">猫さんらしいですね。では、カエルさんはどうですか？</text>
+        
+          <image x="732" y="375" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFdElEQVR4nOWaX2hbVRzHP+fce5MmvcnStNtqGW5ucxMUSieIL+sQGUPnoBtVZ32Y6KMPouCDIIqKKMJAfNEHEf9swnA6YWJVECZsU0SrU9nWrWVb1z+z3Wy6JM3/e3zI2i5tbnJu2tqC37ck58/n+zu/3zknNxFKKRZKu77crTXY0Y4jYqHmFPM1oAvtpvmaqcnAfKHdVIsZ6bXDYsHXOrb2CiwmeDnprobWCvzX8F7mrGpgKeC9zF3RwFLC6zK4GlgO8FOqxFLWwHKCn5Ib05xdyAt8ypQM2kESPhNDKRrSWVoSaYwKO1vMZzESqiMtDXyOQ1Mqy+pkGjRPgNm7k6kLO1t9EZveaAglZsYbCNdzriFH22iMaDpX0t4RcGplhKFQsOT9CxGIpLPcfWWcQKHgmaMkhXSj3x+xOdsYRgmBLaDdb9BmSaRSpCyLn5sbiVulselZNQO/SsJ9dZLNZtF8rM7HTy1R8qL6MsxmlG4fuCkjBb0NNgB76036Vvp57cIEH05k6FlTz1pDkDckp5vC033GAn6u2EX4lyI+/gz7ePH8BN2O4qvVAeqBpM+iP2LrIJSwek6hETuIIyWtluRtQ9C5p5uLAwkA9nVt4uDzW9g6nORqwE9OSizHYcSuA6Cr3qRzJMn9T35PbCKLFPD6y/fw1gPrePpamqFQgM3jcU88nu9CCcsA4PGQyccHeqfhAT769BzNI0lusyRKCE60NHKypZFBOwDAE7bF/ndOEZvIAuAoePXNX3ksIBFKkTINvG5/ErztPJbjABASkngiO9dgMkfkRi4n/Bb/BPw4shinkCFIJPMl7TOZAlZBYQmQSuluRtPMnlegMV2EPpbO8cieDVjmzJStd0Vpvj3C6Vz53eRYKk/XwxtL3uvsWM8pBFkE0XTGK473GliRKUbws0SeXWtCfP35gxztvkRkhY89nRt5ajxL2iWOb8SyfLfjVg6tDvLD8WE2rA/TvnMd20dTJWN7kXjoSIentDvTGKI/Epp+vTNgsC1gMFFQHE7m6c3PHc4Ym6TQGAApMJWiy7Zo8xtcLjh8Es8xVsxK/PkC2wZH8RX0kTwZiPksTqxpKjm83OT/bYzsHQ2ogEno0DmSO9biRPxV+7XEJ9kyGtNF8lYD56O2FjyAyOQhXwxt/NFNWvAAI3aApGloM2kbyBqCv4N12gOn770FFfJpt5+SEoLBWdeNStIu4qt1ftCIvlCKNpFis8iyUuWpE4oxZTCMxUkVJC6qR/dqwK99oGkbSPoqN71TpXhOXmOXiBOVTtk2eQU/EuA9J8phFaYgyidA0lqEFMq5TNZAngPiMr8b/eyTE67wAKaArSLFQWOIXqOP7ZSPcs7QL03tlpYqBRNK0cU4f8g+9srrCM3intI6kaPbGOB9hmhWpVdv03EPwmxpb6ORsKS1SaEENIgC7UyyQeaqd9TQpBJ8q+oZwEdBQSKt6BnS66tdA8FUjmfN67UyVh5bKHaLmUvhN1kfPdRr9ZW6D5CGcwb9af3imo+OJ/S236MdR1wq00VfjOufA7WqN2XwV8rSbu/JwIm4j18SNX+NrqpcQfHuqP4hBjcMeHkqvH/E5nxq4VOpoBT7r9hczOgFaIrZ8/eBlBK8MmRzZnLhTEwWioH5Ken96uHZAEDCkbwwGOKDsQAp71f4EvUkTZ65FOakZuHOVsmDrVqeyAWlQ3soS2swz1p/HlsqDJeEVEDaEYzlJWdTJsfjPvo1U+Zm3Zzy83oytxSaXa81pdBy0hwDC/kL4kKrHFvZFViOJtyYXFNoOZmoxFKxBpaDiWoMVYt4KU3ozK21Cy2FCd05Pf9Sv9jnhNdgeT4HFnM1ahn7//lnDzctxd9t/gVqiTN5d58VpgAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 497 372
+          L 708 372
+          Q 722 372 722 386
+          L 722 402
+          Q 722 416 708 416
+          L 708 424
+          L 697 416
+          L 497 416
+          Q 483 416 483 402
+          L 483 386
+          Q 483 372 497 372
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="495" y="400" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ケロケロ！池で泳ぎたいです。</text>
+        
+          <image x="20" y="444" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 436
+          L 423 436
+          Q 437 436 437 450
+          L 437 486
+          Q 437 500 423 500
+          L 103 500
+          L 92 508
+          L 92 500
+          Q 78 500 78 486
+          L 78 450
+          Q 78 436 92 436
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="464" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">みんなそれぞれの楽しみ方があっていいですね。</text>
+        
+          <text x="90" y="484" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">電車さんは何か予定がありますか？</text>
+        
+          <image x="732" y="523" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFY0lEQVR4nOWaS2wUdRzHP//Z2Xa229e2BVqg9AWUQMFCDfFBFasEE40JGDRe8aAc9aQn9WKI8cIFEuPBA/GEicZoqPjgUAsBlBShLS3dFi2l79e+d2bn72Hb0tLudnamtU38JptsMv////f5zu//nBkhpWSlVH0uaKkx/6lcsVIxhVMDVqFTyakZWwacQqeSHTNKphVWC95u25YzsJrgS8lqNixl4L+GzyTmsgbWAj6T2GkNrCW8VYaUBtYD/KzSsSw5iJ3AFxKkVvxDoQjhIYoiQMdFQObwt1lCryxDiownP2Dpgb3IgF34XMIcVW5Q6xpIWy4gNS4lDtApt9kJs8iEaquVx1QqxnnL9RseoTOoFXG7aAfTbi9SPIqVbcQpDw+xZ7yb42or1xKj/GwecBx7QQbs3P08QrytXiRH6Nz07eTS1mcQIvUUXhoa5oS/GU0aXE7spdXckzH0/CzMdUa7XeeI6yY5QmciK49ftz6dFh5g0LuRlrIGAA4pt/ERyDjmfFZ7o2lG+YTYpfQD0FVQgWlxcHYWVAGgCkmD0u0EwZmB7WJw7n9UybJcL6645/5XiWEnCEkDdrtPVsKHLpMwRbEpy/V888r263vARvRZZkcZiEovfUYdAOWhwWVKP9Js2ZjUGEjsRMX+kcCRgWm8+I06dOmmUA+RH7M2ILcFkwZ69L0gXE4QUJysuoZUMcimV09OhTWB/mXruBIG20IPiZnZ9BqZT6HzVX0uKB1lQIik996ZLNSPdcAy54vdkz1opo7f2AfC+TrqeBoFMITGeKKUktgULz24krL8pvAILzy8BsCQWeEk9Jwc3QKNGHEgmyCFSnI63D9+F68RoXVTPSOeYgCyjBh1E/c4NPQn2aYBQKmrjx6j3hE8gKg6G7A9Bpqmu9jn6yJbhHEJc9H1qFDRFRWvEUFZYoWOmhrRhMbZ+MtgfRlZIEddaCRcRI4SxCVMNqiDHCv8mudzmxEkzWjSIC8RnYMvd/t53XeegzktyetKlHDQi1DsT6OOulC/sZFIXMOTFWW31kaxe4xi9xjtkX2c//EWHR0dALhcLk6ePMn+LTfwqRP41An+ihwgInPoG6tEVtg/OzkyEMkV3Omv58nqq9yP11Ct3WPSKGQiUUxTUxONjY0ACCHweDz0RHdS4hpiQN9KxNQIRPPoDG8HYmtjIJqfoP1eLeXFfVAAX41UImemRrcb3G73gvJ3ovW0R+qQQiUhFa50NxIoWjx2MpGjMYACU1tMLrcfYSJUNAefTlKoJExBa9dzPIiWEtqgO0IQUkpnB3gTNnR48IYkDVVXqd3cmbb4dCSfls7DjIU2MrwrQqwgYTu0/1TuyiyFo1NfIvQjXPcfontwFzvK7rIpf4A8TwBFmMR0jbFgCfdHq+gb2Y5hSkaHzxB74gSQ7yi8cwMP2jB//4xhcYbCHR8hS9/kek/J3GUp5YJTWtwcY7ztXeKBP5B0IF773FF4Bew/4pbxMPKHDxFIZP0xJl95kYG6AJNlMWJek4QqkQroWSYhn85ITZiHB1Xixz9AunMQd3+CO9/bAp9ldpaBX04jpvqTz3naLiDbLmAAUzO/VJo/4OSlTxHlDZC/2RaCbQPS34K4/S2y8lnEq6eRLvfylR5vo+8KfPc+8uLHiDe+sMVh+7GKbP4EcesbW0GX1HvXQNUsFZ3f5dXHL1g2UXsU2dcK8XAmmIslBNQcRtiABwddSFQ+Be80262+Ylq0Eq/kG8SV1lJsS24l1qOJVEwp90LryUQ6lrSbufVgYjmGZXeja2nCSmxL2+m1MGE1ZsZv6lf73VmmNyvjA81qZsNO2//Pjz1SaS0+t/kXW+BLJGQpQAwAAAAASUVORK5CYII="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 286 515
+          L 708 515
+          Q 722 515 722 529
+          L 722 565
+          Q 722 579 708 579
+          L 708 587
+          L 697 579
+          L 286 579
+          Q 272 579 272 565
+          L 272 529
+          Q 272 515 286 515
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="284" y="543" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">私は線路を走り続けるのが仕事です！今日も定刻通りに運行します</text>
+        
+          <text x="284" y="563" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">。</text>
+        
+          <image x="20" y="602" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 599
+          L 423 599
+          Q 437 599 437 613
+          L 437 629
+          Q 437 643 423 643
+          L 103 643
+          L 92 651
+          L 92 643
+          Q 78 643 78 629
+          L 78 613
+          Q 78 599 92 599
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="627" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">さすがですね！では、サメさんはどうでしょう？</text>
+        
+          <image x="732" y="671" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFMklEQVR4nOWaS1PbVhTHf3pY8kOWAeMgwyQ8QoiJ207aITOdbrvotvkIWXebdRZZ5ztk0eErdNNNVp22u3Q6TScFYkLKYyB+gG1Jth5dQBQbbJBsE5jpf+cr33v+f91z7jlHkuD7PqPCoyfPQi32/OljYVQ2hWEFhCXdD8OKGUjAsKT7YRAxYtQJl0V+0LVD78BlEu+FsLsRagc+NfkoNi8UcBXko9g+V8BVkg/Loa+A60D+A87j0jOIPwX5hCySicskYyJt12fr0L5wTq/APiPgssnfSCkYWoy0Gusa/+1dDce72PRpEfIoyQkCpGISuiqTionEJJGYKCAKxzYlEVRZGqXJ7h0Y9O4nZZEpTSGXUohJkXMjEH4HoHsXAgGDkI/LInNjcbJJJerUM4giAD6KGNCFfGb0OLf0OKI4msJyNhNnvWJGnhdZgCjAnYkUk6nh73onjLSK4/ls1qxofCBC2hbgXi48edM08TwP0zQJU3PN6CqaEi7IP3COEHE+S9kkmXis59W1tTXK5XLX2MbGBo1Gg7W1NZrN5oUWBEHg9kQSCB8LoQUYmto3WC3LYnV1lRcvXrC8vEyxWKRYLJJIJJifnycej7OwsECxWERRPq5hGAbJZLJrLU2RyKjhPVsO6z6xHsGq6zozMzPouk6lUmFxcZFMJhNcX1paIp/PUygUMAyDRCKBpmnBThmGwdzcHLu7u5RKpWDeZFKhZl8c0I+ePPNDS92p2xiaiiKLCILA7OwshmEE1x8+fHhmzsrKCgAPHjwIxqanp8+4mmEYSJLE+vo6AGk1fLIL7UKOB68OGiCIFIvFLvJRoGkay8vLjI2NEYt9jKdcLsf4+DgAqhw+NCOlzXrL5XXFxnS8KNPOIJPJUCgUkKTuOz01NQWAJITPLZHz/v5hgx9//oWffn3J5t4BjutGXaIvdF3H9/1IGXmgTOz78OrtDq/e7gCQVJVzM/KdbDI4Wf7cq2O5PhN6im/u3WYmNxH8TxRFJEmi2W5droDTaNrnG3xX8Ulmj4/LhnXsgnXTYvugwg/ff4t84kqO4+B5Hod2+F0dWkBcFvl8SsP3fWzXp9xss9dodbnBfqNFMiaS11TcDu9wXBfP8+EkFKrVKgBls/3pBFiOx/tmm3xaRZVBV2Wm0yqv3zep2U7wv82qxduaRWdFsXQzjxI7puB5Htvb2zRbLlWrDYQL5MGK91N4UzWpd5BVZJHlXAr91HneSX4+n+O7lc+C31tbWzSbTTZrJmHJw0k/MIo2UpUE7htp5I6GpuV4vNw7otXhN1ld4+t7C9y9mUcQBFzXpVQqsb+/z86RxUYlfDX6/OljYWQtpe36rFdM7k6mgjFFFilMplgrN5nOZbm/OMutqSzCyTlfqVQolUrYtk3FbPMmAvkPGGlPfNBsox/Z5NNqMJZWZb7M69wtLDI+lsHzPMrlMjs7O9TrdQB26zbr5ejNDAzZUvZcUIAvbmhopyrKbDaL67rUarWgN2i0XEpVk6rl9FrqXAzZUvaH78PfBw2+yutdyW3/4IC262E5Ho2Wy3vT4dAOf9r0w8gFHEPo4tVoufyxd8TZCmH4fjo4Mkb32sdnMZsIngV5ns8/5WYP8oOjk6vY78KgSCsyqZhEy/E4tBz+2q/TaI2u4LvUJ3MARy2X3/89HPWyfXEmE4/yDeKo0Ytbz1LiOorox6lvLXSdRJzH5dxi7jqIuIjDhdXoVYoIYztUOX0VIsLajPym/rLf4ES9WZEbmsvcjUHW/n9+7NEPV/G5zX8c9Da7sXgqqgAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 362 668
+          L 708 668
+          Q 722 668 722 682
+          L 722 698
+          Q 722 712 708 712
+          L 708 720
+          L 697 712
+          L 362 712
+          Q 348 712 348 698
+          L 348 682
+          Q 348 668 362 668
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="360" y="696" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">海の中を泳ぎ回っているよ！深海探検も楽しいぜ。</text>
+        
+          <image x="20" y="740" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 732
+          L 514 732
+          Q 528 732 528 746
+          L 528 842
+          Q 528 856 514 856
+          L 103 856
+          L 92 864
+          L 92 856
+          Q 78 856 78 842
+          L 78 746
+          Q 78 732 92 732
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="760" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">みんな個性的で素晴らしいですね！</text>
+        
+          <text x="90" y="780" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="800" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">画像アイコンの使い方</text>
+        
+          <text x="90" y="820" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="840" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ChatViewでは、&lt;img&gt; タグを使って画像アイコンを表示できます：</text>
+        
+          <image x="20" y="879" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 876
+          L 423 876
+          Q 437 876 437 890
+          L 437 906
+          Q 437 920 423 920
+          L 103 920
+          L 92 928
+          L 92 920
+          Q 78 920 78 906
+          L 78 890
+          Q 78 876 92 876
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="904" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">画像は相対パスまたは絶対パスで指定できます。</text>
+        
+          <image x="732" y="948" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADdElEQVR4nOWaW27bRhiFvyFFKZZEW5Et27CNOinQl6wkWUC6l2YBWUw2kC0U6FsR5Km5AJViWdaFlqIbKXLy4IqRY5GeIceVgJw3QfPPOWcu//wcUkgpMYVXv79Q6uz1m7fCFKfIa0BVdBLymslkIK/oJGQxY+kGPJT4rH0rz8BDCl8H1dlQmoH/W7wO570GNiFehzvVwCbFq2pINLAN4pdI07LWwDaJXyJJ0x0D2yh+iXXaCiYJwkjwdVxm5jtIuRwbiVMIqe5MKZUCk3TAD+dAntGfzEpcdA4II3vt/1JK9nbHHNX7iJyV0OoZES+hPOL9oECr3UgUDyCEYDiqctWvZaWJsapVu5RYh95gF6nY1WDoEiySjerCiIHxbEe5rRCCybRkghb4z0DezBNFeuMQpSw1VSw1G5kBISK99pZe+zTkMiAltHv1lZSpBm/oMvOdPNQxxB8vn2dePt6wSqdfzxRbLPg8OWtnpY6RawbCKHtCDzX3TRJy9VJzx5SKc+04IUIO9wd5qGPkMmDbEecnl7iVr1pxT0/buJVpHuoYRubRtvWyirUtWWiJR0X1Is2xAyzLXMFrxEC1PMG2Fkpta3sjE5QxjBiwLMnJURdLhKntditjau4WGgDYKfk8Ob2gWr5GcttIwZ5ydHDJcaOHyFtL/wAjDzR+IPn8JeSyGzKZTzk7LOMUvtc7zU6fD60x9V2L8xObg5q5alRIKTMXc5GEj/8GfPoSEq0casf7p+yUysDNg0yz85lF+H2P1Fx49quDW8m3AF6/eSsy9zD3JX+98/nQjG6JB+h6HabzCX7g0/U6t8QDeCP482+fVkdt46ch0xJahDafmg7eyE/4P6Dda6X2EUnB+38iHjlV9h/rHYSrsEDvVjiS0Go3mPvFzKQxhKDrPWY0Vn8gWmKpWXsJ9QZ7zIMi/sLMYSSE4LJbZxFmW81aUcHCZjB0b4gz0a1HJG363l6m2NiAyjLyrqtxiGP0RgmuR1XCUG1YVrXeeT+QllKb7cbNjYIULKIRrateVr0A2JbF6eEvAFhIGnWPSnmmLB40s9DZ8dWt37+dm7hduMgVfWcPmHyDaBrrtK3dxNtoIklTYhbaJhNpWlLT6DaYuE/DvefAJk2ocCsdZJswocqp/ab+od/g6A6WdgHykLORpe+f82OPJGzic5tvPk5+PUibfU4AAAAASUVORK5CYII="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 355 945
+          L 708 945
+          Q 722 945 722 959
+          L 722 975
+          Q 722 989 708 989
+          L 708 997
+          L 697 989
+          L 355 989
+          Q 341 989 341 975
+          L 341 959
+          Q 341 945 355 945
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="353" y="973" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">width と height 属性でサイズを調整できますね。</text>
+        
+          <image x="20" y="1017" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 1009
+          L 502 1009
+          Q 516 1009 516 1023
+          L 516 1059
+          Q 516 1073 502 1073
+          L 103 1073
+          L 92 1081
+          L 92 1073
+          Q 78 1073 78 1059
+          L 78 1023
+          Q 78 1009 92 1009
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="1037" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">はい！Teams文字起こしから変換した場合、</text>
+        
+          <text x="90" y="1057" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">アイコン画像は自動的に icons/ フォルダに保存されます。</text>
+        
+          <image x="732" y="1096" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADdElEQVR4nOWaW27bRhiFvyFFKZZEW5Et27CNOinQl6wkWUC6l2YBWUw2kC0U6FsR5Km5AJViWdaFlqIbKXLy4IqRY5GeIceVgJw3QfPPOWcu//wcUkgpMYVXv79Q6uz1m7fCFKfIa0BVdBLymslkIK/oJGQxY+kGPJT4rH0rz8BDCl8H1dlQmoH/W7wO570GNiFehzvVwCbFq2pINLAN4pdI07LWwDaJXyJJ0x0D2yh+iXXaCiYJwkjwdVxm5jtIuRwbiVMIqe5MKZUCk3TAD+dAntGfzEpcdA4II3vt/1JK9nbHHNX7iJyV0OoZES+hPOL9oECr3UgUDyCEYDiqctWvZaWJsapVu5RYh95gF6nY1WDoEiySjerCiIHxbEe5rRCCybRkghb4z0DezBNFeuMQpSw1VSw1G5kBISK99pZe+zTkMiAltHv1lZSpBm/oMvOdPNQxxB8vn2dePt6wSqdfzxRbLPg8OWtnpY6RawbCKHtCDzX3TRJy9VJzx5SKc+04IUIO9wd5qGPkMmDbEecnl7iVr1pxT0/buJVpHuoYRubRtvWyirUtWWiJR0X1Is2xAyzLXMFrxEC1PMG2Fkpta3sjE5QxjBiwLMnJURdLhKntditjau4WGgDYKfk8Ob2gWr5GcttIwZ5ydHDJcaOHyFtL/wAjDzR+IPn8JeSyGzKZTzk7LOMUvtc7zU6fD60x9V2L8xObg5q5alRIKTMXc5GEj/8GfPoSEq0casf7p+yUysDNg0yz85lF+H2P1Fx49quDW8m3AF6/eSsy9zD3JX+98/nQjG6JB+h6HabzCX7g0/U6t8QDeCP482+fVkdt46ch0xJahDafmg7eyE/4P6Dda6X2EUnB+38iHjlV9h/rHYSrsEDvVjiS0Go3mPvFzKQxhKDrPWY0Vn8gWmKpWXsJ9QZ7zIMi/sLMYSSE4LJbZxFmW81aUcHCZjB0b4gz0a1HJG363l6m2NiAyjLyrqtxiGP0RgmuR1XCUG1YVrXeeT+QllKb7cbNjYIULKIRrateVr0A2JbF6eEvAFhIGnWPSnmmLB40s9DZ8dWt37+dm7hduMgVfWcPmHyDaBrrtK3dxNtoIklTYhbaJhNpWlLT6DaYuE/DvefAJk2ocCsdZJswocqp/ab+od/g6A6WdgHykLORpe+f82OPJGzic5tvPk5+PUibfU4AAAAASUVORK5CYII="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 436 1093
+          L 708 1093
+          Q 722 1093 722 1107
+          L 722 1123
+          Q 722 1137 708 1137
+          L 708 1145
+          L 697 1137
+          L 436 1137
+          Q 422 1137 422 1123
+          L 422 1107
+          Q 422 1093 436 1093
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="434" y="1121" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">SVGエクスポート時はどうなりますか？</text>
+        
+          <image x="20" y="1165" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 1157
+          L 514 1157
+          Q 528 1157 528 1171
+          L 528 1227
+          Q 528 1241 514 1241
+          L 103 1241
+          L 92 1249
+          L 92 1241
+          Q 78 1241 78 1227
+          L 78 1171
+          Q 78 1157 92 1157
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="1185" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">SVGエクスポート時は、画像がBase64形式でSVGに埋め込まれます。</text>
+        
+          <text x="90" y="1205" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">そのため、SVGファイル単体で完結し、外部ファイルへの依存があり</text>
+        
+          <text x="90" y="1225" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ません。</text>
+        
+          <image x="732" y="1264" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADdElEQVR4nOWaW27bRhiFvyFFKZZEW5Et27CNOinQl6wkWUC6l2YBWUw2kC0U6FsR5Km5AJViWdaFlqIbKXLy4IqRY5GeIceVgJw3QfPPOWcu//wcUkgpMYVXv79Q6uz1m7fCFKfIa0BVdBLymslkIK/oJGQxY+kGPJT4rH0rz8BDCl8H1dlQmoH/W7wO570GNiFehzvVwCbFq2pINLAN4pdI07LWwDaJXyJJ0x0D2yh+iXXaCiYJwkjwdVxm5jtIuRwbiVMIqe5MKZUCk3TAD+dAntGfzEpcdA4II3vt/1JK9nbHHNX7iJyV0OoZES+hPOL9oECr3UgUDyCEYDiqctWvZaWJsapVu5RYh95gF6nY1WDoEiySjerCiIHxbEe5rRCCybRkghb4z0DezBNFeuMQpSw1VSw1G5kBISK99pZe+zTkMiAltHv1lZSpBm/oMvOdPNQxxB8vn2dePt6wSqdfzxRbLPg8OWtnpY6RawbCKHtCDzX3TRJy9VJzx5SKc+04IUIO9wd5qGPkMmDbEecnl7iVr1pxT0/buJVpHuoYRubRtvWyirUtWWiJR0X1Is2xAyzLXMFrxEC1PMG2Fkpta3sjE5QxjBiwLMnJURdLhKntditjau4WGgDYKfk8Ob2gWr5GcttIwZ5ydHDJcaOHyFtL/wAjDzR+IPn8JeSyGzKZTzk7LOMUvtc7zU6fD60x9V2L8xObg5q5alRIKTMXc5GEj/8GfPoSEq0casf7p+yUysDNg0yz85lF+H2P1Fx49quDW8m3AF6/eSsy9zD3JX+98/nQjG6JB+h6HabzCX7g0/U6t8QDeCP482+fVkdt46ch0xJahDafmg7eyE/4P6Dda6X2EUnB+38iHjlV9h/rHYSrsEDvVjiS0Go3mPvFzKQxhKDrPWY0Vn8gWmKpWXsJ9QZ7zIMi/sLMYSSE4LJbZxFmW81aUcHCZjB0b4gz0a1HJG363l6m2NiAyjLyrqtxiGP0RgmuR1XCUG1YVrXeeT+QllKb7cbNjYIULKIRrateVr0A2JbF6eEvAFhIGnWPSnmmLB40s9DZ8dWt37+dm7hduMgVfWcPmHyDaBrrtK3dxNtoIklTYhbaJhNpWlLT6DaYuE/DvefAJk2ocCsdZJswocqp/ab+od/g6A6WdgHykLORpe+f82OPJGzic5tvPk5+PUibfU4AAAAASUVORK5CYII="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 505 1256
+          L 708 1256
+          Q 722 1256 722 1270
+          L 722 1326
+          Q 722 1340 708 1340
+          L 708 1348
+          L 697 1340
+          L 505 1340
+          Q 491 1340 491 1326
+          L 491 1270
+          Q 491 1256 505 1256
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="503" y="1284" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">なるほど！便利ですね。</text>
+        
+          <text x="503" y="1304" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="503" y="1324" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">マークダウン記法も使えます</text>
+        
+          <image x="20" y="1363" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 1355
+          L 514 1355
+          Q 528 1355 528 1369
+          L 528 1465
+          Q 528 1479 514 1479
+          L 103 1479
+          L 92 1487
+          L 92 1479
+          Q 78 1479 78 1465
+          L 78 1369
+          Q 78 1355 92 1355
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="1383" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">画像アイコンと一緒に、マークダウン記法も使えます：</text>
+        
+          <text x="90" y="1403" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="1423" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">太字: 太字 で 太字 になります</text>
+        
+          <text x="90" y="1443" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">斜体: 斜体 で 斜体 になります</text>
+        
+          <text x="90" y="1463" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">インラインコード: バッククォートで囲むと コード になります</text>
+        
+          <image x="732" y="1502" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAExUlEQVR4nOWa228bRRTGfzOzN68vSdpAaWlQpdAiHig8VEUIVFUIIV54oRL/B8+88R/xRisBKjyUSwUFGomiFoki6AUnMfFl7zM8OLGbeO3s2k4TiU+ytN7ZmfN9c87MmZldYYxhbvjKK9bYpVDMy6SYWUBR0uMwo5jpBMxKehymECNLGzko8lO2XdwDB0k8DwW9UcwDT5t8CZv7CzgM8iVsTxZwmOQLchgv4CiQ38EELvkCjhL5HYzhNCrgKJLfQQ436zB4AKTxs2TxClnmI2WI5TxCOX8iRLn+250HnkLvG20Rtt8gS1ZGyagNKo2vkao7uZEncsRQwBTks+QYcbhK67FLr52h0SjVYWG5yfGTj3LrBP9eJktOgQhwKneQ1iY6rZOE5zC6gZBb+ItXETIpJGLqEErCVaLO6wAI0SYIHm+X1IgjO1dAGq0MyPtLnyFl0C9wHmBXfidovY3OlomDl3CrtwvxKL8WArR2CdsXBv+9irervFKNcuul0QqQ9MNkh/w2hEhxaze3nztTmEtfQMnwScNVhFDcuLPB3xshlm1jWUNnOp6XW8/xf6F67FOU3cwnY29ijEZn1f1JbHMu7IGr353kyier3Fq7TNQ9D8AXt5vcfdgBoL640CchJVX/FMaMrsWk1UbIeLwRbSOEnPzMHhQeA1VngWfqLp61hBB93R9fOTcoX1haxK9VkVIhlSTqvopbvQVY6KyKyapoXcXoKjqrYbQPZFjOA+zKHYTISIKzACj7n8IChLnuFgqfLDlOr/UuQhTfcxijB2InklCb2O4fA8/6i9dQ9kYhG4VDSNnruPEPmDQtWqUQeQCTLRH3XgPAq90sTB5KTqPy5ybO2rfYHzXBCKLuhf60OCf4i5+XCh8oKUC9t456ZwOh+lEnZP50OS2kapWuU0qAEID95JDRpQ1ONlC+ylSJbGBvTzI6DMwkQDkP58Vjasy0nFbWY6RqorPlwT33zCtYtWOAGA0JA+nmQ6K/fp3F7C7MFkICvMY3wHAwCyURtouwHYS156ck2vVIdX7qMZlbnkPRRDYJwdZbZPELAHiN6/z20ymMtgDDyxdvIuXOczb3bp9n+bkT1Oq1kXaMCKnUb2A5DwrbltOeTSbBi3TX36fd/JA0Oj24L0SI63UxWmO0IQ5sMCmYlF6nAUC71UKbbKRNYTzCrTcpfNp5KSyYKvcgjU8SdS9iTB2BNci4QnaQVgu3Mpydwl5lcN1r93s9CiOE+hFEL6d1hzJDc6pBnMbPD6776x2NsNap1L5HiAzPHwqInhDQ7dQH15XGPZS6SxqdJg7OYrIT01DZFnApFGX2BFIGGFIEBn/xy5H1/S4PBD4ASWyTRv1BansBlpVtX9/H9u7TXv8AYfL3EbmYZUvp+Gs4/trYctcfDaFee9j71Xp7pI5gurlkpml0HBw3Rsj+qjUJXbQW9LaGs45f78zN1lDAHF/7ANQaW0iVoKyMJHKIQxdlJSgrptrYGnleyBAjQhAB7OeN3GOVHRzlkzkY6egDCaGniVEBcw6luSKHW74HjqKIMZzGh9BREjGBy+QxcBRE7MNh/0F8mCIK2C42Cx2GiII2y7+pP+g8UbKzyueBg/TGFG3/Tz/2GIdD+NzmPyvR4KzRn/FyAAAAAElFTkSuQmCC"
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 535 1499
+          L 708 1499
+          Q 722 1499 722 1513
+          L 722 1529
+          Q 722 1543 708 1543
+          L 708 1551
+          L 697 1543
+          L 535 1543
+          Q 521 1543 521 1529
+          L 521 1513
+          Q 521 1499 535 1499
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="533" y="1527" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">リストも使えるんだね！</text>
+        
+          <image x="20" y="1571" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 1563
+          L 205 1563
+          Q 219 1563 219 1577
+          L 219 1673
+          Q 219 1687 205 1687
+          L 103 1687
+          L 92 1695
+          L 92 1687
+          Q 78 1687 78 1673
+          L 78 1577
+          Q 78 1563 92 1563
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="1591" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">もちろんです！</text>
+        
+          <text x="90" y="1611" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="1631" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">順序ありリスト</text>
+        
+          <text x="90" y="1651" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">も使えます</text>
+        
+          <text x="90" y="1671" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">便利ですよ</text>
+        
+          <image x="732" y="1710" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEVklEQVR4nO2ayW8bVRzHP2/GszipYydOnKA4G01VUlrRlU0CBOqll16R4ACl6aEH/gFuiCMHuMEh4gIXblzgDkJqUQpEhR6axCkmzVInceIl9RJ7hkNISOKx/WbsNBbwlSxZecvv853fe/OWWNi2TbOUGBqX6iwSnxDNiikaNSALXU2NmvFkoFHoavJiRnHb4LDgvfYtnYHDBHeSbDakMvCk4d3ErGvgKODdxK5p4CjhZRmqGmgF+B3VYnE00ErwO6rGVGGgbsqCBTrejtF+ZQGU5vjUBrMEr81inl+rWc+Jzec2WNsby5gvJAFQI3nSX46A5Xo52ZU2kiF0cxphWhhn1slPdbrqb19NmaEjDAtWLFiyMc+vEXwnBorlAX0PvFWGuAWWhdBqIxxkVKoV1NQ6sALMg3F2neB7swjV3XDShrPb8OUyzNmQEvBYbiexl9V77gE2gAc2xrMbBK/PIFS5TGiDGUI37yOKZYjZYHnfz7meAxXKCkja6KdTdH3wO9Zm/S59fTmE8Tc8je2sfdDga9OwIbQNofYUUHsKkg0F9AKLNgj3JhJD43YkPiEay4AfGBHg8/gUewSowEPvmfBmoB3QgEFAbfBw1SVAtWHZBtN9c5+n4dPf2NyvUFCBoPtmiaFxu8kkT17/G9irr38QvPWxymraufyz7wTXPlXIyb6oJNRUA1MPBEvrgnjCufznmOCPhMJKunmb3aYaeCZqE/Db9Iedy8ei0N1hEw40L6Z4NHhd6nH4BxfQu5NwXMN4JVO3vhUPUvzoCtigvhhHu3GrfpAti83Pe9HDa6zfviCDJZ+B/HwfxdVO9M0VuJODjXLtjodSqK/NgH8L9erduuDEivB9Dl97lvTdMVks+QzsqOPNGGZ0GeZKcFaHztproV0SCF+dELdy4BcwqrHy4SXsgirN43oltoUCQ/r254CWJ6OY4U0C0RSlxzqr93pZux9h+PI07X0ZtrIGy7/0M/DqHKq+Z+f6kt8txj8GIvEJ4WY1FrYFf27BbBHOGfsyoHcUuPPJ6xVtEr8O7H4Pn1pi+PLs/go/5aBdwHHNFXwkPiGk54AQFv6BBYzMIiRKcMGsGD5dJ1cIn1qq2ofiKzF69V5lwTkDNAV+zHNsdBbFyEubkDZgDiyh9yQpKE/BRT8EncfpmXcn6T69WPF3rS3PczduE+h3WOV0BU7q2C+3YRU1Qhd/kzawezcqO4z0EylC70/XrZd52EE63km5qGJ25QiPPdo/7h1UmAqR+uKEDMbu3anrSVycCZKf7MK8lKxZLxBNE4hW2VM4yMqqZL8ZqF/xgDydB9JfPU1pvg3z+TWUYLGhU6FdUNmaO8bmt/2Uk+4PBPuu11vxRs5Je6/elWoFraqDjP++80ArZ8GJzTEDrWiiGlPVIdRKJmqx1JwDrWCiHkPdSXyUJmRiS72FjsKEbEzX/6k/7MXO7cNyvQ4cZja89P3f/LFHNR3Fz23+AmswpduMel4bAAAAAElFTkSuQmCC"
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 625 1707
+          L 708 1707
+          Q 722 1707 722 1721
+          L 722 1737
+          Q 722 1751 708 1751
+          L 708 1759
+          L 697 1751
+          L 625 1751
+          Q 611 1751 611 1737
+          L 611 1721
+          Q 611 1707 625 1707
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="623" y="1735" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">引用文は？</text>
+        
+          <image x="20" y="1779" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 1771
+          L 273 1771
+          Q 287 1771 287 1785
+          L 287 1861
+          Q 287 1875 273 1875
+          L 103 1875
+          L 92 1883
+          L 92 1875
+          Q 78 1875 78 1861
+          L 78 1785
+          Q 78 1771 92 1771
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="1799" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">引用文も使えます：</text>
+        
+          <text x="90" y="1819" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="1839" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">これは引用文です。</text>
+        
+          <text x="90" y="1859" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">複数行の引用も可能です。</text>
+        
+          <image x="732" y="1898" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFdElEQVR4nOWaX2hbVRzHP+fce5MmvcnStNtqGW5ucxMUSieIL+sQGUPnoBtVZ32Y6KMPouCDIIqKKMJAfNEHEf9swnA6YWJVECZsU0SrU9nWrWVb1z+z3Wy6JM3/e3zI2i5tbnJu2tqC37ck58/n+zu/3zknNxFKKRZKu77crTXY0Y4jYqHmFPM1oAvtpvmaqcnAfKHdVIsZ6bXDYsHXOrb2CiwmeDnprobWCvzX8F7mrGpgKeC9zF3RwFLC6zK4GlgO8FOqxFLWwHKCn5Ib05xdyAt8ypQM2kESPhNDKRrSWVoSaYwKO1vMZzESqiMtDXyOQ1Mqy+pkGjRPgNm7k6kLO1t9EZveaAglZsYbCNdzriFH22iMaDpX0t4RcGplhKFQsOT9CxGIpLPcfWWcQKHgmaMkhXSj3x+xOdsYRgmBLaDdb9BmSaRSpCyLn5sbiVulselZNQO/SsJ9dZLNZtF8rM7HTy1R8qL6MsxmlG4fuCkjBb0NNgB76036Vvp57cIEH05k6FlTz1pDkDckp5vC033GAn6u2EX4lyI+/gz7ePH8BN2O4qvVAeqBpM+iP2LrIJSwek6hETuIIyWtluRtQ9C5p5uLAwkA9nVt4uDzW9g6nORqwE9OSizHYcSuA6Cr3qRzJMn9T35PbCKLFPD6y/fw1gPrePpamqFQgM3jcU88nu9CCcsA4PGQyccHeqfhAT769BzNI0lusyRKCE60NHKypZFBOwDAE7bF/ndOEZvIAuAoePXNX3ksIBFKkTINvG5/ErztPJbjABASkngiO9dgMkfkRi4n/Bb/BPw4shinkCFIJPMl7TOZAlZBYQmQSuluRtPMnlegMV2EPpbO8cieDVjmzJStd0Vpvj3C6Vz53eRYKk/XwxtL3uvsWM8pBFkE0XTGK473GliRKUbws0SeXWtCfP35gxztvkRkhY89nRt5ajxL2iWOb8SyfLfjVg6tDvLD8WE2rA/TvnMd20dTJWN7kXjoSIentDvTGKI/Epp+vTNgsC1gMFFQHE7m6c3PHc4Ym6TQGAApMJWiy7Zo8xtcLjh8Es8xVsxK/PkC2wZH8RX0kTwZiPksTqxpKjm83OT/bYzsHQ2ogEno0DmSO9biRPxV+7XEJ9kyGtNF8lYD56O2FjyAyOQhXwxt/NFNWvAAI3aApGloM2kbyBqCv4N12gOn770FFfJpt5+SEoLBWdeNStIu4qt1ftCIvlCKNpFis8iyUuWpE4oxZTCMxUkVJC6qR/dqwK99oGkbSPoqN71TpXhOXmOXiBOVTtk2eQU/EuA9J8phFaYgyidA0lqEFMq5TNZAngPiMr8b/eyTE67wAKaArSLFQWOIXqOP7ZSPcs7QL03tlpYqBRNK0cU4f8g+9srrCM3intI6kaPbGOB9hmhWpVdv03EPwmxpb6ORsKS1SaEENIgC7UyyQeaqd9TQpBJ8q+oZwEdBQSKt6BnS66tdA8FUjmfN67UyVh5bKHaLmUvhN1kfPdRr9ZW6D5CGcwb9af3imo+OJ/S236MdR1wq00VfjOufA7WqN2XwV8rSbu/JwIm4j18SNX+NrqpcQfHuqP4hBjcMeHkqvH/E5nxq4VOpoBT7r9hczOgFaIrZ8/eBlBK8MmRzZnLhTEwWioH5Ken96uHZAEDCkbwwGOKDsQAp71f4EvUkTZ65FOakZuHOVsmDrVqeyAWlQ3soS2swz1p/HlsqDJeEVEDaEYzlJWdTJsfjPvo1U+Zm3Zzy83oytxSaXa81pdBy0hwDC/kL4kKrHFvZFViOJtyYXFNoOZmoxFKxBpaDiWoMVYt4KU3ozK21Cy2FCd05Pf9Sv9jnhNdgeT4HFnM1ahn7//lnDzctxd9t/gVqiTN5d58VpgAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 550 1895
+          L 708 1895
+          Q 722 1895 722 1909
+          L 722 1925
+          Q 722 1939 708 1939
+          L 708 1947
+          L 697 1939
+          L 550 1939
+          Q 536 1939 536 1925
+          L 536 1909
+          Q 536 1895 550 1895
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="548" y="1923" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">リンクは貼れますか？</text>
+        
+          <image x="20" y="1967" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 1959
+          L 491 1959
+          Q 505 1959 505 1973
+          L 505 2029
+          Q 505 2043 491 2043
+          L 103 2043
+          L 92 2051
+          L 92 2043
+          Q 78 2043 78 2029
+          L 78 1973
+          Q 78 1959 92 1959
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="1987" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">もちろん！ChatView GitHub のようにリンクも使えます。</text>
+        
+          <text x="90" y="2007" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="2027" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">複数行のメッセージ</text>
+        
+          <image x="20" y="2066" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 2058
+          L 250 2058
+          Q 264 2058 264 2072
+          L 264 2188
+          Q 264 2202 250 2202
+          L 103 2202
+          L 92 2210
+          L 92 2202
+          Q 78 2202 78 2188
+          L 78 2072
+          Q 78 2058 92 2058
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="2086" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">複数行のメッセージも</text>
+        
+          <text x="90" y="2106" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">自然に表示されます。</text>
+        
+          <text x="90" y="2126" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="2146" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">改行を入れても</text>
+        
+          <text x="90" y="2166" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">同じ吹き出しの中に</text>
+        
+          <text x="90" y="2186" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">収まります。</text>
+        
+          <image x="732" y="2225" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFY0lEQVR4nOWaS2wUdRzHP//Z2Xa229e2BVqg9AWUQMFCDfFBFasEE40JGDRe8aAc9aQn9WKI8cIFEuPBA/GEicZoqPjgUAsBlBShLS3dFi2l79e+d2bn72Hb0tLudnamtU38JptsMv////f5zu//nBkhpWSlVH0uaKkx/6lcsVIxhVMDVqFTyakZWwacQqeSHTNKphVWC95u25YzsJrgS8lqNixl4L+GzyTmsgbWAj6T2GkNrCW8VYaUBtYD/KzSsSw5iJ3AFxKkVvxDoQjhIYoiQMdFQObwt1lCryxDiownP2Dpgb3IgF34XMIcVW5Q6xpIWy4gNS4lDtApt9kJs8iEaquVx1QqxnnL9RseoTOoFXG7aAfTbi9SPIqVbcQpDw+xZ7yb42or1xKj/GwecBx7QQbs3P08QrytXiRH6Nz07eTS1mcQIvUUXhoa5oS/GU0aXE7spdXckzH0/CzMdUa7XeeI6yY5QmciK49ftz6dFh5g0LuRlrIGAA4pt/ERyDjmfFZ7o2lG+YTYpfQD0FVQgWlxcHYWVAGgCkmD0u0EwZmB7WJw7n9UybJcL6645/5XiWEnCEkDdrtPVsKHLpMwRbEpy/V888r263vARvRZZkcZiEovfUYdAOWhwWVKP9Js2ZjUGEjsRMX+kcCRgWm8+I06dOmmUA+RH7M2ILcFkwZ69L0gXE4QUJysuoZUMcimV09OhTWB/mXruBIG20IPiZnZ9BqZT6HzVX0uKB1lQIik996ZLNSPdcAy54vdkz1opo7f2AfC+TrqeBoFMITGeKKUktgULz24krL8pvAILzy8BsCQWeEk9Jwc3QKNGHEgmyCFSnI63D9+F68RoXVTPSOeYgCyjBh1E/c4NPQn2aYBQKmrjx6j3hE8gKg6G7A9Bpqmu9jn6yJbhHEJc9H1qFDRFRWvEUFZYoWOmhrRhMbZ+MtgfRlZIEddaCRcRI4SxCVMNqiDHCv8mudzmxEkzWjSIC8RnYMvd/t53XeegzktyetKlHDQi1DsT6OOulC/sZFIXMOTFWW31kaxe4xi9xjtkX2c//EWHR0dALhcLk6ePMn+LTfwqRP41An+ihwgInPoG6tEVtg/OzkyEMkV3Omv58nqq9yP11Ct3WPSKGQiUUxTUxONjY0ACCHweDz0RHdS4hpiQN9KxNQIRPPoDG8HYmtjIJqfoP1eLeXFfVAAX41UImemRrcb3G73gvJ3ovW0R+qQQiUhFa50NxIoWjx2MpGjMYACU1tMLrcfYSJUNAefTlKoJExBa9dzPIiWEtqgO0IQUkpnB3gTNnR48IYkDVVXqd3cmbb4dCSfls7DjIU2MrwrQqwgYTu0/1TuyiyFo1NfIvQjXPcfontwFzvK7rIpf4A8TwBFmMR0jbFgCfdHq+gb2Y5hSkaHzxB74gSQ7yi8cwMP2jB//4xhcYbCHR8hS9/kek/J3GUp5YJTWtwcY7ztXeKBP5B0IF773FF4Bew/4pbxMPKHDxFIZP0xJl95kYG6AJNlMWJek4QqkQroWSYhn85ITZiHB1Xixz9AunMQd3+CO9/bAp9ldpaBX04jpvqTz3naLiDbLmAAUzO/VJo/4OSlTxHlDZC/2RaCbQPS34K4/S2y8lnEq6eRLvfylR5vo+8KfPc+8uLHiDe+sMVh+7GKbP4EcesbW0GX1HvXQNUsFZ3f5dXHL1g2UXsU2dcK8XAmmIslBNQcRtiABwddSFQ+Be80262+Ylq0Eq/kG8SV1lJsS24l1qOJVEwp90LryUQ6lrSbufVgYjmGZXeja2nCSmxL2+m1MGE1ZsZv6lf73VmmNyvjA81qZsNO2//Pjz1SaS0+t/kXW+BLJGQpQAwAAAAASUVORK5CYII="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 580 2217
+          L 708 2217
+          Q 722 2217 722 2231
+          L 722 2287
+          Q 722 2301 708 2301
+          L 708 2309
+          L 697 2301
+          L 580 2301
+          Q 566 2301 566 2287
+          L 566 2231
+          Q 566 2217 580 2217
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="578" y="2245" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">これで長い説明も</text>
+        
+          <text x="578" y="2265" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">読みやすく</text>
+        
+          <text x="578" y="2285" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">表示できますね！</text>
+        
+          <image x="20" y="2324" width="48" height="48"
+                 href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAFL0lEQVR4nOWaW2wUVRjHf3PZ+6VXKAXTBqwEGu4NQgSCEMB4wWiE6AM8NDEx+qIPhsTEB1/kRY0xXmJoTOHBB/FZUMBKCZUWJcCTBqFc0m5pWdrtdu87nfGBtmzb2d0zs1vbxH8y2c055/vO/z/nO985c2YkwzAoF9rb24Wctba2SuXqUypVgCjpfChVjC0BpZLOBztiZKsGc0Xerm/hEZhL4mYQHQ2hEfivyVvps6iA+SBvpe+CAuaTvCiHvAIWAvlJFOJiKsDMwJFOs6mzk+bLPZRz8cvFolCILWfPUH/njhAnMMlC+Rqu6elm3eUeAH57aT8Dy1fMauOTomz0duMiZUrQkCTuZp7kVqbZtP6V79rwJhJoisKPb72NoSiz2szMTqqpJxNEq6sxDAPNoRIPBk3bbPJeosn1V0E/DY5b9GcbSRm+WXVJnx9vIkHC58OQxZaoaa0Kxdq9p1bSu7qZa9t2EK2pNW0zrJmX5yKmB8kaLtO6X187gCYrnDv4Okjmy8BMjmq+CjOMqwq68njQJEmmKliL1+3HoTpJsorfOYBbSuKU0zilNBKgIZM2PGQMDyndTaNfZlzXyWSTjETDpDJJADSHA0OWyLjMBeZynQwl4RCaCZ8nSGN9Ew7VaVqfmbhyoQL+GWWLq5cRjgwSenDHVnKwvBcC8HoCrFi2Ki95q6itrKOhrsmWrQzWcr4hQeOSJmTBSSaKymANlYEa4faTnC2HkLKkAafjUYze7L3BmY7TDAz0k9WylvxIEgQDFaxf28LeXc/hcDipqaizSse6ALXqUaY523GaY8e/LnlRu3LtDy50dfDRB0fxuGan1mKQhcPHMAhEIqio9If6aDvxzRT5ZOMGQm+2EW/eVdSN7vIxeOgzwi++P1V2s/cG3588gaIoIClUDQ0JUWpvbzeEA3nl9evU9/URjI5wsbsTXden6sa2HCS9fCOjOw4X9ZNc3kJi9U7GnnkDLbBoqryzqwMAGYPtP58SpSWehQKjIwCoWY1IZGRanSErE78CEak4ZtkBJBJxMplHidcXi0HODSoEW6lkSV39jBJjxm8hGKb/a6prcTqtp2VbAnZu343X+3jCuW9fBcDTe6WorXPgBlI6jvrgLurYw6nyF/a9bIeKvZW4sqKKI+9+yCdffEw8EaOi5ySBaz8hp+NFbR3DfTQc3Yeka0j6OADP7tjD/udftUPF/lZiTfM6vvy0jYuXzhMa6Ecb1yzZS0gEAkE2rN1E86o1dmnYFwAQDARtD325UN79wDxAWEDK4wUQftAoBUmPF0QfaEQPkP5Zt56h+qVEKypKIlcMsUCQ7j17hNq2trZKwnMg43Zz7sBBnli8lEJ7xqvX/+SrY58TT8SmlcuSzOaWrbz3zhGkPE9bAKcOHcYwxBYxsDEHxidSXz6cO/8Lo9EImqZNuzLZDF3dFwg/zL/P0XXdEnmYEGDlVDidNT9xmMTunXvx+/xIkjTtUmSFrZu3UVuzOK9tpojvXNh+pBwdG2bpokYUefaRB0DLhqc5/u0PVt0CMBx9YNnGRghp3A/fs9xRMSTTCcKRQct2UwKshFE4Msj9h31lO6FLpuLcDv0tHP+5XIVP5szgcfmoqazD6/ajKiog/oLF0HXS2RSjsWGGR4cwhHayJZzMmSGZjtM32FuKi5Ixaw6U8w1iuWHGzXQSL0QR+TjlzUILSUQhLgXT6EIQUYxD0XVgPkWI9C20kM2HCNE+Lb+pn+t3Z1ZvluWtxFyOhh3f/8+PPfJhPj63+RcHEA2vFgpZEAAAAABJRU5ErkJggg=="
+                 style="border-radius: 50%;" />
+        
+        <path d="
+          M 92 2316
+          L 514 2316
+          Q 528 2316 528 2330
+          L 528 2406
+          Q 528 2420 514 2420
+          L 103 2420
+          L 92 2428
+          L 92 2420
+          Q 78 2420 78 2406
+          L 78 2330
+          Q 78 2316 92 2316
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="2344" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">その通りです！ChatViewを使えば、会話形式のドキュメントを</text>
+        
+          <text x="90" y="2364" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">見やすく、美しく 表示できます。</text>
+        
+          <text x="90" y="2384" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="2404" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ぜひお試しください！🚀</text>
+        
+</svg>

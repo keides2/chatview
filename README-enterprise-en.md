@@ -4,13 +4,13 @@
 
 # 🗨️ ChatView Enterprise Edition — Lightweight Version for Corporate Environments
 
-**ChatView Enterprise Edition** is a lightweight version designed to meet corporate security requirements. By completely removing browser automation and implementing SVG-only export, it operates safely in environments with SSL certificate issues or proxy restrictions.
+**ChatView Enterprise Edition** is a lightweight version of ChatView designed for corporate security requirements. By completely removing browser automation and implementing SVG-only export, it operates safely in environments with SSL certificate issues or proxy restrictions.
 
 ---
 
 ## 📷 Sample Display
 
-![ChatView Sample](./sample_2.jpg)
+![ChatView Sample](.\tools\samples\markdown\sample_with_icons.jpg)
 
 ---
 
@@ -18,11 +18,11 @@
 
 ### ✅ Optimized for Corporate Environments
 
-- **No Browser Automation**: Complete removal of dependencies like Puppeteer and Playwright
-- **Lightweight Package**: Dramatically reduced distribution size without browser binaries
-- **Enhanced Security**: No external browser process launching, avoiding SSL certificate issues
-- **Proxy Environment Compatible**: Unaffected by corporate proxy settings
-- **SVG-Only Export**: High-quality vector format output
+- **No Browser Automation**: Completely removed dependencies like Puppeteer and Playwright
+- **Lightweight Package**: No browser binaries required, significantly reducing distribution size
+- **Enhanced Security**: No external browser process launches, avoids SSL certificate issues
+- **Proxy Environment Support**: Not affected by corporate proxy settings
+- **SVG-Only Export**: High-quality output in vector format
 
 ### ⚠️ Differences from Standard Edition
 
@@ -42,41 +42,60 @@
 ### 🚀 How to Use
 
 1. Open a Markdown file (e.g., sample.md) in VS Code
-2. Open the Command Palette with Ctrl+Shift+P
-3. Run ChatView: Preview display
+2. Press Ctrl+Shift+P to open the Command Palette
+3. Execute **ChatView: Show Preview | プレビュー表示**
 4. The chat UI will be displayed in the Webview
+
+![command_palette](.\media\command_palette.jpg)
 
 ### 💾 SVG Export
 
-1. While preview is displayed, open Command Palette with Ctrl+Shift+P
-2. Run ChatView: Export view as image
-3. Specify the save destination and save the SVG file
+1. While preview is displayed, press Ctrl+Shift+P to open the Command Palette
+2. Execute **ChatView: Export as SVG | SVGエクスポート**
+3. Specify the save location and save the SVG file
 
-### 💬 Writing Conversations (Using @ai / @me)
+### 🎤 Converting Teams Transcripts
 
-In ChatView, you can easily specify speakers in Markdown. By placing the prefix @ai or @me at the beginning of a line, it will be rendered as an AI-side or user-side bubble respectively.
+You can convert Microsoft Teams transcript DOCX files to ChatView format.
+
+```powershell
+# Basic usage
+python tools/converters/transcript2chatview.py input.docx -o output.md
+
+# Merge consecutive messages from the same speaker
+python tools/converters/transcript2chatview.py input.docx --merge-speaker
+
+# Hide timestamps and icons
+python tools/converters/transcript2chatview.py input.docx --no-timestamp --no-icon
+```
+
+After conversion, you can open and preview the Markdown file in VS Code.
+
+### 💬 How to Write Conversations (@ai / @me Usage)
+
+In ChatView, you can easily specify speakers in Markdown. By placing the prefix @ai or @me at the beginning of a line, they will be rendered as AI-side or user-side speech bubbles respectively.
 
 Example (Markdown):
 
 ```markdown
-@ai Hi — what would you like to do today?
-@me I was thinking about watching a movie.
-@ai How about "Interstellar"? It is very moving.
+@ai Hello, what shall we do today?
+@me I'm thinking about watching a movie!
+@ai How about "Interstellar"? It's very moving.
 ```
 
-Important Specifications:
+Important specifications:
 
 - Each conversation starts with a line prefixed with @ai or @me
-- Subsequent lines without a prefix are treated as "continuation lines" and merged into the same bubble
-- Use lowercase @ai / @me at the beginning of the line for prefixes
-- Limited Markdown syntax is rendered inside bubbles (headings #, bold **, italic *, inline code \\, lists -, numbered lists, blockquotes >, links [text](url), etc.)
-- For SVG export, Markdown formatting is removed and output as plain text
+- Subsequent lines without a prefix at the beginning are treated as "continuation lines" and grouped into the same speech bubble
+- Use lowercase @ai / @me prefixes at the beginning of lines
+- Limited Markdown syntax is rendered within speech bubbles (headings #, bold **, italic *, inline code \`, lists -, numbered lists, quotes >, links [text](url), etc.)
+- In SVG export, Markdown notation is removed and output as plain text
 
 ### 🎨 Customizing Appearance
 
-The UI appearance is primarily defined in media/style.css.
+The UI appearance is mainly defined in media/style.css.
 
-Steps for changing in development environment:
+Steps to modify in development environment:
 1. Edit media/style.css
 2. Close and reopen the preview, or reload the extension host window (Ctrl+R)
 
@@ -88,17 +107,32 @@ Steps for changing in development environment:
 
 ```
 chatview/
-├── src/extension.ts       // Extension entry point (includes SVG generation logic)
-├── media/style.css        // Chat UI style definitions
-├── media/script.js        // Markdown parsing in Webview
-├── sample.md              // Sample Markdown for testing
-├── .vscode/launch.json    // Debug configuration
-├── .vscode/tasks.json     // Build/development task definitions
-├── tsconfig.json          // TypeScript compiler settings
-└── package.json           // Extension metadata
+├── src/
+│   └── extension.ts           // Extension entry point (includes SVG generation logic)
+├── media/
+│   ├── style.css              // Chat UI style definitions
+│   └── script.js              // Markdown parser in Webview
+├── tools/                     // Development and conversion tools
+│   ├── converters/
+│   │   └── transcript2chatview.py  // Convert Teams transcript DOCX to ChatView format
+│   ├── generators/
+│   │   ├── create_sample_docx.py   // Generate sample transcript DOCX
+│   │   └── generate-icons.ps1      // Generate icon images
+│   ├── samples/
+│   │   ├── transcripts/            // Transcript samples
+│   │   └── markdown/               // Markdown samples
+│   └── tests/
+│       └── puppeteer-test.js       // Test scripts
+├── dist/
+│   └── releases/              // Released .vsix files
+├── .vscode/
+│   ├── launch.json            // Debug configuration
+│   └── tasks.json             // Build/development task definitions
+├── tsconfig.json              // TypeScript compiler settings
+└── package.json               // Extension metadata
 ```
 
-### 🛠 Local Development Steps
+### 🛠 Local Development Setup
 
 Prerequisites:
 
@@ -113,10 +147,10 @@ Testing:
 
 1. Open the project in VS Code
 2. Press F5 to launch the extension host
-3. In the debug window, open sample.md and run Ctrl+Shift+P → ChatView: Preview display
+3. In the debug window, open sample.md and press Ctrl+Shift+P → ChatView: Preview display
 4. After editing media/style.css, close and reopen the preview
 
-### 🔧 Build and Packaging
+### 🔧 Build and Package
 
 ```powershell
 # Development build
@@ -135,21 +169,21 @@ vsce package
 
 ### System Requirements
 
-- **Visual Studio Code**: Version 1.103.0 or later
-- **No Browser Required**: Chrome/Chromium installation is not necessary
+- **Visual Studio Code**: Version 1.103.0 or higher
+- **No Browser Required**: Chrome/Chromium installation is not required
 
 ### Install from VSIX File
 
-1. Download the .vsix file from the releases page
-2. In VS Code, run Ctrl+Shift+P → Extensions: Install from VSIX...
+1. Download the .vsix file from the release page
+2. In VS Code, press Ctrl+Shift+P → Extensions: Install from VSIX...
 3. Select the downloaded .vsix file
 
 ### Build from Source (For Developers)
 
 1. Clone the repository (enterprise-edition branch)
-2. Install dependencies with npm install
-3. Build with npm run package
-4. Launch the extension host with F5
+2. Run `npm install` to install dependencies
+3. Run `npm run package` to build
+4. Press F5 to launch the extension host
 
 ---
 
@@ -157,18 +191,18 @@ vsce package
 
 Enterprise Edition meets the following security requirements:
 
-- **No External Process Launching**: Reduces security risks by not launching browsers
-- **No Network Access**: No external communication required for export processing
-- **Privacy Protection**: Implementation that does not include personal information (username, etc.) in paths
-- **SSL Certificate Issue Avoidance**: Works in corporate self-signed certificate environments without using browser automation
+- **No External Process Launch**: Reduces security risks by not launching browsers
+- **No Network Access**: Export processing requires no external communication
+- **Privacy Protection**: Implementation does not include personal information (such as usernames) in paths
+- **Avoids SSL Certificate Issues**: Works in corporate self-signed certificate environments without using browser automation
 
 ---
 
-## 📋 Configuration Options
+## 📋 Configuration Settings
 
 ### chatPreview.defaultFolder
 
-Specifies the default folder for the save dialog.
+Specify the default folder for the save dialog.
 
 - workspace: Workspace root (default)
 - home: User home directory
@@ -186,19 +220,19 @@ Example (settings.json):
 
 ## 🆚 Comparison with Standard Edition
 
-### Choose Enterprise Edition When:
+### When to Choose Enterprise Edition
 
-- Using in a corporate proxy environment
-- Environment with SSL certificate issues
+- Using in corporate proxy environments
+- Environments with SSL certificate issues
 - Browser installation is restricted
-- Lightweight package is needed
+- Need for lightweight package
 - SVG format is sufficient
 
-### Choose Standard Edition When:
+### When to Choose Standard Edition
 
-- PNG format export is required
-- HTML format export is required
-- Pixel-perfect screenshots are needed
+- Need PNG format export
+- Need HTML format export
+- Need pixel-perfect screenshots
 
 ---
 
@@ -206,25 +240,25 @@ Example (settings.json):
 
 ### Preview Not Displaying
 
-1. Verify VS Code version is 1.103.0 or later
-2. Run Developer: Reload Window from the Command Palette
+1. Verify VS Code version is 1.103.0 or higher
+2. Execute Developer: Reload Window in the Command Palette
 
 ### SVG Export Not Working
 
-1. Verify write permissions for the destination directory
-2. Check if the filename contains invalid characters
+1. Verify write permissions for the save directory
+2. Verify the filename does not contain invalid characters
 
 ---
 
 ## 📄 License
 
 MIT License
-See the LICENSE file for details.
+See LICENSE file for details.
 
 ---
 
 ## 🔗 Related Links
 
 - [GitHub Repository](https://github.com/keides2/chatview)
-- [Standard Edition README](README.md)
+- [Standard Edition README](README_ja.md)
 - [Issue Reports](https://github.com/keides2/chatview/issues)

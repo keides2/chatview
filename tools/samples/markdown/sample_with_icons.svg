@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="2532" viewBox="0 0 800 2532">
+  <defs>
+    <style>
+      text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+        fill: #0b2b2b;
+      }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#a7b6d9"/>
+  
+          <text x="44" y="54" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🤖</text>
+        
+        <path d="
+          M 92 27
+          L 370 27
+          Q 384 27 384 41
+          L 384 57
+          Q 384 71 370 71
+          L 103 71
+          L 92 79
+          L 92 71
+          Q 78 71 78 57
+          L 78 41
+          Q 78 27 92 27
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="55" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">こんにちは！今日は何をしたいですか？</text>
+        
+          <text x="756" y="123" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">👤</text>
+        
+        <path d="
+          M 497 96
+          L 708 96
+          Q 722 96 722 110
+          L 722 126
+          Q 722 140 708 140
+          L 708 148
+          L 697 140
+          L 497 140
+          Q 483 140 483 126
+          L 483 110
+          Q 483 96 497 96
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="495" y="124" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">映画を観たいと思っています。</text>
+        
+          <text x="44" y="192" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🤖</text>
+        
+        <path d="
+          M 92 165
+          L 484 165
+          Q 498 165 498 179
+          L 498 195
+          Q 498 209 484 209
+          L 103 209
+          L 92 217
+          L 92 209
+          Q 78 209 78 195
+          L 78 179
+          Q 78 165 92 165
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="193" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">「インターステラー」はどうですか？とても感動的ですよ。</text>
+        
+          <text x="756" y="261" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">😊</text>
+        
+        <path d="
+          M 527 234
+          L 708 234
+          Q 722 234 722 248
+          L 722 264
+          Q 722 278 708 278
+          L 708 286
+          L 697 278
+          L 527 278
+          Q 513 278 513 264
+          L 513 248
+          Q 513 234 527 234
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="525" y="262" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">いいですね！観てみます。</text>
+        
+          <text x="44" y="330" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🎬</text>
+        
+        <path d="
+          M 92 303
+          L 250 303
+          Q 264 303 264 317
+          L 264 333
+          Q 264 347 250 347
+          L 103 347
+          L 92 355
+          L 92 347
+          Q 78 347 78 333
+          L 78 317
+          Q 78 303 92 303
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="331" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">楽しんでくださいね！</text>
+        
+          <text x="756" y="399" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">👤</text>
+        
+        <path d="
+          M 610 372
+          L 708 372
+          Q 722 372 722 386
+          L 722 402
+          Q 722 416 708 416
+          L 708 424
+          L 697 416
+          L 610 416
+          Q 596 416 596 402
+          L 596 386
+          Q 596 372 610 372
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="608" y="400" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ありがとう！</text>
+        
+          <text x="44" y="468" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🤖</text>
+        
+        <path d="
+          M 92 436
+          L 288 436
+          Q 302 436 302 450
+          L 302 506
+          Q 302 520 288 520
+          L 103 520
+          L 92 528
+          L 92 520
+          Q 78 520 78 506
+          L 78 450
+          Q 78 436 92 436
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="464" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">複数行のメッセージも</text>
+        
+          <text x="90" y="484" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">サポートしています。</text>
+        
+          <text x="90" y="504" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">このように続けて書けます。</text>
+        
+          <text x="756" y="567" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">👍</text>
+        
+        <path d="
+          M 535 535
+          L 708 535
+          Q 722 535 722 549
+          L 722 605
+          Q 722 619 708 619
+          L 708 627
+          L 697 619
+          L 535 619
+          Q 521 619 521 605
+          L 521 549
+          Q 521 535 535 535
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="533" y="563" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">便利ですね！</text>
+        
+          <text x="533" y="583" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">これで長いメッセージも</text>
+        
+          <text x="533" y="603" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">読みやすくなります。</text>
+        
+          <text x="44" y="666" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🤖</text>
+        
+        <path d="
+          M 92 639
+          L 363 639
+          Q 377 639 377 653
+          L 377 669
+          Q 377 683 363 683
+          L 103 683
+          L 92 691
+          L 92 683
+          Q 78 683 78 669
+          L 78 653
+          Q 78 639 92 639
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="667" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">アイコンなしのメッセージも可能です。</text>
+        
+          <text x="756" y="735" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">👤</text>
+        
+        <path d="
+          M 512 708
+          L 708 708
+          Q 722 708 722 722
+          L 722 738
+          Q 722 752 708 752
+          L 708 760
+          L 697 752
+          L 512 752
+          Q 498 752 498 738
+          L 498 722
+          Q 498 708 512 708
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="510" y="736" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">こちらもアイコンなしです。</text>
+        
+          <text x="44" y="804" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🤖</text>
+        
+        <path d="
+          M 92 777
+          L 356 777
+          Q 370 777 370 791
+          L 370 807
+          Q 370 821 356 821
+          L 103 821
+          L 92 829
+          L 92 821
+          Q 78 821 78 807
+          L 78 791
+          Q 78 777 92 777
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="805" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">デフォルトアイコン🤖が表示されます</text>
+        
+          <text x="756" y="873" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">👤</text>
+        
+        <path d="
+          M 444 846
+          L 708 846
+          Q 722 846 722 860
+          L 722 876
+          Q 722 890 708 890
+          L 708 898
+          L 697 890
+          L 444 890
+          Q 430 890 430 876
+          L 430 860
+          Q 430 846 444 846
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="442" y="874" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">デフォルトアイコン👤が表示されます</text>
+        
+          <text x="44" y="942" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">📝</text>
+        
+        <path d="
+          M 92 915
+          L 310 915
+          Q 324 915 324 929
+          L 324 945
+          Q 324 959 310 959
+          L 103 959
+          L 92 967
+          L 92 959
+          Q 78 959 78 945
+          L 78 929
+          Q 78 915 92 915
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="943" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">マークダウン記法も使えます！</text>
+        
+          <text x="756" y="1011" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">👤</text>
+        
+        <path d="
+          M 385 984
+          L 708 984
+          Q 722 984 722 998
+          L 722 1014
+          Q 722 1028 708 1028
+          L 708 1036
+          L 697 1028
+          L 385 1028
+          Q 371 1028 371 1014
+          L 371 998
+          Q 371 984 385 984
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="383" y="1012" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">それは便利ですね！どんな機能がありますか？</text>
+        
+          <text x="44" y="1080" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🤖</text>
+        
+        <path d="
+          M 92 1048
+          L 514 1048
+          Q 528 1048 528 1062
+          L 528 1158
+          Q 528 1172 514 1172
+          L 103 1172
+          L 92 1180
+          L 92 1172
+          Q 78 1172 78 1158
+          L 78 1062
+          Q 78 1048 92 1048
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="1076" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">以下の機能が使えます：</text>
+        
+          <text x="90" y="1096" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="1116" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">太字: 太字 で 太字 になります</text>
+        
+          <text x="90" y="1136" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">斜体: 斜体 で 斜体 になります</text>
+        
+          <text x="90" y="1156" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">インラインコード: バッククォートで囲むと コード になります</text>
+        
+          <text x="756" y="1219" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">💡</text>
+        
+        <path d="
+          M 550 1192
+          L 708 1192
+          Q 722 1192 722 1206
+          L 722 1222
+          Q 722 1236 708 1236
+          L 708 1244
+          L 697 1236
+          L 550 1236
+          Q 536 1236 536 1222
+          L 536 1206
+          Q 536 1192 550 1192
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="548" y="1220" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">リストも使えますか？</text>
+        
+          <text x="44" y="1288" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">📋</text>
+        
+        <path d="
+          M 92 1256
+          L 514 1256
+          Q 528 1256 528 1270
+          L 528 1366
+          Q 528 1380 514 1380
+          L 103 1380
+          L 92 1388
+          L 92 1380
+          Q 78 1380 78 1366
+          L 78 1270
+          Q 78 1256 92 1256
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="1284" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">もちろんです！順序なしリストと順序ありリストが使えます：</text>
+        
+          <text x="90" y="1304" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="1324" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">リスト項目1</text>
+        
+          <text x="90" y="1344" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">リスト項目2</text>
+        
+          <text x="90" y="1364" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">リスト項目3</text>
+        
+          <text x="756" y="1427" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">👤</text>
+        
+        <path d="
+          M 565 1400
+          L 708 1400
+          Q 722 1400 722 1414
+          L 722 1430
+          Q 722 1444 708 1444
+          L 708 1452
+          L 697 1444
+          L 565 1444
+          Q 551 1444 551 1430
+          L 551 1414
+          Q 551 1400 565 1400
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="563" y="1428" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">順序ありリストは？</text>
+        
+          <text x="44" y="1496" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🔢</text>
+        
+        <path d="
+          M 92 1464
+          L 220 1464
+          Q 234 1464 234 1478
+          L 234 1574
+          Q 234 1588 220 1588
+          L 103 1588
+          L 92 1596
+          L 92 1588
+          Q 78 1588 78 1574
+          L 78 1478
+          Q 78 1464 92 1464
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="1492" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">こんな感じです：</text>
+        
+          <text x="90" y="1512" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="1532" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">最初のステップ</text>
+        
+          <text x="90" y="1552" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">次のステップ</text>
+        
+          <text x="90" y="1572" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">最後のステップ</text>
+        
+          <text x="756" y="1635" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🔗</text>
+        
+        <path d="
+          M 625 1608
+          L 708 1608
+          Q 722 1608 722 1622
+          L 722 1638
+          Q 722 1652 708 1652
+          L 708 1660
+          L 697 1652
+          L 625 1652
+          Q 611 1652 611 1638
+          L 611 1622
+          Q 611 1608 625 1608
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="623" y="1636" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">リンクは？</text>
+        
+          <text x="44" y="1704" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🌐</text>
+        
+        <path d="
+          M 92 1672
+          L 514 1672
+          Q 528 1672 528 1686
+          L 528 1722
+          Q 528 1736 514 1736
+          L 103 1736
+          L 92 1744
+          L 92 1736
+          Q 78 1736 78 1722
+          L 78 1686
+          Q 78 1672 92 1672
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="1700" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">リンクも使えます！</text>
+        
+          <text x="90" y="1720" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">Anthropic公式サイト のように テキスト の形式で書けます。</text>
+        
+          <text x="756" y="1783" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">💬</text>
+        
+        <path d="
+          M 625 1756
+          L 708 1756
+          Q 722 1756 722 1770
+          L 722 1786
+          Q 722 1800 708 1800
+          L 708 1808
+          L 697 1800
+          L 625 1800
+          Q 611 1800 611 1786
+          L 611 1770
+          Q 611 1756 625 1756
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="623" y="1784" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">引用文は？</text>
+        
+          <text x="44" y="1852" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">📖</text>
+        
+        <path d="
+          M 92 1820
+          L 273 1820
+          Q 287 1820 287 1834
+          L 287 1910
+          Q 287 1924 273 1924
+          L 103 1924
+          L 92 1932
+          L 92 1924
+          Q 78 1924 78 1910
+          L 78 1834
+          Q 78 1820 92 1820
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="1848" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">引用文も使えます：</text>
+        
+          <text x="90" y="1868" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="1888" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">これは引用文です。</text>
+        
+          <text x="90" y="1908" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">複数行の引用も可能です。</text>
+        
+          <text x="756" y="1971" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🎨</text>
+        
+        <path d="
+          M 550 1944
+          L 708 1944
+          Q 722 1944 722 1958
+          L 722 1974
+          Q 722 1988 708 1988
+          L 708 1996
+          L 697 1988
+          L 550 1988
+          Q 536 1988 536 1974
+          L 536 1958
+          Q 536 1944 550 1944
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="548" y="1972" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">見出しは使えますか？</text>
+        
+          <text x="44" y="2040" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">📌</text>
+        
+        <path d="
+          M 92 2008
+          L 235 2008
+          Q 249 2008 249 2022
+          L 249 2118
+          Q 249 2132 235 2132
+          L 103 2132
+          L 92 2140
+          L 92 2132
+          Q 78 2132 78 2118
+          L 78 2022
+          Q 78 2008 92 2008
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="2036" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">見出しも使えます：</text>
+        
+          <text x="90" y="2056" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="2076" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">見出し1</text>
+        
+          <text x="90" y="2096" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">見出し2</text>
+        
+          <text x="90" y="2116" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">見出し3</text>
+        
+          <text x="756" y="2179" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">✨</text>
+        
+        <path d="
+          M 460 2152
+          L 708 2152
+          Q 722 2152 722 2166
+          L 722 2182
+          Q 722 2196 708 2196
+          L 708 2204
+          L 697 2196
+          L 460 2196
+          Q 446 2196 446 2182
+          L 446 2166
+          Q 446 2152 460 2152
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="458" y="2180" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">すごい！いろいろできるんですね！</text>
+        
+          <text x="44" y="2248" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">🤖</text>
+        
+        <path d="
+          M 92 2216
+          L 514 2216
+          Q 528 2216 528 2230
+          L 528 2406
+          Q 528 2420 514 2420
+          L 103 2420
+          L 92 2428
+          L 92 2420
+          Q 78 2420 78 2406
+          L 78 2230
+          Q 78 2216 92 2216
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="90" y="2244" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">はい！これらを組み合わせて、読みやすく 美しい チャットUIを作</text>
+        
+          <text x="90" y="2264" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">れます。</text>
+        
+          <text x="90" y="2284" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="2304" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">例えば：</text>
+        
+          <text x="90" y="2324" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">重要な情報を強調</text>
+        
+          <text x="90" y="2344" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">補足情報を斜体で</text>
+        
+          <text x="90" y="2364" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">コード例を見やすく表示</text>
+        
+          <text x="90" y="2384" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="90" y="2404" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">詳しくは ChatView GitHub をご覧ください！</text>
+        
+          <text x="756" y="2467" text-anchor="middle" dominant-baseline="middle"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif"
+                font-size="28" fill="#0b2b2b">👏</text>
+        
+        <path d="
+          M 520 2440
+          L 708 2440
+          Q 722 2440 722 2454
+          L 722 2470
+          Q 722 2484 708 2484
+          L 708 2492
+          L 697 2484
+          L 520 2484
+          Q 506 2484 506 2470
+          L 506 2454
+          Q 506 2440 520 2440
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="518" y="2468" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ありがとうございました！</text>
+        
+</svg>

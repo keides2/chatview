@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1436" viewBox="0 0 720 1436">
+  <defs>
+    <style>
+      text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+        font-size: 14px;
+        fill: #0b2b2b;
+      }
+    </style>
+  </defs>
+  <rect width="100%" height="100%" fill="#a7b6d9"/>
+  
+        <path d="
+          M 264 30
+          L 686 30
+          Q 700 30 700 44
+          L 700 144
+          Q 700 158 686 158
+          L 686 166
+          L 675 158
+          L 264 158
+          Q 250 158 250 144
+          L 250 44
+          Q 250 30 264 30
+          Z
+        " fill="#9efb7a"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="264" y="60" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">日銀がETF売却に踏み切りました。そもそも購入資金(原資)はどこ</text>
+        
+          <text x="264" y="80" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">から出てくるでしょうか？　紙幣を自由に刷れるように、無限の購</text>
+        
+          <text x="264" y="100" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">買力があるのでしょうか？　また売却益はどうするつもりなのでし</text>
+        
+          <text x="264" y="120" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ょうか？</text>
+        
+          <text x="264" y="140" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 34 181
+          L 456 181
+          Q 470 181 470 195
+          L 470 295
+          Q 470 309 456 309
+          L 45 309
+          L 34 317
+          L 34 309
+          Q 20 309 20 295
+          L 20 195
+          Q 20 181 34 181
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="34" y="211" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">日銀のETF売却に関するご質問、非常に鋭い視点ですね。以下に、購</text>
+        
+          <text x="34" y="231" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">入資金の原資と売却益の扱いについて詳しく解説します。</text>
+        
+          <text x="34" y="251" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="271" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">---</text>
+        
+          <text x="34" y="291" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 34 332
+          L 456 332
+          Q 470 332 470 346
+          L 470 666
+          Q 470 680 456 680
+          L 45 680
+          L 34 688
+          L 34 680
+          Q 20 680 20 666
+          L 20 346
+          Q 20 332 34 332
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="34" y="362" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">🏦 ETF購入の原資は何か？</text>
+        
+          <text x="34" y="382" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="402" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">日銀がETFを購入する際の資金は、中央銀行としての信用創造機能</text>
+        
+          <text x="34" y="422" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">によって賄われています。具体的には：</text>
+        
+          <text x="34" y="442" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="462" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">日銀当座預金の増加：民間銀行からETFを買い入れる際、日銀はそ</text>
+        
+          <text x="34" y="482" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">の銀行の当座預金残高を増やすことで支払いを行います。これは実</text>
+        
+          <text x="34" y="502" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">質的に「新たなマネーの供給」にあたります。</text>
+        
+          <text x="34" y="522" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">紙幣を刷るわけではない：物理的な紙幣を刷るわけではなく、電子</text>
+        
+          <text x="34" y="542" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">的な形でマネーを供給する仕組みです。</text>
+        
+          <text x="34" y="562" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">無限ではないが、理論上制限は少ない：中央銀行は信用によってマ</text>
+        
+          <text x="34" y="582" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ネーを創造できるため、理論上は大きな購買力を持ちますが、イン</text>
+        
+          <text x="34" y="602" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">フレや金融市場の安定性を考慮して制限されます。</text>
+        
+          <text x="34" y="622" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="642" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">---</text>
+        
+          <text x="34" y="662" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 34 703
+          L 456 703
+          Q 470 703 470 717
+          L 470 1037
+          Q 470 1051 456 1051
+          L 45 1051
+          L 34 1059
+          L 34 1051
+          Q 20 1051 20 1037
+          L 20 717
+          Q 20 703 34 703
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="34" y="733" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">📈 売却時の利益はどう扱われる？</text>
+        
+          <text x="34" y="753" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="773" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">日銀がETFを売却して得た利益（含み益）は、以下のように扱われ</text>
+        
+          <text x="34" y="793" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ると考えられます：</text>
+        
+          <text x="34" y="813" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="833" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">日銀の収益として計上：売却益は日銀の収益となり、最終的には国</text>
+        
+          <text x="34" y="853" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">庫（政府）に納付される可能性があります。</text>
+        
+          <text x="34" y="873" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">市場への影響を最小化する売却方針：2025年9月の金融政策決定会</text>
+        
+          <text x="34" y="893" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">合では、年間3300億円（簿価ベース）、時価で6200億円程度のペー</text>
+        
+          <text x="34" y="913" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">スで売却する方針が示されており、100年以上かけて売却する計算</text>
+        
+          <text x="34" y="933" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">です。</text>
+        
+          <text x="34" y="953" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">損失回避と市場安定が最優先：売却は市場を攪乱しないよう慎重に</text>
+        
+          <text x="34" y="973" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">行われ、損失が出ないようにする方針です。</text>
+        
+          <text x="34" y="993" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="1013" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">---</text>
+        
+          <text x="34" y="1033" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 34 1074
+          L 456 1074
+          Q 470 1074 470 1088
+          L 470 1268
+          Q 470 1282 456 1282
+          L 45 1282
+          L 34 1290
+          L 34 1282
+          Q 20 1282 20 1268
+          L 20 1088
+          Q 20 1074 34 1074
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="34" y="1104" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">🧠 なぜ売却するのか？</text>
+        
+          <text x="34" y="1124" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="1144" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">金融政策の正常化：異次元緩和の出口戦略の一環として、資産の圧</text>
+        
+          <text x="34" y="1164" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">縮（バランスシートの縮小）を進めています。</text>
+        
+          <text x="34" y="1184" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">市場の歪み是正：ETF保有が株価形成を歪めるとの批判もあり、正</text>
+        
+          <text x="34" y="1204" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">常化の一環として売却が進められています。</text>
+        
+          <text x="34" y="1224" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+          <text x="34" y="1244" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">---</text>
+        
+          <text x="34" y="1264" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+        <path d="
+          M 34 1305
+          L 456 1305
+          Q 470 1305 470 1319
+          L 470 1379
+          Q 470 1393 456 1393
+          L 45 1393
+          L 34 1401
+          L 34 1393
+          Q 20 1393 20 1379
+          L 20 1319
+          Q 20 1305 34 1305
+          Z
+        " fill="#ffffff"
+              stroke="rgba(3, 30, 32, 0.06)" stroke-width="1"/>
+      
+          <text x="34" y="1335" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ご興味があれば、日銀のバランスシートや国庫納付の仕組みについ</text>
+        
+          <text x="34" y="1355" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14">ても掘り下げられますよ。どこまで深堀りしましょうか？</text>
+        
+          <text x="34" y="1375" fill="#0b2b2b"
+                font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif"
+                font-size="14"></text>
+        
+</svg>

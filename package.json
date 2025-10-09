@@ -13,36 +13,21 @@
       "type": "object",
       "title": "ChatView",
       "properties": {
-  "chatPreviewEnterprise.playwrightBrowser": {
-          "type": "string",
-          "enum": ["firefox", "webkit", "chromium"],
-          "default": "firefox",
-          "description": "Playwrightで使用するブラウザエンジン (firefox推奨)"
-        },
-  "chatPreviewEnterprise.browserExecutablePath": {
-          "type": "string",
-          "description": "ブラウザ実行ファイルの明示的なパス（企業環境やカスタムインストール用）"
-        },
-  "chatPreviewEnterprise.defaultFolder": {
+        "chatPreviewEnterprise.defaultFolder": {
           "type": "string",
           "default": "workspace",
           "description": "保存ダイアログの既定フォルダ。'workspace'（ワークスペースのルート）、'home'（ユーザーホーム）、または絶対パスを指定できます。"
-        },
-  "chatPreviewEnterprise.puppeteerExecutablePath": {
-          "type": "string",
-          "default": "",
-          "description": "Puppeteerで使用するChrome/Chromiumの実行ファイルパス。空の場合は自動検出を試みます。"
         }
       }
     },
     "commands": [
       {
         "command": "chatPreviewEnterprise.showPreview",
-        "title": "ChatView Enterprise: プレビュー表示"
+        "title": "ChatView Enterprise: Show Preview | プレビュー表示"
       },
       {
         "command": "chatPreviewEnterprise.exportImage",
-        "title": "ChatView Enterprise: SVGエクスポート"
+        "title": "ChatView Enterprise: Export as SVG | SVGエクスポート"
       }
     ]
   },
@@ -50,8 +35,8 @@
     "vscode": "^1.103.0"
   },
   "activationEvents": [
-  "onCommand:chatPreviewEnterprise.showPreview",
-  "onCommand:chatPreviewEnterprise.exportImage"
+    "onCommand:chatPreviewEnterprise.showPreview",
+    "onCommand:chatPreviewEnterprise.exportImage"
   ],
   "license": "MIT",
   "categories": [
@@ -82,9 +67,5 @@
     "webpack": "^5.101.3",
     "webpack-cli": "^6.0.1"
   },
-  "dependencies": {
-    "playwright": "^1.55.1",
-    "puppeteer": "^24.22.2",
-    "puppeteer-core": "^24.20.0"
-  }
+  "dependencies": {}
 }

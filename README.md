@@ -1,179 +1,264 @@
 # <p align="center">
-  <img src="./media/ChatView-logo4.png" alt="ChatView Logo" width="512" height="512"/>
+  <img src="./media/ChatView-logo-Enterprise.png" alt="ChatView Enterprise Logo" width="512" height="512"/>
 </p>
 
-**English** | [日本語](README_ja.md)
+# 🗨️ ChatView Enterprise Edition — Lightweight Version for Corporate Environments
 
-# 🗨️ ChatView — Preview Markdown conversations in a LINE-style chat UI
-
-**ChatView** is a Visual Studio Code extension that renders conversation content written in Markdown as a LINE-style chat UI. It's useful for creating screenshots and for reviewing conversational content.
+**ChatView Enterprise Edition** is a lightweight version of ChatView designed for corporate security requirements. By completely removing browser automation and implementing SVG-only export, it operates safely in environments with SSL certificate issues or proxy restrictions.
 
 ---
-## 📷 Example
 
-![ChatView sample](./sample_2.jpg)
+## 📷 Sample Display
+
+![ChatView Sample](.\tools\samples\markdown\sample_with_icons.jpg)
+
+---
+
+## 🏢 Enterprise Edition Features
+
+### ✅ Optimized for Corporate Environments
+
+- **No Browser Automation**: Completely removed dependencies like Puppeteer and Playwright
+- **Lightweight Package**: No browser binaries required, significantly reducing distribution size
+- **Enhanced Security**: No external browser process launches, avoids SSL certificate issues
+- **Proxy Environment Support**: Not affected by corporate proxy settings
+- **SVG-Only Export**: High-quality output in vector format
+
+### ⚠️ Differences from Standard Edition
+
+| Feature | Enterprise Edition | Standard Edition |
+|---------|-------------------|------------------|
+| Preview Display | ✅ Supported | ✅ Supported |
+| SVG Export | ✅ Supported | ✅ Supported |
+| PNG Export | ❌ Not Supported | ✅ Supported |
+| HTML Export | ❌ Not Supported | ✅ Supported |
+| Browser Dependency | ❌ None | ✅ Chrome/Chromium Required |
+| Package Size | Small | Large |
 
 ---
 
 ## 👤 User Guide
 
-### ✅ Key features
+### 🚀 How to Use
 
-- Render conversation text written in Markdown as a chat UI
-- Stylish chat bubbles (customizable colors, rounded corners, shadows)
-- Suitable as a screenshot asset generator
-- Appearance can be easily customized via CSS
+1. Open a Markdown file (e.g., sample.md) in VS Code
+2. Press Ctrl+Shift+P to open the Command Palette
+3. Execute **ChatView: Show Preview | プレビュー表示**
+4. The chat UI will be displayed in the Webview
 
-### 🚀 How to use
+![command_palette](.\media\command_palette.jpg)
 
-1. Open a Markdown file in VS Code (for example, `sample.md`)
-2. Open the Command Palette with `Ctrl+Shift+P`
-3. Run `ChatView: Preview display`
-4. A chat-style preview will open in a webview
+### 💾 SVG Export
 
-### 💬 Conversation markup (using @ai / @me)
+1. While preview is displayed, press Ctrl+Shift+P to open the Command Palette
+2. Execute **ChatView: Export as SVG | SVGエクスポート**
+3. Specify the save location and save the SVG file
 
-In ChatView, you indicate the speaker by prefixing a line with `@ai` or `@me`. Lines starting with `@ai` are rendered as AI messages; lines starting with `@me` are rendered as user messages.
+### 🎤 Converting Teams Transcripts
+
+You can convert Microsoft Teams transcript DOCX files to ChatView format.
+
+```powershell
+# Basic usage
+python tools/converters/transcript2chatview.py input.docx -o output.md
+
+# Merge consecutive messages from the same speaker
+python tools/converters/transcript2chatview.py input.docx --merge-speaker
+
+# Hide timestamps and icons
+python tools/converters/transcript2chatview.py input.docx --no-timestamp --no-icon
+```
+
+After conversion, you can open and preview the Markdown file in VS Code.
+
+### 💬 How to Write Conversations (@ai / @me Usage)
+
+In ChatView, you can easily specify speakers in Markdown. By placing the prefix @ai or @me at the beginning of a line, they will be rendered as AI-side or user-side speech bubbles respectively.
 
 Example (Markdown):
 
 ```markdown
-@ai Hi — what would you like to do today?
-@me I was thinking about watching a movie.
-@ai How about "Interstellar"? It is very moving.
+@ai Hello, what shall we do today?
+@me I'm thinking about watching a movie!
+@ai How about "Interstellar"? It's very moving.
 ```
 
-Important (current behavior and updates):
+Important specifications:
 
-- Each message starts with a line that begins with `@ai` or `@me`. Subsequent lines that do not start with a prefix are treated as continuation lines for the previous bubble. In other words, you can split a long message across multiple lines and only prefix the first line.
-- Prefixes must appear at the start of the line and be lowercase `@ai` / `@me`. Lines with leading spaces or uppercase `@AI`/`@Me` are not detected.
-- A limited subset of Markdown is rendered inside bubbles (headings `#`, bold `**`, italic `*`, inline code `` ` ``, unordered lists `-`, ordered lists, blockquotes `>`, links `[text](url)`, etc.).
-- For SVG export the Markdown formatting is stripped and plain text is used. HTML/PNG export and the preview support simple Markdown rendering.
+- Each conversation starts with a line prefixed with @ai or @me
+- Subsequent lines without a prefix at the beginning are treated as "continuation lines" and grouped into the same speech bubble
+- Use lowercase @ai / @me prefixes at the beginning of lines
+- Limited Markdown syntax is rendered within speech bubbles (headings #, bold **, italic *, inline code \`, lists -, numbered lists, quotes >, links [text](url), etc.)
+- In SVG export, Markdown notation is removed and output as plain text
 
-### 🎨 Customizing appearance (important)
+### 🎨 Customizing Appearance
 
-- The UI styling is defined mainly in `media/style.css`. Edit that file locally to try different appearances.
-- Note:
-  - In a development environment (clone the repo and run the extension host via F5 in VS Code), editing `media/style.css` and reopening the preview will reflect the changes.
-  - If you installed the published extension from the Marketplace, editing `media/style.css` in your local copy will not update the installed extension. To change the published behavior you need to modify the source, rebuild, and republish / reinstall the extension.
+The UI appearance is mainly defined in media/style.css.
+
+Steps to modify in development environment:
+1. Edit media/style.css
+2. Close and reopen the preview, or reload the extension host window (Ctrl+R)
 
 ---
 
 ## 🧑‍💻 Developer Guide
 
-### 📦 Project layout
+### 📦 Project Structure
 
-```text
+```
 chatview/
-├── src/extension.ts       // Extension entry: generates the webview HTML
-├── media/style.css        // Chat UI styling (colors, layout, fonts)
-├── media/script.js        // Webview script that parses Markdown and generates messages (supports continuation lines and limited Markdown inside bubbles)
-├── sample.md              // Example Markdown for testing
-├── .vscode/launch.json    // Debug configuration
-├── .vscode/tasks.json     // Build/dev tasks (e.g. `npm: watch` for TS watch)
-├── tsconfig.json          // TypeScript compiler settings
-└── package.json           // Extension metadata
+├── src/
+│   └── extension.ts           // Extension entry point (includes SVG generation logic)
+├── media/
+│   ├── style.css              // Chat UI style definitions
+│   └── script.js              // Markdown parser in Webview
+├── tools/                     // Development and conversion tools
+│   ├── converters/
+│   │   └── transcript2chatview.py  // Convert Teams transcript DOCX to ChatView format
+│   ├── generators/
+│   │   ├── create_sample_docx.py   // Generate sample transcript DOCX
+│   │   └── generate-icons.ps1      // Generate icon images
+│   ├── samples/
+│   │   ├── transcripts/            // Transcript samples
+│   │   └── markdown/               // Markdown samples
+│   └── tests/
+│       └── puppeteer-test.js       // Test scripts
+├── dist/
+│   └── releases/              // Released .vsix files
+├── .vscode/
+│   ├── launch.json            // Debug configuration
+│   └── tasks.json             // Build/development task definitions
+├── tsconfig.json              // TypeScript compiler settings
+└── package.json               // Extension metadata
 ```
 
-### 🛠 Local development
+### 🛠 Local Development Setup
 
 Prerequisites:
 
 ```powershell
 git clone https://github.com/keides2/chatview.git
 cd chatview
+git checkout enterprise-edition
 npm install
 ```
 
-Running and testing (including CSS changes):
+Testing:
 
 1. Open the project in VS Code
-2. Press `F5` to start the Extension Development Host (a debug window)
-3. In the debug window open `sample.md`, then run `Ctrl+Shift+P` → `ChatView: Preview display`
-4. If you edit `media/style.css`, close and reopen the preview or reload the extension host window (Developer: Reload Window / `Ctrl+R`) to see the updates
+2. Press F5 to launch the extension host
+3. In the debug window, open sample.md and press Ctrl+Shift+P → ChatView: Preview display
+4. After editing media/style.css, close and reopen the preview
 
-Notes:
+### 🔧 Build and Package
 
-- Editing CSS only does not require rebuilding TypeScript. However, if the extension is already running you must reload or reopen the preview to apply CSS changes.
-- If you change the DOM structure (message classes/elements), edit `media/script.js` as needed.
+```powershell
+# Development build
+npm run compile
 
-### 🔧 Example HTML/CSS
+# Production build
+npm run package
 
-```html
-<div class="message ai">Hi — what would you like to do today?</div>
-<div class="message me">I was thinking about watching a movie.</div>
-```
-
-```css
-.message {
-  padding: 10px 14px;
-  border-radius: 14px;
-  max-width: 75%;
-}
-.ai { background: #e0f7fa; }
-.me { background: #a5d6a7; text-align: right; }
+# Create VSIX package
+vsce package
 ```
 
 ---
 
 ## 📥 Installation
 
-### Requirements
+### System Requirements
 
-- **Visual Studio Code**: version 1.103.0 or later
+- **Visual Studio Code**: Version 1.103.0 or higher
+- **No Browser Required**: Chrome/Chromium installation is not required
 
-### From the Marketplace
+### Install from VSIX File
 
-1. Search for "ChatView" in the Extensions view in VS Code
-2. Install and start using it
+1. Download the .vsix file from the release page
+2. In VS Code, press Ctrl+Shift+P → Extensions: Install from VSIX...
+3. Select the downloaded .vsix file
 
-### From source (for developers)
+### Build from Source (For Developers)
 
-1. Clone the repo
+1. Clone the repository (enterprise-edition branch)
 2. Run `npm install` to install dependencies
-3. Press `F5` to run the extension host
+3. Run `npm run package` to build
+4. Press F5 to launch the extension host
 
 ---
 
-## 🧾 Important note about Puppeteer rendering
+## 🔒 Security and Privacy
 
-High-quality image export (rendering the extension's HTML and taking screenshots) relies on Headless Chrome / Chromium via Puppeteer. This repository uses `puppeteer-core` to keep the package lightweight and expects Chrome/Chromium to be available on the user's machine.
+Enterprise Edition meets the following security requirements:
 
-### Why `puppeteer-core`?
-- `puppeteer-core` does not include a browser binary, which keeps the extension package small.
-- Including full `puppeteer` triggers an automatic Chromium download which can drastically increase package size.
+- **No External Process Launch**: Reduces security risks by not launching browsers
+- **No Network Access**: Export processing requires no external communication
+- **Privacy Protection**: Implementation does not include personal information (such as usernames) in paths
+- **Avoids SSL Certificate Issues**: Works in corporate self-signed certificate environments without using browser automation
 
-### Requirements
-- A Chrome or Chromium binary must be installed on the machine.
-- Set the extension configuration `chatPreview.puppeteerExecutablePath` to the browser executable path, or ensure the browser is discoverable on PATH.
+---
+
+## 📋 Configuration Settings
+
+### chatPreview.defaultFolder
+
+Specify the default folder for the save dialog.
+
+- workspace: Workspace root (default)
+- home: User home directory
+- Absolute path: Any directory path
 
 Example (settings.json):
 
 ```json
-"chatPreview.puppeteerExecutablePath": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+{
+  "chatPreview.defaultFolder": "C:\\Users\\YourName\\Documents\\ChatExports"
+}
 ```
 
-### Local testing (quick example)
+---
 
-1. Install dependencies (developer):
+## 🆚 Comparison with Standard Edition
 
-```powershell
-npm install
-```
+### When to Choose Enterprise Edition
 
-2. If you're using `puppeteer-core`, make sure Chrome is available and `chatPreview.puppeteerExecutablePath` is set.
+- Using in corporate proxy environments
+- Environments with SSL certificate issues
+- Browser installation is restricted
+- Need for lightweight package
+- SVG format is sufficient
 
-3. Run the included test script:
+### When to Choose Standard Edition
 
-```powershell
-node scripts\\puppeteer-test.js
-```
+- Need PNG format export
+- Need HTML format export
+- Need pixel-perfect screenshots
 
-This will create `out/puppeteer-test.png` with a screenshot.
+---
+
+## 🐛 Troubleshooting
+
+### Preview Not Displaying
+
+1. Verify VS Code version is 1.103.0 or higher
+2. Execute Developer: Reload Window in the Command Palette
+
+### SVG Export Not Working
+
+1. Verify write permissions for the save directory
+2. Verify the filename does not contain invalid characters
 
 ---
 
 ## 📄 License
 
 MIT License
-See the `LICENSE` file for details.
+See LICENSE file for details.
+
+---
+
+## 🔗 Related Links
+
+- [GitHub Repository](https://github.com/keides2/chatview)
+- [Standard Edition README](README_ja.md)
+- [Issue Reports](https://github.com/keides2/chatview/issues)
