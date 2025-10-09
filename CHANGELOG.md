@@ -2,6 +2,12 @@
 
 All notable changes to the ChatView Enterprise Edition extension will be documented in this file.
 
+## [0.3.1] - 2025-10-09
+
+### Fixed
+- Fixed image display issue on Visual Studio Marketplace by using absolute GitHub URLs
+- Updated all README files with absolute image paths
+
 ## [0.3.0] - 2025-10-09
 
 ### Added
