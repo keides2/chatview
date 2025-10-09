@@ -1,5 +1,5 @@
 # <p align="center">
-  <img src="./media/ChatView-logo-Enterprise.png" alt="ChatView Enterprise Logo" width="512" height="512"/>
+  <img src="https://raw.githubusercontent.com/keides2/chatview/enterprise-edition/media/ChatView-logo-Enterprise.png" alt="ChatView Enterprise Logo" width="512" height="512"/>
 </p>
 
 # 🗨️ ChatView Enterprise Edition — 企業環境向け軽量版
@@ -12,7 +12,7 @@
 
 ## 📷 サンプル表示
 
-![ChatView サンプル](./tools/samples/markdown/sample_with_icons.jpg)
+![ChatView サンプル](https://raw.githubusercontent.com/keides2/chatview/enterprise-edition/tools/samples/markdown/sample_with_icons.jpg)
 
 ---
 
@@ -48,7 +48,7 @@
 3. ChatView: Show Preview | プレビュー表示 を実行
 4. Webview にチャットUIが表示されます
 
-![command_palette](./media/command_palette.jpg)
+![command_palette](https://raw.githubusercontent.com/keides2/chatview/enterprise-edition/media/command_palette.jpg)
 
 ### 💾 SVGエクスポート
 
