@@ -2,7 +2,7 @@
 
 All notable changes to the ChatView Enterprise Edition extension will be documented in this file.
 
-## [0.2.0] - 2025-10-09
+## [0.3.0] - 2025-10-09
 
 ### Added
 - Image icon support for speaker avatars
@@ -23,7 +23,7 @@ All notable changes to the ChatView Enterprise Edition extension will be documen
 - Puppeteer dependency and related configuration
 - Browser-related configuration options
 
-## [0.1.2] - 2025-10-06
+## [0.2.0] - 2025-10-06
 
 ### Added
 - SVG export functionality
