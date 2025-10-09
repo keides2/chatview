@@ -4,13 +4,15 @@
 
 # 🗨️ ChatView Enterprise Edition — 企業環境向け軽量版
 
+**[English](README-enterprise-en.md)** | **[日本語]**
+
 **ChatView Enterprise Edition** は、企業のセキュリティ要件に対応した ChatView の軽量版です。ブラウザ自動化を完全に削除し、SVG専用エクスポートを実装することで、SSL証明書問題やプロキシ制限のある環境でも安全に動作します。
 
 ---
 
 ## 📷 サンプル表示
 
-![ChatView サンプル](.\tools\samples\markdown\sample_with_icons.jpg)
+![ChatView サンプル](./tools/samples/markdown/sample_with_icons.jpg)
 
 ---
 
@@ -46,7 +48,7 @@
 3. ChatView: Show Preview | プレビュー表示 を実行
 4. Webview にチャットUIが表示されます
 
-![command_palette](.\media\command_palette.jpg)
+![command_palette](./media/command_palette.jpg)
 
 ### 💾 SVGエクスポート
 
