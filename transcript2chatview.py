@@ -7,6 +7,7 @@ Microsoft Teams DOCX文字起こしをChatView形式のマークダウンに変�
     python transcript2chatview.py input.docx --merge-speaker   # 同一話者の連続発言を結合
     python transcript2chatview.py input.docx --no-timestamp    # タイムスタンプ非表示
     python transcript2chatview.py input.docx --no-icon         # アイコン絵文字非表示
+    python transcript2chatview.py input.docx --embed-icons     # アイコンをBase64で埋め込み（デフォルトは別ファイル保存）
     python transcript2chatview.py input.docx --merge-speaker --no-timestamp --no-icon  # 複数オプション併用
 """
 
@@ -448,9 +449,9 @@ def main():
         help='アイコン絵文字を非表示'
     )
     parser.add_argument(
-        '--icon-files',
+        '--embed-icons',
         action='store_true',
-        help='アイコンを別ファイルとして保存（Base64埋め込みを避ける）'
+        help='アイコンをBase64でマークダウンに埋め込む（デフォルトは別ファイル保存）'
     )
     
     args = parser.parse_args()
@@ -471,7 +472,7 @@ def main():
     transcript = parse_teams_docx_simple(
         args.input,
         output_dir=output_dir,
-        use_icon_files=args.icon_files
+        use_icon_files=not args.embed_icons  # デフォルトはファイル保存
     )
     print(f'  → {len(transcript)}件のエントリを検出')
     
