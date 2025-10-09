@@ -60,16 +60,42 @@
 
 You can convert Microsoft Teams transcript DOCX files to ChatView format.
 
+#### Download the Script
+
+Download `transcript2chatview.py` from the GitHub repository:
+
 ```powershell
-# Basic usage
-python tools/converters/transcript2chatview.py input.docx -o output.md
+# Clone the repository
+git clone https://github.com/keides2/chatview.git
+cd chatview/tools
+
+# Or download directly
+curl -O https://raw.githubusercontent.com/keides2/chatview/enterprise-edition/tools/transcript2chatview.py
+```
+
+#### Requirements
+
+```powershell
+pip install python-docx
+```
+
+#### Usage
+
+```powershell
+# Basic usage (icons saved as separate files in icons/ directory)
+python transcript2chatview.py input.docx -o output.md
 
 # Merge consecutive messages from the same speaker
-python tools/converters/transcript2chatview.py input.docx --merge-speaker
+python transcript2chatview.py input.docx --merge-speaker -o output.md
 
 # Hide timestamps and icons
-python tools/converters/transcript2chatview.py input.docx --no-timestamp --no-icon
+python transcript2chatview.py input.docx --no-timestamp --no-icon -o output.md
+
+# Embed icons as Base64 (not recommended for large files)
+python transcript2chatview.py input.docx --embed-icons -o output.md
 ```
+
+**Note**: By default, speaker icons are saved as separate PNG files in the `icons/` directory alongside the output markdown file. This keeps file sizes manageable for large transcripts.
 
 After conversion, you can open and preview the Markdown file in VS Code.
 

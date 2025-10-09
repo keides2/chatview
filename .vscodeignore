@@ -1,52 +1,33 @@
-# VS Code files
-.vscode/**
-.vscode-test/**
+# VSCode拡張機能のパッケージから除外するファイル
 
-# Source files (only include bundled output)
+# ソースファイル（ビルド済みdist/を使用）
 src/**
-out/**
-**/*.ts
-**/*.map
+tsconfig.json
 webpack.config.js
 
-# Build and config files
-tsconfig.json
-eslint.config.mjs
-.vscode-test.mjs
-vsc-extension-quickstart.md
-CHANGELOG.md
-
-# Git files
-.gitignore
-
-# Workspace files
-chatview.code-workspace
-
-# Scripts
-scripts/**
-
-# Node modules documentation and test files
-node_modules/**/test/**
-node_modules/**/tests/**
-node_modules/**/*.md
-node_modules/**/LICENSE*
-node_modules/**/CHANGELOG*
-node_modules/**/README*
-node_modules/**/docs/**
-node_modules/**/examples/**
-
-# Test files
-**/*.test.*
-out/test/**
-
-# Node modules (bundled with webpack)
+# 開発ツール
+.vscode/**
+.vscode-test/**
 node_modules/**
+.gitignore
+.gitattributes
 
-# Test output and temporary files
-test-output/**
+# テストファイル
+**/test/**
+**/.eslintrc.json
+
+# ドキュメント生成ファイル
+scripts/debug/**
 evac/**
-docs/**
-report*.html
-report*.md
-*.tmp.html
-playwright-test.js
+
+# その他
+*.vsix
+.DS_Store
+Thumbs.db
+
+# 重要: 以下は含める（デフォルトで除外されないが明示）
+# !transcript2chatview.py
+# !tools/**
+# !README*.md
+# !CHANGELOG.md
+# !LICENSE
