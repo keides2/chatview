@@ -2,6 +2,14 @@
 
 All notable changes to the ChatView Enterprise Edition extension will be documented in this file.
 
+## [0.3.2] - 2025-10-09
+
+### Changed
+- **transcript2chatview.py**: Changed default icon handling from Base64 embedding to file-based storage
+- Icons are now saved as separate files in `icons/` directory by default
+- Added `--embed-icons` option for Base64 embedding when needed
+- Significantly reduces markdown file size for large transcripts (396 entries: ~5MB → ~50KB)
+
 ## [0.3.1] - 2025-10-09
 
 ### Fixed

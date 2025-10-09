@@ -2,7 +2,7 @@
   "name": "chatview-enterprise",
   "displayName": "ChatView Enterprise",
   "description": "ChatView Enterprise Edition",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "publisher": "keides2",
   "repository": {
     "type": "git",
