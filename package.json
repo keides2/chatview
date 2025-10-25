@@ -6,7 +6,7 @@
   "publisher": "keides2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/keides2/chatview"
+    "url": "https://github.com/keides2/chatview.git"
   },
   "contributes": {
     "configuration": {
