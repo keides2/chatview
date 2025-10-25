@@ -1,41 +1,33 @@
 # <p align="center">
-  <img src="https://raw.githubusercontent.com/keides2/chatview/enterprise-edition/media/ChatView-logo-Enterprise.png" alt="ChatView Enterprise Logo" width="512" height="512"/>
+  <img src="https://raw.githubusercontent.com/keides2/chatview/main/media/ChatView-logo-Enterprise.png" alt="ChatView Logo" width="512" height="512"/>
 </p>
 
-# 🗨️ ChatView Enterprise Edition — 企業環境向け軽量版
+# 🗨️ ChatView — VS Code用軽量チャットビューア
 
-**[English](README-enterprise-en.md)** | **[日本語]**
+**[English](README.md)** | **[日本語]**
 
-**ChatView Enterprise Edition** は、企業のセキュリティ要件に対応した ChatView の軽量版です。ブラウザ自動化を完全に削除し、SVG専用エクスポートを実装することで、SSL証明書問題やプロキシ制限のある環境でも安全に動作します。
+> **📢 重要なお知らせ (2025-10-25)**  
+> ChatViewは単一の軽量版に統合されました。旧「Enterprise Edition」が標準版となり、企業環境を含むすべての環境に最適化されています。PNG/HTMLエクスポート機能は廃止され、互換性とセキュリティを重視したSVG専用エクスポートとなりました。
+
+**ChatView** は、チャット形式のMarkdownファイルを可視化するための軽量なVS Code拡張機能です。企業環境向けに最適化され、SVGエクスポート機能を搭載。SSL証明書問題やプロキシ制限のある環境でも安全に動作します。
 
 ---
 
 ## 📷 サンプル表示
 
-![ChatView サンプル](https://raw.githubusercontent.com/keides2/chatview/enterprise-edition/tools/samples/markdown/sample_with_icons.jpg)
+![ChatView サンプル](https://raw.githubusercontent.com/keides2/chatview/main/tools/samples/markdown/sample_with_icons.jpg)
 
 ---
 
-## 🏢 Enterprise Editionの特徴
+## ✨ 主な機能
 
-### ✅ 企業環境に最適化
-
-- **ブラウザ自動化なし**: Puppeteer、Playwrightなどの依存関係を完全削除
+- **ブラウザ自動化なし**: Puppeteer、Playwrightなどの依存関係なし
 - **軽量パッケージ**: ブラウザバイナリ不要で配布サイズを大幅削減
 - **セキュリティ向上**: 外部ブラウザプロセス起動なし、SSL証明書問題を回避
 - **プロキシ環境対応**: 企業プロキシ設定の影響を受けない
-- **SVG専用エクスポート**: ベクター形式で高品質な出力
-
-### ⚠️ 通常版との違い
-
-| 機能 | Enterprise Edition | Standard Edition |
-|------|-------------------|------------------|
-| プレビュー表示 | ✅ 対応 | ✅ 対応 |
-| SVGエクスポート | ✅ 対応 | ✅ 対応 |
-| PNGエクスポート | ❌ 非対応 | ✅ 対応 |
-| HTMLエクスポート | ❌ 非対応 | ✅ 対応 |
-| ブラウザ依存 | ❌ なし | ✅ Chrome/Chromium必須 |
-| パッケージサイズ | 小 | 大 |
+- **SVGエクスポート**: ベクター形式で高品質な出力
+- **チャット形式プレビュー**: @ai / @me 形式の会話を美しく可視化
+- **Teams文字起こし変換**: Microsoft TeamsのDOCX文字起こしをChatView形式に変換
 
 ---
 

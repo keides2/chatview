@@ -1,41 +1,33 @@
 # <p align="center">
-  <img src="https://raw.githubusercontent.com/keides2/chatview/enterprise-edition/media/ChatView-logo-Enterprise.png" alt="ChatView Enterprise Logo" width="512" height="512"/>
+  <img src="https://raw.githubusercontent.com/keides2/chatview/main/media/ChatView-logo-Enterprise.png" alt="ChatView Logo" width="512" height="512"/>
 </p>
 
-# 🗨️ ChatView Enterprise Edition — Lightweight Version for Corporate Environments
+# 🗨️ ChatView — Lightweight Chat Viewer for VS Code
 
-**[English]** | **[日本語](README-enterprise-ja.md)**
+**[English]** | **[日本語](README_ja.md)**
 
-**ChatView Enterprise Edition** is a lightweight version of ChatView designed for corporate security requirements. By completely removing browser automation and implementing SVG-only export, it operates safely in environments with SSL certificate issues or proxy restrictions.
+> **📢 Important Notice (2025-10-25)**  
+> ChatView has been streamlined to a single, lightweight edition. The former "Enterprise Edition" is now the standard version, optimized for all environments including corporate settings. PNG/HTML export features have been discontinued in favor of SVG-only export for better compatibility and security.
+
+**ChatView** is a lightweight VS Code extension designed for visualizing chat-format markdown files. Optimized for corporate environments with SVG-only export functionality, it operates safely in environments with SSL certificate issues or proxy restrictions.
 
 ---
 
 ## 📷 Sample Display
 
-![ChatView Sample](https://raw.githubusercontent.com/keides2/chatview/enterprise-edition/tools/samples/markdown/sample_with_icons.jpg)
+![ChatView Sample](https://raw.githubusercontent.com/keides2/chatview/main/tools/samples/markdown/sample_with_icons.jpg)
 
 ---
 
-## 🏢 Enterprise Edition Features
+## ✨ Key Features
 
-### ✅ Optimized for Corporate Environments
-
-- **No Browser Automation**: Completely removed dependencies like Puppeteer and Playwright
+- **No Browser Automation**: No dependencies like Puppeteer or Playwright
 - **Lightweight Package**: No browser binaries required, significantly reducing distribution size
 - **Enhanced Security**: No external browser process launches, avoids SSL certificate issues
 - **Proxy Environment Support**: Not affected by corporate proxy settings
-- **SVG-Only Export**: High-quality output in vector format
-
-### ⚠️ Differences from Standard Edition
-
-| Feature | Enterprise Edition | Standard Edition |
-|---------|-------------------|------------------|
-| Preview Display | ✅ Supported | ✅ Supported |
-| SVG Export | ✅ Supported | ✅ Supported |
-| PNG Export | ❌ Not Supported | ✅ Supported |
-| HTML Export | ❌ Not Supported | ✅ Supported |
-| Browser Dependency | ❌ None | ✅ Chrome/Chromium Required |
-| Package Size | Small | Large |
+- **SVG Export**: High-quality output in vector format
+- **Chat-format Preview**: Beautiful visualization of @ai / @me style conversations
+- **Teams Transcription Converter**: Convert Microsoft Teams DOCX transcripts to ChatView format
 
 ---
 

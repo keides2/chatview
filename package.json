@@ -1,7 +1,7 @@
 {
-  "name": "chatview-enterprise",
-  "displayName": "ChatView Enterprise",
-  "description": "ChatView Enterprise Edition",
+  "name": "chatview",
+  "displayName": "ChatView",
+  "description": "Lightweight chat-format markdown viewer for VS Code",
   "version": "0.3.2",
   "publisher": "keides2",
   "repository": {
@@ -13,7 +13,7 @@
       "type": "object",
       "title": "ChatView",
       "properties": {
-        "chatPreviewEnterprise.defaultFolder": {
+        "chatPreview.defaultFolder": {
           "type": "string",
           "default": "workspace",
           "description": "保存ダイアログの既定フォルダ。'workspace'（ワークスペースのルート）、'home'（ユーザーホーム）、または絶対パスを指定できます。"
@@ -22,12 +22,12 @@
     },
     "commands": [
       {
-        "command": "chatPreviewEnterprise.showPreview",
-        "title": "ChatView Enterprise: Show Preview | プレビュー表示"
+        "command": "chatPreview.showPreview",
+        "title": "ChatView: Show Preview | プレビュー表示"
       },
       {
-        "command": "chatPreviewEnterprise.exportImage",
-        "title": "ChatView Enterprise: Export as SVG | SVGエクスポート"
+        "command": "chatPreview.exportImage",
+        "title": "ChatView: Export as SVG | SVGエクスポート"
       }
     ]
   },
@@ -35,8 +35,8 @@
     "vscode": "^1.103.0"
   },
   "activationEvents": [
-    "onCommand:chatPreviewEnterprise.showPreview",
-    "onCommand:chatPreviewEnterprise.exportImage"
+    "onCommand:chatPreview.showPreview",
+    "onCommand:chatPreview.exportImage"
   ],
   "license": "MIT",
   "categories": [

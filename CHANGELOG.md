@@ -1,6 +1,21 @@
 # Change Log
 
-All notable changes to the ChatView Enterprise Edition extension will be documented in this file.
+All notable changes to the ChatView extension will be documented in this file.
+
+## [0.4.0] - 2025-10-25
+
+### Changed
+- **MAJOR**: Merged Enterprise Edition into main branch
+- Discontinued Standard Edition (PNG/HTML export features removed)
+- This is now the single, lightweight version optimized for corporate environments
+- Renamed from "ChatView Enterprise" to "ChatView"
+- Updated command names from `chatPreviewEnterprise.*` to `chatPreview.*`
+- Updated configuration keys from `chatPreviewEnterprise.*` to `chatPreview.*`
+
+### Migration Notes
+- If upgrading from Standard Edition: PNG/HTML export is no longer available
+- If upgrading from Enterprise Edition: Update any custom keybindings or tasks to use new command names
+- Configuration settings will need to be migrated from `chatPreviewEnterprise.*` to `chatPreview.*`
 
 ## [0.3.2] - 2025-10-09
 
